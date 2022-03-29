@@ -1,7 +1,7 @@
 package patterns;
 
 public class Empty_Square {
-
+	//program to print empty square box...
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int n=4;
@@ -19,3 +19,10 @@ public class Empty_Square {
 	}
 
 }
+
+/* like
+
+	* * * *
+	*     *
+	* * * *
+*/
