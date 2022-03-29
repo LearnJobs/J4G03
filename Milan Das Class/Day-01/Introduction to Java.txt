@@ -1,0 +1,218 @@
+THE FOLLOWING SOFTWARE HAVE TO BE INSTALLED IN YOUR MACHINE:
+1.  JDK Version 8
+		jdk-8u202-windows-x64.exe
+
+2.  Eclipse
+		eclipse-jee-2021-12-R-win32-x86_64.zip
+
+3.  Create a GitHub account
+
+USING JAVA ONE CAN DEVELOP 3 TYPES OF PROGRAMS:
+1.	Application
+		An application is a program that starts from the main() method
+
+2.	Applet
+3.  Servlet (Web-application)
+
+THERE ARE AROUND 54 RESERVE WORK IN JAVA:
+    There are only 54 reserve words in Java 8.
+	1. class
+	2. interface
+	3. void
+	4. byte
+	5. short
+	6. int
+	7. long
+	8. char
+	9. boolean
+   10. float
+   11. double
+   12. for
+   13. while
+   14. if
+   15. switch
+   16. ....
+
+JAVA PROGRAM ARE WRITTEN WITHIN A CLASS
+	class <name-of-the-class> {
+	}
+
+	[access-specifier]
+	[modifier]
+	class <name-of-the-program>
+	[extend <parent-class-name>]
+	[implements <list-of-interfaces>]
+	{}
+
+	class Begin {}
+
+	public class Begin {}
+
+	public abstract class Begin {}
+
+	public class Begin extend Parent {}
+
+STRUCTURE OF A FIELD:
+    [access-specifier]
+    [modifier]
+    {<Type>|void} <name-of-field>
+    [= <value-of-field>];
+
+    Example:
+        public static int PI = 3.141;
+        public String country = "India";
+        String name;
+
+
+WHAT ARE ACCESS-SPECIFIERS:
+	1. public
+	2. protected
+	3. private
+	4. <undefined>
+
+WHAT IS THE HEIRARCHY OF A CLASS:
+	jar file
+	|---package01
+	|---+- class01
+	|---+- class02
+	|---+- class03
+	|---package02
+	|---+- class04
+	|---+- class05
+	|---+- class06
+	|---+- class07
+	|---package03
+	|---+- class08
+	|---+- class09
+	|---+- class10
+	|---+- class11
+
+WHAT ARE THE MEMBERS OF A CLASS:
+	1.	Field member
+	2.  Constructor member
+	3.  Method member
+	4.  Inner class member
+
+A JAVA APPLICATION STARTS FROM THE MAIN METHOD
+	public class Begin {
+		public static void main() {
+		}
+
+		public static void main(String arg) {
+		}
+
+		public static void main(int n) {
+		}
+
+		public static void main(String[] args) {
+		}
+	}
+
+
+ASSIGNMENT:
+01: a)  Draw a triangle of asterisks?
+    b)  Draw a diamond style of asterisks?
+    c)  Draw a triangle of palindrome numbers?
+    d)  Draw a outline of a triangle using stars?
+    e)  Draw a triangle of palindrome alphabets?
+    f)  Draw a triangle using digits from 0 to 9 for each line
+    g)  Draw the figure shown in number g
+    h)  Draw the figure shown in number h
+    i)  Draw a figure with two triangle meeting upside down using astericks
+    j)  Draw a swastik using * character
+
+      a)      *             b)      *           c)      1            d)       *
+             ***                   ***                 121                   * *
+            *****                 *****               12321                 *   *
+           *******               *******             1234321               *     *
+          *********             *********           123454321             *       *
+         ***********           ***********         12345654321           *         *
+        *************         *************       1234567654321         *           *
+       ***************       ***************     123456787654321       *             *
+      *****************     *****************   12345678987654321     *               *
+                             ***************                         *******************
+                              *************
+                               ***********
+                                *********
+                                 *******
+                                  *****
+                                   ***
+                                    *
+
+      e)       a            f)       0         g) 1               1  h) 12345678987654321
+              aba                   111           12             21     12345678 87654321
+             abcba                 22222          123           321     1234567   7654321
+            abcdcba               3333333         1234         4321     123456     654321
+           abcdedcba             444444444        12345       54321     12345       54321
+          abcdefedcba           55555555555       123456     654321     1234         4321
+         abcdefgfedcba         6666666666666      1234567   7654321     123           321
+        abcdefghgfedcba       777777777777777     12345678 87654321     12             21
+       abcdefghihgfedcba     88888888888888888    12345678987654321     1               1
+      abcdefghijihgfedcba   9999999999999999999
+
+
+    i)*****************   j)* * * * * *         *
+       ***************                *         *
+        *************                 *         *
+         ***********                  *         *
+          *********                   *         *
+           *******          * * * * * * * * * * *
+            *****           *         *
+             ***            *         *
+              *             *         *
+             ***            *         *
+            *****           *         * * * * * *
+           *******
+          *********
+         ***********
+        *************
+       ***************
+      *****************
+
+
+WRAPPER CLASSES:
+    Java provides 2 types of variables:
+    1.  Primitive data type
+        i)  byte            (-128 to +127)                          java.lang.Byte
+       ii)  short           (-32768 to +32767)                      java.lang.Short
+      iii)  int                                     default         java.lang.Integer
+       iv)  long                                                    java.lang.Long
+        v)  float                                                   java.lang.Float
+       vi)  double                                  default         java.lang.Double
+      vii)  char                                                    java.lang.Character
+     viii)  boolean                                                 java.lang.Boolean
+
+        int n = new Integer(10);
+
+
+    2.  Reference data type
+        Rest all object type are known as reference type
+
+
+WHAT IS THE STRUCTURE OF A CLASS?
+
+class Example {
+    // Field members
+    int age = 25;
+    String name = "Subrat Lalani";
+    String father = "Jagdish Lalani";
+
+    // Constructor members (The name of the constructor must resemble with the class name)
+    public Example() {
+    }
+
+    public Example(int age, String name, String father) {
+    }
+
+    // Method members
+    public int getAge() {
+        return this.age;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+}
+
+    
