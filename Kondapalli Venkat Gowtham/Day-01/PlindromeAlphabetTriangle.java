@@ -12,8 +12,6 @@ public class PlindromeAlphabetTriangle {
 			for(int j=letter-2;j>=0;j--)System.out.print((char)(alphabet+j));
 			System.out.println();
 			spaces--;
-			letter++;
-			
-		}//System.out.print((char)(alphabet+i));
-		
+			letter++;	
+		}		
 }}
