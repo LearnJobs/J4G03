@@ -1,0 +1,3 @@
+ASSIGNMENT-02 (30-03-2022)
+
+Modify the program MultiplicationTables.java to show 5 tables in each row. The subsequent tables will be print in the next row which is a block.
