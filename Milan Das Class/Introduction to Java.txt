@@ -1,5 +1,18 @@
 WhatsApp Group Invite: https://chat.whatsapp.com/G04YyfYpD3E8c8HHE16zlH
 
+What is Java? 
+    A simple
+    object-oriented
+    distributed
+    interpreted
+    robust
+    secure
+    architecture neutral
+    portable
+    high-performance
+    multithreaded
+    dynamic language
+
 THE FOLLOWING SOFTWARE HAVE TO BE INSTALLED IN YOUR MACHINE:
 1.  JDK Version 8
 		jdk-8u202-windows-x64.exe
@@ -283,7 +296,7 @@ abstract
     class isn't required to have an abstract method at all.
 
 assert (added in J2SE 1.4)
-    Assert describes a predicate (a true–false statement) placed in a Java program to indicate that the 
+    Assert describes a predicate (a trueÂ–false statement) placed in a Java program to indicate that the 
     developer thinks that the predicate is always true at that place. If an assertion evaluates to false
     at run-time, an assertion failure results, which typically causes execution to abort. Assertions are
     disabled at runtime by default, but can be enabled through a command-line option or programmatically
