@@ -21,7 +21,7 @@ public class MultiplicationTables {
 	public static void main(String[] args) {
 		
 		// This code i updated in the earlier program....
-		
+		//input fields
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter Starting point : ");
 		int start= sc.nextInt();
