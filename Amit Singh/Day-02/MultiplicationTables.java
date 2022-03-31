@@ -23,10 +23,10 @@ public class MultiplicationTables {
 		// This code i updated in the earlier program....
 		
 		Scanner sc = new Scanner(System.in);
-		//int start= sc.nextInt();
-		//int end = sc.nextInt();
-		int start= 15;
-		int end = 45;
+		System.out.print("Enter Starting point : ");
+		int start= sc.nextInt();
+		System.out.print("Enter Ending point : ");
+		int end = sc.nextInt();
 		int temp_end=start+4;
 		while(temp_end<=end) {
 			new MultiplicationTables(start, temp_end);
