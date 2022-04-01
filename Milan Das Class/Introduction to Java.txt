@@ -296,7 +296,7 @@ abstract
     class isn't required to have an abstract method at all.
 
 assert (added in J2SE 1.4)
-    Assert describes a predicate (a trueÂ–false statement) placed in a Java program to indicate that the 
+    Assert describes a predicate (a true–false statement) placed in a Java program to indicate that the 
     developer thinks that the predicate is always true at that place. If an assertion evaluates to false
     at run-time, an assertion failure results, which typically causes execution to abort. Assertions are
     disabled at runtime by default, but can be enabled through a command-line option or programmatically
@@ -721,3 +721,124 @@ NAMING CONVENSION:
     9.  All method names should start with a lowercase alphabetic character
 
 Date, LocalDate, LocalTime classes:
+
+ASSIGNMENT-03
+    1.  Write a program to find how many days are there between today and Sunday?
+    2.  Define a “Clock” class that does the following: -
+        a. Accept hours, minutes and seconds.
+        b. Check the validity numbers.
+        c. Set the time to AM/PM mode.
+        Use necessary constructors and methods to do the above task.
+
+WHAT IS REFLECTION?
+
+
+
+
+
+WHAT IS EXCEPTION HANDLING?
+    Exception Handling is a technique to stop the program from terminating abnoramlly in case of
+    an exception found during running the program.
+
+    To handle exceptions, Java has provided a reserve word in the try, there are 2 clauses in try
+    statement. They are catch and finally.
+
+    Syntax:
+        try {
+            // Here you write the program
+            // some exception occurs
+        } catch(exception1 e) {
+        } catch(exception2 e) {
+        } catch(exception3 e) {
+        } catch(exception4 e) {
+        } finally {
+        }
+
+    When an exception occurs in the try block, an exception object is generated. The object is match with
+    the date type of each of the catch block. Which ever data type matches, the exception object is stored
+    in the corresponding variable and the corresponding block is executed.
+
+    When an exception occurs, that becomes the last line to be executed. All other lines following that line
+    are ignored.
+
+    If there is a finally block, the finally block is executed in either case, in case where there is an exception
+    or there is no exception.
+
+WHAT IS AN EXCEPTION?
+    An exception is a class. It is a special class. Any class that inherits the java.lang.Throwable class is
+    considered as an exception class.
+
+    There are 2 types of exceptions. They are checked exception and unchecked exception.
+        The checked exceptions:
+        They are checked by the compliler if such exception is going to be generated from the try block
+        or the exception is generated from the try block but a matching catch block doesn't exist.
+
+        The exception is handled in the catch clause but there is no chance of such exception being generated from
+        the try block.
+
+        Unchecked exceptions:
+        The unchecked exceptions are never checked by the compiler. When a class inherits the RuntimeException, it
+        is considered as a unchecked exception.
+
+
+    Object
+    +- Throwable
+    |  +- Exception             To be handled within the program
+    |  |  +- AclNotFoundException
+    |  |  +- ActivationException
+    |  |  |  +- UnknownGroupException
+    |  |  |  +- UnknownObjectException
+    |  |  +- AlreadyBoundException
+    |  |  +- ApplicationException
+    |  |  +- AWTException
+    |  |  +- BackingStoreException
+    |  |  +- BadAttributeValueExpException
+    |  |  +- BadBinaryOpValueExpException
+    |  |  +- BadLocationException
+    |  |  +- FontFormatException
+    |  |  +- InterruptedException
+    |  |  +- IOException
+    |  |  +- PrintException
+    |  |  +- RuntimeException
+    |  |  |  +- AnnotationTypeMismatchException
+    |  |  |  +- ArithmeticException
+    |  |  |  +- ArrayStoreException
+    |  |  |  +- BufferOverflowException
+    |  |  |  +- BufferUnderflowException
+    |  |  |  +- CannotRedoException
+    |  |  |  +- CannotUndoException
+    |  |  |  +- ClassCastException
+    |  |  |  +- CMMException
+    |  |  |  +- CompletionException
+    |  |  |  +- IndexOutOfBoundsException
+    |  |  |  |  +- ArrayIndexOutOfBoundsException
+    |  |  |  |  +- StringIndexOutOfBoundsException
+    |  |  |  +- JMRuntimeException
+    |  |  |  +- MalformedParametersException
+    |  |  |  +- NoSuchMechanismException
+    |  |  |  +- UnsupportedOperationException
+    |  |  |  +- WebServiceException
+    |  |  |  +- WrongMethodTypeException
+    |  |  +- SQLException
+    |  |  +- UnsupportedAudioFileException
+    |  |  +- URISyntaxException
+    |  +- Error                 Handled by the JVM
+
+PROJECT QUESTION:
+    In an election in some country the followin voters are allowed to cast vote:
+        a)  between >=18 year and <=70 year
+        b)  <18 can't cast vote
+        c)  >70 can't cast vote
+
+    PLAN:
+        Throwable
+        +- Exception
+        |  +- AgeException
+        |  |  +- InvalidAgeException
+        |  |  |  +- NegativeAgeException
+        |  |  |  +- WrongDataInAgeException
+        |  |  +- AgeLimitException
+        |  |  |  +- TooYoundAgeException
+        |  |  |  +- TooOldAgeException
+
+        int ages[] = {25, 35, 11, 19, 55, 94, 75, -3, 22, 12, 10, 45, 75, 51, 13};
