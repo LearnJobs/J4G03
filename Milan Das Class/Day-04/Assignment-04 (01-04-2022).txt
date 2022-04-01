@@ -6,3 +6,10 @@ ASSIGNMENT-04 (01-04-2022)
     1. Invalid Hour Exception
     2. Invalid Minute Exception
     3. Invalid Second Exception
+
+    Throwable
+    +- Exception
+    |  +- TimeException
+    |  |  +- InvalidHourException
+    |  |  +- InvalidMinuteException
+    |  |  +- InvalidSecondException
