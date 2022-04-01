@@ -2,3 +2,7 @@ ASSIGNMENT-04 (01-04-2022)
 1.  Write a program to take 3 numbers from the keyboard for hour, minute and second.
     Create user defined exceptions to generate if the hour is not in the range of 1-24, minute is not in the range
     of 1-60 and second not in the range of 1-60.
+
+    1. Invalid Hour Exception
+    2. Invalid Minute Exception
+    3. Invalid Second Exception
