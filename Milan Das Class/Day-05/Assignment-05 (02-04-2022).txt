@@ -3,5 +3,5 @@ ASSIGNMENT-05 (02-03-2022)
         Serialize and de-serialize all the 2 objects in one output file.
 
     2.  Write a program to copy a file into another name. 
-        Ask the file the source and destination file names from the console. 
+        Ask for the source file name and destination file name from the console.
         Show progress bar during the copy process.
