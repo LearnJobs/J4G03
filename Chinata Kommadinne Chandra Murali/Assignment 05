@@ -1,0 +1,51 @@
+static void Main(string[] args)
+
+{
+
+    //Setting up my Source File Path
+
+    string source = @"F:\Project\CSharp";
+
+    //Setting up my Destination Path
+
+    string destination = @"E:\Destin Pro";
+
+    try
+
+    {
+
+        Console.WriteLine("Start Copying....");
+
+        //Copying the File From Source to
+
+        // Destination
+
+        FileSystem.CopyDirectory(source,
+
+        destination, UIOption.AllDialogs);
+
+        Console.WriteLine("SuccessFully Copied!!!");
+
+        Console.ReadKey();
+
+    }
+
+     //If the Copying Operation is Cancelled in
+
+    // the midway
+
+    //then it throws an Exception which is
+
+     //carried by this catch block
+
+    catch (OperationCanceledException)
+
+    {
+
+        Console.WriteLine("Copying Cancelled!!!");
+
+        Console.ReadKey();
+
+    }
+
+} 
