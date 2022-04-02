@@ -842,3 +842,84 @@ PROJECT QUESTION:
         |  |  |  +- TooOldAgeException
 
         int ages[] = {25, 35, 11, 19, 55, 94, 75, -3, 22, 12, 10, 45, 75, 51, 13};
+
+ASSIGNMENT-04 (01-04-2022)
+    Write a program to take 3 numbers from the keyboard for hour, minute and second.
+    Create user defined exceptions to generate if the hour is not in the range of 1-24, minute is not in the range
+    of 1-60 and second not in the range of 1-60.
+
+    1. Invalid Hour Exception
+    2. Invalid Minute Exception
+    3. Invalid Second Exception
+
+    Throwable
+    +- Exception
+    |  +- TimeException
+    |  |  +- InvalidHourException
+    |  |  +- InvalidMinuteException
+    |  |  +- InvalidSecondException
+
+
+WHAT IS java.io PACKAGE?
+    To transmit the data across one device to the other device is work of java.io package.
+
+    The standard output device of a computer is the monitor. An object of the standard output device is already
+    set in the System class. The name of the object is "out". out field is static, so we can access this out object
+    by giving the class name reference.
+            System.out
+    The System.out is a PrintStream object. Giving the System.out object reference, we can access all the methods
+    of PrintStream class.
+            System.out.println();
+
+    Similarly, there is a standard input device. The standard input device is the Keyboard. An InputStream object 
+    referencing the standard input device is already created in the System class. The name of the object is "in".
+    Because the in object in the System class is static, we can access the object by giving the class name reference,
+    i.e. System. 
+            System.in
+
+    In java.io there are 2 types of handling:
+        byte stream: it is a 8 bit byte handling
+        character stream: it a 16 bit byte handling
+     
+    java.io
+    +- byte stream (8 bit r/w)
+    |  +- InputStream
+    |  |  +- AudioInputStream
+    |  |  +- ByteArrayInputStream
+    |  |  +- FileInputStream                CopyFile.java
+    |  |  +- FilterInputStream
+    |  |  +- ObjectInputStream
+    |  |  +- PipedInputStream
+    |  |  +- SequenceInputStream
+    |  |  +- StringBufferInputStream
+    |  +- OutputStream
+    |  |  +- ByteArrayOutputStream
+    |  |  +- FileOutputStream               CopyFile.java
+    |  |  +- FilterOutputStream
+    |  |  +- ObjectOutputStream
+    |  |  +- PipedOutputStream
+    +- character stream (16 bit r/w)
+    |  +- Reader
+    |  |  +- BufferedReader
+    |  |  +- CharArrayReader
+    |  |  +- FilterReader
+    |  |  +- InputStreamReader
+    |  |  +- PipedReader
+    |  |  +- StringReader
+    |  +- Writer
+    |  |  +- BufferedWriter
+    |  |  +- CharArrayWriter
+    |  |  +- FilterWriter
+    |  |  +- OutputStreamWriter
+    |  |  +- PipedWriter
+    |  |  +- PrintWriter
+    |  |  +- StringWriter
+
+
+ASSIGNMENT-05 (02-03-2022)
+    1.  Write a program to create 3 class in the name, Book, Library, College.
+        Serialize and de-serialize all the 2 objects in one output file.
+
+    2.  Write a program to copy a file into another name. 
+        Ask the file the source and destination file names from the console. 
+        Show progress bar during the copy process.
