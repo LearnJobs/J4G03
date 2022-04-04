@@ -2,6 +2,10 @@ ASSIGNMENT-05 (02-03-2022)
     1.  Write a program to create 3 class in the name, Book, Library, College.
         Serialize and de-serialize all the 2 objects in one output file.
 
-    2.  Write a program to copy a file into another name. 
-        Ask for the source file name and destination file name from the console.
+        Book: book_id, book_title, book_author, book_isbn, book_pages
+        Library: lib_id, lib_name, lib_method, lib_location
+        College: college_id, college_name, college_location
+
+    2.  Write a program to copy a file into another name.
+        Ask the file the source and destination file names from the console.
         Show progress bar during the copy process.
