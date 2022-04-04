@@ -1,4 +1,4 @@
-package begin5;
+package day05;
 
 import java.io.Serializable;
 
