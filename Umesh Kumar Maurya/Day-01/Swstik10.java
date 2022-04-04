@@ -29,7 +29,7 @@ public class Swstik10 {
 	    	{  
 	    		if(j%2==0 || j==num)
 	    		{  		
-	    			if(j==0 || i==num ||i==num/2 || i<=num/2 && j==num   ) // j==num || i==num/2 || i==num )
+	    			if(j==0 || i==num ||i==num/2 || i<=num/2 && j==num   ) 
 	    		   			System.out.print("*");
 	    		   		else
 	    		   			System.out.print(" ");
