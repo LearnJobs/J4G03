@@ -12,13 +12,13 @@ public class BookSerializeOut {
 
 	public static void main(String[] args) {
 		try {
-			   Book b1 = new Book(" 5.1.2.","The Java Language Specification","James Gosling","9780201310085","600");
+			   Book b1 = new Book(512,"The Java Language Specification","James Gosling","9780201310085",600);
 			  
-			  Book b2 = new Book("3.1.2","The Java TM programming language","Ken Arnold","0785342349801","891");
+			  Book b2 = new Book(312,"The Java TM programming language","Ken Arnold","0785342349801",891);
 			  
-			  Book b3 = new Book("5.4.3","Core Java An Integrated Approach","Dr. R. Nageswara Rao","9788177228366","720");
+			  Book b3 = new Book(543,"Core Java An Integrated Approach","Dr. R. Nageswara Rao","9788177228366",720);
 			  
-			  Book b4 = new Book("5.3.2","Java The Complete Reference", "Herbert Schildt","9781260440232","1248");
+			  Book b4 = new Book(532,"Java The Complete Reference", "Herbert Schildt","9781260440232",1248);
 			
 			List<Book> list = new ArrayList<Book>();
 			list.add(b1);
