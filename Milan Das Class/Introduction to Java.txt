@@ -920,6 +920,32 @@ ASSIGNMENT-05 (02-03-2022)
     1.  Write a program to create 3 class in the name, Book, Library, College.
         Serialize and de-serialize all the 2 objects in one output file.
 
-    2.  Write a program to copy a file into another name. 
-        Ask the file the source and destination file names from the console. 
+    2.  Write a program to copy a file into another name.
+        Ask the file the source and destination file names from the console.
         Show progress bar during the copy process.
+
+
+04-04-2022
+----------
+COLLECTIONS FRAMEWORK
+    1.  List – ArrayList, LinkedList,
+    2.  Set – HashSet, LinkedHashSet, TreeSet
+    3.  Map – TreeMap, ConcurrencyMap
+    4.  Iterator, ListIterator
+    5.  Sorting using Comparator and Comparable
+    6.  Method References – overview and example
+
+
+WHAT IS A LinkedList?
+
+                                    +----+----------------+----+
+                                    |  P |                | N  |
+                                    |  R |                | E  |
+                            +-------+  E |                | X  +-------+
+                            |       |  V |                | T  |       |
+                            |       +----+----------------+----+       |
+                            |                                          |        
+                    +-------+-------+                          +-------+-------+
+                    | Linked to the |                          | Linked to the |
+                    | previous element                         | next element  |
+                    +---------------+                          +---------------+
