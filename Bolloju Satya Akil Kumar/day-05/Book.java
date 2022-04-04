@@ -5,21 +5,21 @@ import java.io.Serializable;
 public class Book implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	public String book_id;
+	public int book_id;
 	public String book_title;
 	public String book_author;
 	public String book_isbn;
-	public String book_pages;
+	public int book_pages;
 
 	public Book() {
-		book_id = "0";
+		book_id = 0;
 		book_title = "not told";
 		book_author = "Not told";		
 		book_isbn = "Not told";
-		book_pages = "unkown";	
+		book_pages = 0;	
 	}
 
-	public Book(String book_id, String book_title, String book_author, String book_isbn, String book_pages) {
+	public Book(int book_id, String book_title, String book_author, String book_isbn, int book_pages) {
  
 		this.book_id = book_id;
 		this.book_title = book_title;
