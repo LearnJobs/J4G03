@@ -1,4 +1,4 @@
-package begin5;
+ppackage begin5;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -12,13 +12,13 @@ public class CollegeSerializeOut {
 
 	public static void main(String[] args) {
 		try {
-			   College c1 = new  College("k6","Sasi Institute of tech and engg","Tadepalligudem");
+			   College c1 = new  College(6,"Sasi Institute of tech and engg","Tadepalligudem");
 			  
-			   College c2 = new  College("6N","srinivasa institute of tech and engg","Amalapuram");
+			   College c2 = new  College(8,"srinivasa institute of tech and engg","Amalapuram");
 			  
-			   College c3 = new  College("96","LENORA COLLEGE OF ENGG","RAMPACHODAVARAM");
+			   College c3 = new  College(9,"LENORA COLLEGE OF ENGG","RAMPACHODAVARAM");
 			  
-			   College c4 = new  College("A6","SRI PRAKASH COLLEGE OF ENGG","TUNI");
+			   College c4 = new  College(5,"SRI PRAKASH COLLEGE OF ENGG","TUNI");
 			
 			List<College> list = new ArrayList<College>();
 			list.add(c1);
