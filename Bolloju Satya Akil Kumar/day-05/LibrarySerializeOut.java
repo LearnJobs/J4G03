@@ -12,13 +12,13 @@ public class LibrarySerializeOut {
 
 	public static void main(String[] args) {
 		try {
-			   Library c1 = new Library("15k6a0518","Sasi","Central Library","Tadepalligudem");
+			   Library c1 = new Library(518,"Sasi","Central Library","Tadepalligudem");
 			  
-			   Library  c2 = new Library("16A6b0501","Srinivasa","Srin Library","Amalapuram");
+			   Library  c2 = new Library(501,"Srinivasa","Srin Library","Amalapuram");
 			  
-			   Library c3 = new Library("12S6c0502","Jntuk","Jntu Library","Kakinada");
+			   Library c3 = new Library(502,"Jntuk","Jntu Library","Kakinada");
 			  
-			   Library  c4 = new Library("13w3q0509","Vasavi", "vLibrary","Hyderabad");
+			   Library  c4 = new Library(509,"Vasavi", "vLibrary","Hyderabad");
 			
 			List<Library> list = new ArrayList<Library>();
 			list.add(c1);
