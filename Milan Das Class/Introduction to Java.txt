@@ -920,6 +920,10 @@ ASSIGNMENT-05 (02-03-2022)
     1.  Write a program to create 3 class in the name, Book, Library, College.
         Serialize and de-serialize all the 2 objects in one output file.
 
+        Book: book_id, book_title, book_author, book_isbn, book_pages
+        Library: lib_id, lib_name, lib_method, lib_location
+        College: college_id, college_name, college_location
+
     2.  Write a program to copy a file into another name.
         Ask the file the source and destination file names from the console.
         Show progress bar during the copy process.
@@ -928,7 +932,7 @@ ASSIGNMENT-05 (02-03-2022)
 04-04-2022
 ----------
 COLLECTIONS FRAMEWORK
-    1.  List – ArrayList, LinkedList,
+    1.  List – ArrayList, LinkedList
     2.  Set – HashSet, LinkedHashSet, TreeSet
     3.  Map – TreeMap, ConcurrencyMap
     4.  Iterator, ListIterator
@@ -941,11 +945,72 @@ WHAT IS A LinkedList?
                                     +----+----------------+----+
                                     |  P |                | N  |
                                     |  R |                | E  |
-                            +-------+  E |                | X  +-------+
+                            +-------+  E |     data[1]    | X  +-------+
                             |       |  V |                | T  |       |
+                            |       | [0]|                | [2]|       |
                             |       +----+----------------+----+       |
-                            |                                          |        
-                    +-------+-------+                          +-------+-------+
-                    | Linked to the |                          | Linked to the |
-                    | previous element                         | next element  |
-                    +---------------+                          +---------------+
+                            |                                          |
+               +----+-------+-------+----+                +----+-------+-------+----+
+               |    |      [0]      |    |                |    |      [2]      |    |
+               |[-1]| Linked to the | [1]|                | [1]| Linked to the | [3]|
+               |    | previous element   |                |    | next element  |    |
+               +----+---------------+----+                +----+---------------+----+
+
+
+ASSIGNMENT-06:
+    1   Write a program to assign 10 items to an ArrayList. Swap values from the 1 with 6, 2 with 7, 3 with 8,
+        4 with 9 and 5 with 10.
+
+        Before          After
+        10              60
+        20              70
+        30              80
+        40              90
+        50             100
+        50              10
+        70              20
+        80              30
+        90              40
+       100              50
+
+WHAT IS SQL?
+    SQL stands for Structured Query Language.
+    This language, SQL is used to communicate with the Database.
+
+WHAT IS A DATABASE?
+    An engine which provides facility to store and retrive data quickly. It also provides many functionalities
+    to SORT, CREATE, INSERT, etc. data in the database engine.
+
+HOW MANY TYPES OF DATABASE ENGINES ARE THERE?
+    There are 2 types of database engines:
+    1.  Embedded engines
+    2.  External engines
+
+WHAT A SOME POPULAR DATABASE ENGINES?
+    1.  Oracle                  exteranl
+    2.  MS SQL-Server           exteranl
+    3.  Unify                   exteranl
+    4.  Sybase                  exteranl
+    5.  MySQL                   exteranl        Open-source
+    6.  PostgreSQL              exteranl
+    7.  Cloudscape              embedded        Open-source
+    8.  Berkeyley               embedded        Open-source
+    9.  SQLite                  embedded        Open-source
+
+HOW DO YOU COMMUNICATE WITH A DATABASE?
+    Using the SQL language, one can communicate with the database.
+
+    The SQL language is divided into 3 parts:
+    1.  DDL - Data Definition Language
+              CREATE, DROP, ALTER, RENAME, TRUNCATE
+
+    2.  DML - Data Manipulation Language
+              SELECT, INSERT, UPDATE, DELETE
+
+    3.  DCL - Data Control Language
+              GRANT, REVOKE, COMMIT, ROLLBACK
+
+HOW TO INSTALL MYSQL?
+    Link: https://dev.mysql.com/downloads/mysql/ 
+    Workbench: https://dev.mysql.com/downloads/workbench/
+
