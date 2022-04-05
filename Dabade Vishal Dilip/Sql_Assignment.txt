@@ -1,0 +1,17 @@
+create database Assignment;
+use Assignment;
+ create table Designation(desig_id int(6) primary key  AUTO_INCREMENT ,desig_desc varchar(100),desgi_abbr varchar(20), del enum("*"));
+ desc Designation;
+ insert into Designation(desig_desc,desgi_abbr) values("vishal","student"),("milan sir","instructor"),("rohit sharma","cricketer"),("messi","Footboller"),("tiger","animal");
+ select * from Designation;
+ create table  Department(depart_id int(6),depart_name varchar(20),depart_abbr varchar(20),del enum("*"));
+ desc Department;
+ insert into Department(depart_id,depart_name,depart_abbr) values(5,"aro","aronotics");
+ select * from Department;
+ update  Department set depart_id=1  where depart_abbr="software";
+ drop table Department;
+ create table employee(employ_id int(6),employ_name varchar(20),father_name varchar(20),desig_id int(6) not null references Designation(desig_id),depart_id int(6) not null references Department(deart_id), gender enum("f","m"),dob date,doj date);
+ desc employee;
+ insert into employee(employ_name,father_name, desig_id,depart_id,gender,dob,doj) values("madan","shahu",1,2,"m","2022-12-12","2000-12-11");
+ select * from employee;
+ 
