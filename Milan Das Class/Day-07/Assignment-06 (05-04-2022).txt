@@ -1,0 +1,47 @@
+ASSIGNEMENT PROJECT EMPLOYEE:
+
+    1.  Designation
+        a)  desig_id        INT(6)          AUTO_INCREMENT
+        b)  desig_desc      VARCHAR(100)
+        c)  desig_abbr      VARCHAR(20)
+        d)  del             ENUM("*")       DEFAUL NULL
+
+        5 ROWS
+
+    2.  Department
+        a)  depart_id
+        b)  depart_name
+        c)  depart_abbr
+        d)  del
+
+        5 ROWS
+
+    3.  Employee
+        a)  employ_id
+        b)  employ_name
+        c)  father_name
+        d)  desig_id
+        e)  depart_id
+        f)  gender
+        g)  dob
+        h)  doj
+
+        20 ROWS
+
+    4.  Salary
+        a)  salary_id
+        b)  employ_id
+        c)  desig_id
+        d)  bank_name
+        e)  bank_ifsc
+        f)  bank_ac_no
+
+        20 ROWS
+
+    5.  Photo
+        a)  photo_id
+        b)  employ_id
+        c)  photo
+
+        20 ROWS
+
