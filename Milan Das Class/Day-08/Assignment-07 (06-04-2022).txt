@@ -1,0 +1,26 @@
+ASSIGNMENT (06-04-2022)
+1.  Warehouse
+    a)  warehouse_id
+    b)  warehouse_name
+
+    10 ROWS
+
+2.  Process
+    a)  process_id
+
+
+    10 ROWS
+
+3.  Product
+    a)  prod_id
+    b)  prod_name
+    c)  expiry_dt
+    d)  warehouse_id
+    e)  process_id
+    f)
+    g)
+
+    20 ROWS
+
+Create a view from the SQL statement that will display all products with their warehouse name and process name.
+Write a Java to display the query?
