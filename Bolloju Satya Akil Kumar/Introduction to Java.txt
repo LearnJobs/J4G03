@@ -15,10 +15,10 @@ What is Java?
 
 THE FOLLOWING SOFTWARE HAVE TO BE INSTALLED IN YOUR MACHINE:
 1.  JDK Version 8
-		jdk-8u202-windows-x64.exe
+        jdk-8u202-windows-x64.exe
 
 2.  Eclipse
-		eclipse-jee-2021-12-R-win32-x86_64.zip
+        eclipse-jee-2021-12-R-win32-x86_64.zip
 
 3.  Create a GitHub account
 
@@ -30,23 +30,23 @@ JAVA COMES IN 3 MODULES
 
 
 USING JAVA ONE CAN DEVELOP 3 TYPES OF PROGRAMS:
-1.	Application
-		An application is a program that starts from the main() method
+1.  Application
+        An application is a program that starts from the main() method
 
-2.	Applet
+2.  Applet
 3.  Servlet (Web-application)
 
 THERE ARE AROUND 54 RESERVE WORK IN JAVA:
     There are only 54 reserve words in Java 8.
-	1. class
-	2. interface
-	3. void
-	4. byte
-	5. short
-	6. int
-	7. long
-	8. char
-	9. boolean
+    1. class
+    2. interface
+    3. void
+    4. byte
+    5. short
+    6. int
+    7. long
+    8. char
+    9. boolean
    10. float
    11. double
    12. for
@@ -56,23 +56,23 @@ THERE ARE AROUND 54 RESERVE WORK IN JAVA:
    16. ....
 
 JAVA PROGRAM ARE WRITTEN WITHIN A CLASS
-	class <name-of-the-class> {
-	}
+    class <name-of-the-class> {
+    }
 
-	[access-specifier]
-	[modifier]
-	class <name-of-the-program>
-	[extend <parent-class-name>]
-	[implements <list-of-interfaces>]
-	{}
+    [access-specifier]
+    [modifier]
+    class <name-of-the-program>
+    [extend <parent-class-name>]
+    [implements <list-of-interfaces>]
+    {}
 
-	class Begin {}
+    class Begin {}
 
-	public class Begin {}
+    public class Begin {}
 
-	public abstract class Begin {}
+    public abstract class Begin {}
 
-	public class Begin extend Parent {}
+    public class Begin extend Parent {}
 
 STRUCTURE OF A FIELD:
     [access-specifier]
@@ -87,48 +87,48 @@ STRUCTURE OF A FIELD:
 
 
 WHAT ARE ACCESS-SPECIFIERS:
-	1. public
-	2. protected
-	3. private
-	4. <undefined>
+    1. public
+    2. protected
+    3. private
+    4. <undefined>
 
 WHAT IS THE HEIRARCHY OF A CLASS:
-	jar file
-	|---package01
-	|---+- class01
-	|---+- class02
-	|---+- class03
-	|---package02
-	|---+- class04
-	|---+- class05
-	|---+- class06
-	|---+- class07
-	|---package03
-	|---+- class08
-	|---+- class09
-	|---+- class10
-	|---+- class11
+    jar file
+    |---package01
+    |---+- class01
+    |---+- class02
+    |---+- class03
+    |---package02
+    |---+- class04
+    |---+- class05
+    |---+- class06
+    |---+- class07
+    |---package03
+    |---+- class08
+    |---+- class09
+    |---+- class10
+    |---+- class11
 
 WHAT ARE THE MEMBERS OF A CLASS:
-	1.	Field member
-	2.  Constructor member
-	3.  Method member
-	4.  Inner class member
+    1.  Field member
+    2.  Constructor member
+    3.  Method member
+    4.  Inner class member
 
 A JAVA APPLICATION STARTS FROM THE MAIN METHOD
-	public class Begin {
-		public static void main() {
-		}
+    public class Begin {
+        public static void main() {
+        }
 
-		public static void main(String arg) {
-		}
+        public static void main(String arg) {
+        }
 
-		public static void main(int n) {
-		}
+        public static void main(int n) {
+        }
 
-		public static void main(String[] args) {
-		}
-	}
+        public static void main(String[] args) {
+        }
+    }
 
 
 ASSIGNMENT:
@@ -278,15 +278,15 @@ HOW TO CREATE AN OBJECT IN JAVA?
 
 
 JAVA RESERVE WORKDS IN 1.8 (KEY WORDS):
-abstract	assert	        boolean	    break	    byte	    case
-catch	    char	        class	    const	    continue	default
-double	    do	            else	    enum	    extends	    false
-final	    finally	        float	    for	        goto	    if
-implements	import	        instanceof	int	        interface	long
-native	    new	            null	    package	    private	    protected
-public	    return	        short	    static	    strictfp	super
-switch	    synchronized	this	    throw	    throws	    transient
-true	    try	            void	    volatile	while
+abstract    assert          boolean     break       byte        case
+catch       char            class       const       continue    default
+double      do              else        enum        extends     false
+final       finally         float       for         goto        if
+implements  import          instanceof  int         interface   long
+native      new             null        package     private     protected
+public      return          short       static      strictfp    super
+switch      synchronized    this        throw       throws      transient
+true        try             void        volatile    while
 
 
 abstract
@@ -296,7 +296,7 @@ abstract
     class isn't required to have an abstract method at all.
 
 assert (added in J2SE 1.4)
-    Assert describes a predicate (a truefalse statement) placed in a Java program to indicate that the 
+    Assert describes a predicate (a true�false statement) placed in a Java program to indicate that the 
     developer thinks that the predicate is always true at that place. If an assertion evaluates to false
     at run-time, an assertion failure results, which typically causes execution to abort. Assertions are
     disabled at runtime by default, but can be enabled through a command-line option or programmatically
@@ -721,3 +721,565 @@ NAMING CONVENSION:
     9.  All method names should start with a lowercase alphabetic character
 
 Date, LocalDate, LocalTime classes:
+
+ASSIGNMENT-03
+    1.  Write a program to find how many days are there between today and Sunday?
+    2.  Define a �Clock� class that does the following: -
+        a. Accept hours, minutes and seconds.
+        b. Check the validity numbers.
+        c. Set the time to AM/PM mode.
+        Use necessary constructors and methods to do the above task.
+
+WHAT IS REFLECTION?
+
+
+
+
+
+WHAT IS EXCEPTION HANDLING?
+    Exception Handling is a technique to stop the program from terminating abnoramlly in case of
+    an exception found during running the program.
+
+    To handle exceptions, Java has provided a reserve word in the try, there are 2 clauses in try
+    statement. They are catch and finally.
+
+    Syntax:
+        try {
+            // Here you write the program
+            // some exception occurs
+        } catch(exception1 e) {
+        } catch(exception2 e) {
+        } catch(exception3 e) {
+        } catch(exception4 e) {
+        } finally {
+        }
+
+    When an exception occurs in the try block, an exception object is generated. The object is match with
+    the date type of each of the catch block. Which ever data type matches, the exception object is stored
+    in the corresponding variable and the corresponding block is executed.
+
+    When an exception occurs, that becomes the last line to be executed. All other lines following that line
+    are ignored.
+
+    If there is a finally block, the finally block is executed in either case, in case where there is an exception
+    or there is no exception.
+
+WHAT IS AN EXCEPTION?
+    An exception is a class. It is a special class. Any class that inherits the java.lang.Throwable class is
+    considered as an exception class.
+
+    There are 2 types of exceptions. They are checked exception and unchecked exception.
+        The checked exceptions:
+        They are checked by the compliler if such exception is going to be generated from the try block
+        or the exception is generated from the try block but a matching catch block doesn't exist.
+
+        The exception is handled in the catch clause but there is no chance of such exception being generated from
+        the try block.
+
+        Unchecked exceptions:
+        The unchecked exceptions are never checked by the compiler. When a class inherits the RuntimeException, it
+        is considered as a unchecked exception.
+
+
+    Object
+    +- Throwable
+    |  +- Exception             To be handled within the program
+    |  |  +- AclNotFoundException
+    |  |  +- ActivationException
+    |  |  |  +- UnknownGroupException
+    |  |  |  +- UnknownObjectException
+    |  |  +- AlreadyBoundException
+    |  |  +- ApplicationException
+    |  |  +- AWTException
+    |  |  +- BackingStoreException
+    |  |  +- BadAttributeValueExpException
+    |  |  +- BadBinaryOpValueExpException
+    |  |  +- BadLocationException
+    |  |  +- FontFormatException
+    |  |  +- InterruptedException
+    |  |  +- IOException
+    |  |  +- PrintException
+    |  |  +- RuntimeException
+    |  |  |  +- AnnotationTypeMismatchException
+    |  |  |  +- ArithmeticException
+    |  |  |  +- ArrayStoreException
+    |  |  |  +- BufferOverflowException
+    |  |  |  +- BufferUnderflowException
+    |  |  |  +- CannotRedoException
+    |  |  |  +- CannotUndoException
+    |  |  |  +- ClassCastException
+    |  |  |  +- CMMException
+    |  |  |  +- CompletionException
+    |  |  |  +- IndexOutOfBoundsException
+    |  |  |  |  +- ArrayIndexOutOfBoundsException
+    |  |  |  |  +- StringIndexOutOfBoundsException
+    |  |  |  +- JMRuntimeException
+    |  |  |  +- MalformedParametersException
+    |  |  |  +- NoSuchMechanismException
+    |  |  |  +- UnsupportedOperationException
+    |  |  |  +- WebServiceException
+    |  |  |  +- WrongMethodTypeException
+    |  |  +- SQLException
+    |  |  +- UnsupportedAudioFileException
+    |  |  +- URISyntaxException
+    |  +- Error                 Handled by the JVM
+
+PROJECT QUESTION:
+    In an election in some country the followin voters are allowed to cast vote:
+        a)  between >=18 year and <=70 year
+        b)  <18 can't cast vote
+        c)  >70 can't cast vote
+
+    PLAN:
+        Throwable
+        +- Exception
+        |  +- AgeException
+        |  |  +- InvalidAgeException
+        |  |  |  +- NegativeAgeException
+        |  |  |  +- WrongDataInAgeException
+        |  |  +- AgeLimitException
+        |  |  |  +- TooYoundAgeException
+        |  |  |  +- TooOldAgeException
+
+        int ages[] = {25, 35, 11, 19, 55, 94, 75, -3, 22, 12, 10, 45, 75, 51, 13};
+
+ASSIGNMENT-04 (01-04-2022)
+    Write a program to take 3 numbers from the keyboard for hour, minute and second.
+    Create user defined exceptions to generate if the hour is not in the range of 1-24, minute is not in the range
+    of 1-60 and second not in the range of 1-60.
+
+    1. Invalid Hour Exception
+    2. Invalid Minute Exception
+    3. Invalid Second Exception
+
+    Throwable
+    +- Exception
+    |  +- TimeException
+    |  |  +- InvalidHourException
+    |  |  +- InvalidMinuteException
+    |  |  +- InvalidSecondException
+
+
+WHAT IS java.io PACKAGE?
+    To transmit the data across one device to the other device is work of java.io package.
+
+    The standard output device of a computer is the monitor. An object of the standard output device is already
+    set in the System class. The name of the object is "out". out field is static, so we can access this out object
+    by giving the class name reference.
+            System.out
+    The System.out is a PrintStream object. Giving the System.out object reference, we can access all the methods
+    of PrintStream class.
+            System.out.println();
+
+    Similarly, there is a standard input device. The standard input device is the Keyboard. An InputStream object 
+    referencing the standard input device is already created in the System class. The name of the object is "in".
+    Because the in object in the System class is static, we can access the object by giving the class name reference,
+    i.e. System. 
+            System.in
+
+    In java.io there are 2 types of handling:
+        byte stream: it is a 8 bit byte handling
+        character stream: it a 16 bit byte handling
+     
+    java.io
+    +- byte stream (8 bit r/w)
+    |  +- InputStream
+    |  |  +- AudioInputStream
+    |  |  +- ByteArrayInputStream
+    |  |  +- FileInputStream                CopyFile.java
+    |  |  +- FilterInputStream
+    |  |  +- ObjectInputStream
+    |  |  +- PipedInputStream
+    |  |  +- SequenceInputStream
+    |  |  +- StringBufferInputStream
+    |  +- OutputStream
+    |  |  +- ByteArrayOutputStream
+    |  |  +- FileOutputStream               CopyFile.java
+    |  |  +- FilterOutputStream
+    |  |  +- ObjectOutputStream
+    |  |  +- PipedOutputStream
+    +- character stream (16 bit r/w)
+    |  +- Reader
+    |  |  +- BufferedReader
+    |  |  +- CharArrayReader
+    |  |  +- FilterReader
+    |  |  +- InputStreamReader
+    |  |  +- PipedReader
+    |  |  +- StringReader
+    |  +- Writer
+    |  |  +- BufferedWriter
+    |  |  +- CharArrayWriter
+    |  |  +- FilterWriter
+    |  |  +- OutputStreamWriter
+    |  |  +- PipedWriter
+    |  |  +- PrintWriter
+    |  |  +- StringWriter
+
+
+ASSIGNMENT-05 (02-03-2022)
+    1.  Write a program to create 3 class in the name, Book, Library, College.
+        Serialize and de-serialize all the 2 objects in one output file.
+
+        Book: book_id, book_title, book_author, book_isbn, book_pages
+        Library: lib_id, lib_name, lib_method, lib_location
+        College: college_id, college_name, college_location
+
+        List<Object> obj = new ArrayList<Object>();
+        obj.add(bookObj);
+        obj.add(bookLibrary);
+        obj.add(bookCollege);
+
+    2.  Write a program to copy a file into another name.
+        Ask the file the source and destination file names from the console.
+        Show progress bar during the copy process.
+
+
+04-04-2022
+----------
+COLLECTIONS FRAMEWORK
+    1.  List � ArrayList, LinkedList
+    2.  Set � HashSet, LinkedHashSet, TreeSet
+    3.  Map � TreeMap, ConcurrencyMap
+    4.  Iterator, ListIterator
+    5.  Sorting using Comparator and Comparable
+    6.  Method References � overview and example
+
+
+WHAT IS A LinkedList?
+
+                                    +----+----------------+----+
+                                    |  P |                | N  |
+                                    |  R |                | E  |
+                            +-------+  E |     data[1]    | X  +-------+
+                            |       |  V |                | T  |       |
+                            |       | [0]|                | [2]|       |
+                            |       +----+----------------+----+       |
+                            |                                          |
+               +----+-------+-------+----+                +----+-------+-------+----+
+               |    |      [0]      |    |                |    |      [2]      |    |
+               |[-1]| Linked to the | [1]|                | [1]| Linked to the | [3]|
+               |    | previous element   |                |    | next element  |    |
+               +----+---------------+----+                +----+---------------+----+
+
+
+https://github.com/LearnJobs/J4G03/
+
+ASSIGNMENT-06:
+    1   Write a program to assign 10 items to an ArrayList. Swap values from the 1 with 6, 2 with 7, 3 with 8,
+        4 with 9 and 5 with 10.
+
+                Before          After
+        1       10              60
+        2       20              70
+        3       30              80
+        4       40              90
+        5       50             100
+        6       50              10
+        7       70              20
+        8       80              30
+        9       90              40
+       10      100              50
+
+
+MySQL Link: https://dev.mysql.com/downloads/installer/
+WHAT IS SQL?
+    SQL stands for Structured Query Language.
+    This language, SQL is used to communicate with the Database.
+
+WHAT IS A DATABASE?
+    An engine which provides facility to store and retrive data quickly. It also provides many functionalities
+    to SORT, CREATE, INSERT, etc. data in the database engine.
+
+HOW MANY TYPES OF DATABASE ENGINES ARE THERE?
+    There are 2 types of database engines:
+    1.  Embedded engines
+    2.  External engines
+
+WHAT A SOME POPULAR DATABASE ENGINES?
+    1.  Oracle                  exteranl
+    2.  MS SQL-Server           exteranl
+    3.  Unify                   exteranl
+    4.  Sybase                  exteranl
+    5.  Ingress                 external
+    6.  MySQL                   exteranl        Open-source
+    7.  PostgreSQL              exteranl        Open-source
+    8.  Cloudscape              embedded        Open-source
+    9.  Berkeyley               embedded        Open-source
+   10.  SQLite                  embedded        Open-source
+
+HOW DO YOU COMMUNICATE WITH A DATABASE?
+    Using the SQL language, one can communicate with the database.
+
+    The SQL language is divided into 3 parts:
+    1.  DDL - Data Definition Language
+              CREATE, DROP, ALTER, RENAME, TRUNCATE
+
+    2.  DML - Data Manipulation Language
+              SELECT, INSERT, UPDATE, DELETE
+
+    3.  DCL - Data Control Language
+              GRANT, REVOKE, COMMIT, ROLLBACK
+
+HOW TO INSTALL MYSQL?
+    Link: https://dev.mysql.com/downloads/mysql/ 
+    Workbench: https://dev.mysql.com/downloads/workbench/
+    General: https://dev.mysql.com/downloads/installer/
+
+AFTER YOU INSTALL MySQL, THE FIRST THING YOU DO IS TO GO TO THE DOS PROMPT OR THE IDE.
+THE FIRST COMMAND THAT WE WILL DISCUSS IS:
+    1.  SHOW DATABASES;                             It show all the databases
+    2.  CREATE DATABASE j4g03;                      Creates a new database in the specified name
+    3.  DROP DATABASE j4g03;                        Removes the specified database
+    4.  USE j4g03;                                  Makes the specified database active
+    5.  SHOW TABLES;                                It show the list of the tables that exist in the active database
+    6.  CREATE TABLE <name-of-the-table>(...);      Creates a table as specified in the place of the 3 dots ...
+        <column-name>   <column-type>[(<size-of-the-column>)] <constraints>,
+        <column-name>   <column-type>[(<size-of-the-column>)] <constraints>,
+        <column-name>   <column-type>[(<size-of-the-column>)] <constraints>,
+        <column-name>   <column-type>[(<size-of-the-column>)] <constraints>,
+        <column-name>   <column-type>[(<size-of-the-column>)] <constraints>,
+        <column-name>   <column-type>[(<size-of-the-column>)] <constraints>,
+    7.  DROP TABLE <name-of-the-table>;
+    8.  INSERT INTO <name-of-the-table>[(<column-list>)] VALUES(<value-list>[, (<value-list>)]);
+    9.  SELECT <*|<column-list>> FROM <name-of-the-table>;
+        The SELECT command has a list of CLAUSES
+        a)  WHERE <condition>           In a compound condition, AND or OR is used
+        b)  ORDER BY                    Sorts the table by the name of the columns
+        c)  GROUP BY                    Groups the data of the specified column and the top row is displayed
+        d)  HAVING                      It works like the WHERE clause. It is used with the GROUP BY clause to give condition
+        e)  TOP
+        f)  JOIN
+        g)  LIMIT                       Shows the number of rows specified
+        h)  UNION
+   10.  UPDATE <table-name> SET <column-name>=<value>[, <column-name>=<value>] WHERE <condition>;
+
+
+WHAT IS A <column-name>?
+    A <column-name> is the name of the column.
+    A column name must start with an alphbetic character.
+    A column name must be with 30 characters.
+    A column name is created by using alphabetic, digit and the only special charater is the under score character (_).
+
+WHAT IS <column-type>?
+    1.  INT
+    2.  VARCHAR
+    3.  DATE
+    4.  BOOLEAN
+    5.  CHAR
+    6.  ENUM("Yes", "No") or ENUM("Sun","Mon","Tue","Wed","Thu","Fri","Sat")
+    7.  BLOB
+    8.  BINARY
+    9.  TINYBLOB
+   10.  TINYTEXT
+   11.  TEXT
+   12.  MEDIUMTEXT
+   13.  MEDIUMBLOB
+   14.  LONGTEXT
+   15.  LONGBLOB
+
+WHAT IS THE <size-of-the-column>?
+    Required size in digit.
+
+    INT(6)
+    VARCHAR(200)
+
+    1.  INT                             16
+    2.  VARCHAR                         2000
+    3.  DATE
+    4.  BOOLEAN
+    5.  CHAR                            2000
+    6.  ENUM("Yes", "No") or ENUM("Sun","Mon","Tue","Wed","Thu","Fri","Sat")
+    7.  BLOB
+    8.  BINARY
+    9.  TINYBLOB
+   10.  TINYTEXT
+   11.  TEXT
+   12.  MEDIUMTEXT
+   13.  MEDIUMBLOB
+   14.  LONGTEXT
+   15.  LONGBLOB
+
+WHAT IS <constraints>?
+    1.  NOT NULL                            Doesn't allow blank column
+    2.  PRIMARY KEY(<column-name>)          Index key
+    3.  DEFAULT <default-value>
+    4.  UNIQUE
+    5.  FOREIGN KEY(<column-name>)
+    6.  CHECK
+    7.  CREATE INDEX <index-name>
+    8.  AUTO_INCREMENT
+
+TABLE REQUIREMENT:
+    1.  student_id      INT           8         AUTO_INCREMENT PRIMARY KEY
+    2.  student_name    VARCHAR     100         NOT NULL
+    3.  father_name     VARCHAR     100
+    4.  gender          ENUM("F","M")           DEFAULT NULL
+    5.  date_of_birth   DATE                    NOT NULL
+    6.  photo           BLOB
+
+CREATE THE TABLE:
+    CREATE TABLE students(
+        student_id      INT(8)          AUTO_INCREMENT,
+        student_name    VARCHAR(100)    NOT NULL,
+        father_name     VARCHAR(100),
+        gender          ENUM("F","M")   DEFAULT NULL,
+        date_of_birth   DATE            NOT NULL,
+        photo           BLOB,
+        PRIMARY KEY(student_id)
+    );
+
+    CREATE TABLE students(student_id INT(8) AUTO_INCREMENT,student_name VARCHAR(100) NOT NULL,father_name VARCHAR(100),gender ENUM("F","M") DEFAULT NULL,date_of_birth DATE NOT NULL,photo BLOB, PRIMARY KEY(student_id));
+
+INSERT INTO THE TABLE:
+    INSERT INTO students(student_name,father_name,gender,date_of_birth) VALUES("Rahul Gandhi", "Rajeev Gandhi", "M", "1973-02-25");
+
+    INSERT INTO students(student_name,father_name,gender,date_of_birth) VALUES
+        ("Indira Gandhi", "Jawaharlal Nehru", "F", "1922-02-25"),
+        ("Naveen Patnaik", "Biju Patnaik", "M", "1960-11-03"),
+        ("Bomkin Chandra", "Subash Chandra", "M", "1923-06-11");
+
+SELECT COMMAND:
+    SELECT * FROM students;
+    +------------+----------------+------------------+--------+---------------+-------+
+    | student_id | student_name   | father_name      | gender | date_of_birth | photo |
+    +------------+----------------+------------------+--------+---------------+-------+
+    |          1 | Rahul Gandhi   | Rajeev Gandhi    | M      | 1973-02-25    | NULL  |
+    |          2 | Indira Gandhi  | Jawaharlal Nehru | F      | 1922-02-25    | NULL  |
+    |          3 | Naveen Patnaik | Biju Patnaik     | M      | 1960-11-03    | NULL  |
+    |          4 | Bomkin Chandra | Subash Chandra   | M      | 1923-06-11    | NULL  |
+    +------------+----------------+------------------+--------+---------------+-------+
+
+    SELECT student_id,student_name FROM students;
+    +------------+----------------+
+    | student_id | student_name   |
+    +------------+----------------+
+    |          1 | Rahul Gandhi   |
+    |          2 | Indira Gandhi  |
+    |          3 | Naveen Patnaik |
+    |          4 | Bomkin Chandra |
+    +------------+----------------+
+
+    SELECT * FROM students WHERE gender="F";
+    +------------+---------------+------------------+--------+---------------+-------+
+    | student_id | student_name  | father_name      | gender | date_of_birth | photo |
+    +------------+---------------+------------------+--------+---------------+-------+
+    |          2 | Indira Gandhi | Jawaharlal Nehru | F      | 1922-02-25    | NULL  |
+    +------------+---------------+------------------+--------+---------------+-------+
+
+    SELECT * FROM students WHERE gender="M";
+    +------------+----------------+----------------+--------+---------------+-------+
+    | student_id | student_name   | father_name    | gender | date_of_birth | photo |
+    +------------+----------------+----------------+--------+---------------+-------+
+    |          1 | Rahul Gandhi   | Rajeev Gandhi  | M      | 1973-02-25    | NULL  |
+    |          3 | Naveen Patnaik | Biju Patnaik   | M      | 1960-11-03    | NULL  |
+    |          4 | Bomkin Chandra | Subash Chandra | M      | 1923-06-11    | NULL  |
+    +------------+----------------+----------------+--------+---------------+-------+
+    3 rows in set (0.000 sec)
+
+    SELECT * FROM students WHERE gender="M" AND date_of_birth="1960-11-03";
+    +------------+----------------+--------------+--------+---------------+-------+
+    | student_id | student_name   | father_name  | gender | date_of_birth | photo |
+    +------------+----------------+--------------+--------+---------------+-------+
+    |          3 | Naveen Patnaik | Biju Patnaik | M      | 1960-11-03    | NULL  |
+    +------------+----------------+--------------+--------+---------------+-------+
+
+    SELECT * FROM students ORDER BY student_name;
+    +------------+----------------+------------------+--------+---------------+-------+
+    | student_id | student_name   | father_name      | gender | date_of_birth | photo |
+    +------------+----------------+------------------+--------+---------------+-------+
+    |          4 | Bomkin Chandra | Subash Chandra   | M      | 1923-06-11    | NULL  |
+    |          2 | Indira Gandhi  | Jawaharlal Nehru | F      | 1922-02-25    | NULL  |
+    |          3 | Naveen Patnaik | Biju Patnaik     | M      | 1960-11-03    | NULL  |
+    |          6 | Navjoot Sidhu  | Karim Sidhu      | M      | 1968-05-30    | NULL  |
+    |          7 | Nazeem Shaik   | Karim Shaik      | M      | 1973-07-03    | NULL  |
+    |          1 | Rahul Gandhi   | Rajeev Gandhi    | M      | 1973-02-25    | NULL  |
+    |          5 | Sivaji Rao     | Chatrapati Rao   | M      | 1946-11-02    | NULL  |
+    +------------+----------------+------------------+--------+---------------+-------+
+
+    SELECT * FROM students ORDER BY gender,student_name;
+    +------------+----------------+------------------+--------+---------------+-------+
+    | student_id | student_name   | father_name      | gender | date_of_birth | photo |
+    +------------+----------------+------------------+--------+---------------+-------+
+    |          2 | Indira Gandhi  | Jawaharlal Nehru | F      | 1922-02-25    | NULL  |
+    |          4 | Bomkin Chandra | Subash Chandra   | M      | 1923-06-11    | NULL  |
+    |          3 | Naveen Patnaik | Biju Patnaik     | M      | 1960-11-03    | NULL  |
+    |          6 | Navjoot Sidhu  | Karim Sidhu      | M      | 1968-05-30    | NULL  |
+    |          7 | Nazeem Shaik   | Karim Shaik      | M      | 1973-07-03    | NULL  |
+    |          1 | Rahul Gandhi   | Rajeev Gandhi    | M      | 1973-02-25    | NULL  |
+    |          5 | Sivaji Rao     | Chatrapati Rao   | M      | 1946-11-02    | NULL  |
+    +------------+----------------+------------------+--------+---------------+-------+
+
+    SELECT * FROM students GROUP BY gender HAVING gender="M";
+    +------------+--------------+---------------+--------+---------------+-------+
+    | student_id | student_name | father_name   | gender | date_of_birth | photo |
+    +------------+--------------+---------------+--------+---------------+-------+
+    |          1 | Rahul Gandhi | Rajeev Gandhi | M      | 1973-02-25    | NULL  |
+    +------------+--------------+---------------+--------+---------------+-------+
+
+
+    CREATE TABLE members(
+        student_id      INT(8)          AUTO_INCREMENT,
+        student_name    VARCHAR(100)    NOT NULL,
+        father_name     VARCHAR(100),
+        mother_name     VARCHAR(100),
+        gender          ENUM("F","M")   DEFAULT NULL,
+        date_of_birth   DATE            NOT NULL,
+        photo           BLOB,
+        PRIMARY KEY(student_id)
+    );
+
+
+WHY PRIMARY KEY IS USED?
+    1.  The primary key creates an index of the column that is specified. When you index, binary search can be
+        performed on that column.
+    2.  A foreign key can be defined in another table pointing to the primary key.
+
+
+ASSIGNEMENT PROJECT EMPLOYEE:
+    1.  Designation
+        a)  desig_id        INT(6)          AUTO_INCREMENT
+        b)  desig_desc      VARCHAR(100)
+        c)  desig_abbr      VARCHAR(20)
+        d)  del             ENUM("*")       DEFAUL NULL
+
+        5 ROWS
+
+    2.  Department
+        a)  depart_id
+        b)  depart_name
+        c)  depart_abbr
+        d)  del
+
+        5 ROWS
+
+    3.  Employee
+        a)  employ_id
+        b)  employ_name
+        c)  father_name
+        d)  desig_id
+        e)  depart_id
+        f)  gender
+        g)  dob
+        h)  doj
+
+        20 ROWS
+
+    4.  Salary
+        a)  salary_id
+        b)  employ_id
+        c)  desig_id
+        d)  bank_name
+        e)  bank_ifsc
+        f)  bank_ac_no
+
+        20 ROWS
+
+    5.  Photo
+        a)  photo_id
+        b)  employ_id
+        c)  photo
+
+        20 ROWS
+
+
+INTRODUCTION TO JDBC:
