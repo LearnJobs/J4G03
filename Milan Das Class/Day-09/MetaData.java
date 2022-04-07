@@ -24,13 +24,28 @@ public class MetaData {
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT e.employ_id, INITCAP(e.employ_name) AS employ_name, des.desig_desc, dep.depart_name FROM employ AS e LEFT JOIN designation AS des ON e.desig_id=des.desig_id LEFT JOIN department AS dep ON e.depart_id=dep.depart_id");
 			rsmd = rs.getMetaData();
+
+			// Line
+			int length;
+			System.out.print("\r\n+-");
+			for(int i=1; i<=rsmd.getColumnCount(); i++) {
+				length = (rsmd.getColumnName(i).length()>rsmd.getColumnDisplaySize(i)?rsmd.getColumnDisplaySize(i):50);
+				System.out.print(replicate("-",length)+"-+-");
+			}
 			
 			// Header
 			System.out.print("\r\n| ");
 			for(int i=1; i<=rsmd.getColumnCount(); i++) {
-				System.out.print(padCenter(rsmd.getColumnLabel(i).toUpperCase(),(rsmd.getColumnName(i).length()>rsmd.getColumnDisplaySize(i)?rsmd.getColumnDisplaySize(i):50))+" | ");
+				length = (rsmd.getColumnLabel(i).length()>rsmd.getColumnDisplaySize(i)?rsmd.getColumnDisplaySize(i):50);
+				System.out.print(padCenter(rsmd.getColumnLabel(i).toUpperCase(),length)+" | ");
 			}
-			System.out.println();
+
+			// Line
+			System.out.print("\r\n+-");
+			for(int i=1; i<=rsmd.getColumnCount(); i++) {
+				length = (rsmd.getColumnLabel(i).length()>rsmd.getColumnDisplaySize(i)?rsmd.getColumnDisplaySize(i):50);
+				System.out.print(replicate("-",length)+"-+-");
+			}
 
 			// Data
 			String type;
@@ -50,6 +65,12 @@ public class MetaData {
 				System.out.println();
 			}
 
+			// Line
+			System.out.print("\r\n+-");
+			for(int i=1; i<=rsmd.getColumnCount(); i++) {
+				length = (rsmd.getColumnName(i).length()>rsmd.getColumnDisplaySize(i)?rsmd.getColumnDisplaySize(i):50);
+				System.out.print(replicate("-",length)+"-+-");
+			}
 		} catch(ClassNotFoundException e) {
 		} catch(SQLException e) {
 		} catch(Exception e) {
@@ -79,6 +100,12 @@ public class MetaData {
 	public String padRight(String data, int length) {
 		StringBuffer buf = new StringBuffer(data);
 		for(int i=buf.length(); i<length; i++) buf.append(" ");
+		return buf.toString();
+	}
+
+	public String replicate(String data, int length) {
+		StringBuffer buf = new StringBuffer();
+		for(int i=0; i<length; i++) buf.append(data);
 		return buf.toString();
 	}
 	
