@@ -32,7 +32,6 @@ JAVA COMES IN 3 MODULES
 USING JAVA ONE CAN DEVELOP 3 TYPES OF PROGRAMS:
 1.  Application
         An application is a program that starts from the main() method
-
 2.  Applet
 3.  Servlet (Web-application)
 
@@ -1580,11 +1579,14 @@ ASSIGNMENT (06-04-2022)
 Create a view using the SQL statement that will display all products with their warehouse name and process name.
 Write a Java to display the query?
 
-
++------------+
+| 07-04-2022 |
++------------+
 HOW TO TAKE BACKUP OF A DATABASE?
     mysqldump.exe is a tool that comes with mysql. This tool is used to take backup of a database.
-    The command syntax for mysqldump is as follows:
+    The command syntax for mysqldump used from the DOS prompt is as follows:
         mysqldump -uroot -proot j4g03 > j4g03.sql
+        mysqldump -uroot -proot employee > employee.sql
 
     To restore start mysql and type the following command:
         create database if not exists j4g03;
@@ -1640,3 +1642,56 @@ To use the INITCAP function, write the following:
     | shruti hussan     | Shruti Hussan     |
     | vansika maurya    | Vansika Maurya    |
     +-------------------+-------------------+
+
+WHAT IS META-DATA?
+    The information about the information is meta-data.
+    The column names, column type and the column constraints are the meta-data of a table.
+    Using JDBC, the meta-data of a ResultSet can be obtained.
+
+    +-----------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
+    | EMPLOY_ID |                    EMPLOY_NAME                     |                     DESIG_DESC                     |                    DEPART_NAME                     | 
+    +-----------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
+    |         1 | Rajat Singh                                        | Chief Operating Officer                            | Transportation Department                          | 
+    |         2 | Vijay Rana                                         | Chief Executive Officer                            | Human Resource Department                          | 
+    |         3 | Shyamji Yadav                                      | Director General                                   | Accounting Department                              | 
+    |         4 | Lisa Willium                                       | General Manager                                    | Accounting Department                              | 
+    |         5 | Jully Oak                                          | Director General                                   | Research & Development Department                  | 
+    |         6 | Simran Saah                                        | Director General                                   | Transportation Department                          | 
+    |         7 | Suraj Yadav                                        | Chief Operating Officer                            | Research & Development Department                  | 
+    |         8 | Jetha Lal                                          | Chief Operating Officer                            | Accounting Department                              | 
+    |         9 | Aatma Ram                                          | Director General                                   | Accounting Department                              | 
+    |        10 | Abhijeet Singh                                     | Chief Executive Officer                            | Research & Development Department                  | 
+    |        11 | Preeti Paal                                        | Chief Operating Officer                            | Research & Development Department                  | 
+    |        12 | Lucifer The Devil                                  | Director General                                   | Technical Depertment                               | 
+    |        13 | Iyyaar                                             | Director General                                   | Research & Development Department                  | 
+    |        14 | Ram Lakhn Singh                                    | Chief Executive Officer                            | Human Resource Department                          | 
+    |        15 | Vishal Maurya                                      | Director General                                   | Accounting Department                              | 
+    |        16 | Shani Parihar                                      | Chief Executive Officer                            | Transportation Department                          | 
+    |        17 | Ali Muraad                                         | Manager Production                                 | Accounting Department                              | 
+    |        18 | Sameera Singh                                      | Chief Operating Officer                            | Human Resource Department                          | 
+    |        19 | Ammir Khan                                         | Director General                                   | Accounting Department                              | 
+    |        20 | Shruti Hussan                                      | Director General                                   | Transportation Department                          | 
+    |        21 | Vansika Maurya                                     | Manager Production                                 | Human Resource Department                          | 
+    +-----------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
+
+
+WHAT IS THE NEW IO (java.nio)?
+    java.nio is a set of classes provided in later version of Java. It probably started from JDK ver 1.4.
+    The reason for creating a new IO package was to make the IO operation faster. The older version of IO,
+    java.io was slow.
+
+    java.nio
+        1. Creates a Channel
+        2. From the Channel, it creates a buffer
+           The buffer has the ability to read/write in blocks. A block is multiple bytes.
+
+WHAT IS A WEB APPLICATION?
+    The term web application refers to a software system that provides a user interface through a web browser. 
+    Examples of web applications include blogs, online shopping, search engines, etc. Web applications can be
+    simple consisting of only static web pages or they can be dynamic and interactive.
+
+
+ASSIGNMENT-08 (07-04-2022)
+    Write a program to take a string, i.e. SQL statement from the user. The user has to type the SQL statement
+    in the keyboard. For example: SELECT * FROM employ
+    Write code to disply the table data and the header on the screen.
