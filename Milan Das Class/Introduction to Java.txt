@@ -295,7 +295,7 @@ abstract
     class isn't required to have an abstract method at all.
 
 assert (added in J2SE 1.4)
-    Assert describes a predicate (a true–false statement) placed in a Java program to indicate that the 
+    Assert describes a predicate (a trueÂ–false statement) placed in a Java program to indicate that the 
     developer thinks that the predicate is always true at that place. If an assertion evaluates to false
     at run-time, an assertion failure results, which typically causes execution to abort. Assertions are
     disabled at runtime by default, but can be enabled through a command-line option or programmatically
@@ -723,7 +723,7 @@ Date, LocalDate, LocalTime classes:
 
 ASSIGNMENT-03
     1.  Write a program to find how many days are there between today and Sunday?
-    2.  Define a “Clock” class that does the following: -
+    2.  Define a Â“ClockÂ” class that does the following: -
         a. Accept hours, minutes and seconds.
         b. Check the validity numbers.
         c. Set the time to AM/PM mode.
@@ -936,12 +936,12 @@ ASSIGNMENT-05 (02-03-2022)
 04-04-2022
 ----------
 COLLECTIONS FRAMEWORK
-    1.  List – ArrayList, LinkedList
-    2.  Set – HashSet, LinkedHashSet, TreeSet
-    3.  Map – TreeMap, ConcurrencyMap
+    1.  List Â– ArrayList, LinkedList
+    2.  Set Â– HashSet, LinkedHashSet, TreeSet
+    3.  Map Â– TreeMap, ConcurrencyMap
     4.  Iterator, ListIterator
     5.  Sorting using Comparator and Comparable
-    6.  Method References – overview and example
+    6.  Method References Â– overview and example
 
 
 WHAT IS A LinkedList?
@@ -1692,6 +1692,14 @@ WHAT IS A WEB APPLICATION?
 
 
 ASSIGNMENT-08 (07-04-2022)
-    Write a program to take a string, i.e. SQL statement from the user. The user has to type the SQL statement
+1.  Write a program to take a string, i.e. SQL statement from the user. The user has to type the SQL statement
     in the keyboard. For example: SELECT * FROM employ
-    Write code to disply the table data and the header on the screen.
+    Write a Java program to display the table-data and the header on the screen.
+
+2.  Use the following MySSQL functions in your query and create SELECT Queries.
+    a)  CONCAT
+    b)  LOCATE
+    c)  MID
+    d)  REVERSE
+    e)  SUBSTRING
+
