@@ -1577,5 +1577,66 @@ ASSIGNMENT (06-04-2022)
 
     20 ROWS
 
-Create a view from the SQL statement that will display all products with their warehouse name and process name.
+Create a view using the SQL statement that will display all products with their warehouse name and process name.
 Write a Java to display the query?
+
+
+HOW TO TAKE BACKUP OF A DATABASE?
+    mysqldump.exe is a tool that comes with mysql. This tool is used to take backup of a database.
+    The command syntax for mysqldump is as follows:
+        mysqldump -uroot -proot j4g03 > j4g03.sql
+
+    To restore start mysql and type the following command:
+        create database if not exists j4g03;
+        use j4g03;
+        source j4g03.sql;
+
+HOW TO USE THE BUILT-IN FUNCTION IN MySQL?
+    date_format
+        SELECT doj AS original, DATE_FORMAT(doj,"%d-%m-%Y") AS after FROM employ;
+
+HOW TO CREATE A USER DEFINED USER DEFINED FUNCTION?
+    DELIMITER $$
+
+    DROP FUNCTION IF EXISTS initcap$$
+    CREATE FUNCTION initcap(x char(100)) RETURNS char(100) CHARSET utf8
+        BEGIN
+            SET @str='';
+            SET @l_str='';
+            WHILE x REGEXP ' ' DO
+                SELECT SUBSTRING_INDEX(x, ' ', 1) INTO @l_str;
+                SELECT SUBSTRING(x, LOCATE(' ', x)+1) INTO x;
+                SELECT CONCAT(@str, ' ', CONCAT(UPPER(SUBSTRING(@l_str,1,1)),LOWER(SUBSTRING(@l_str,2)))) INTO @str;
+            END WHILE;
+            RETURN LTRIM(CONCAT(@str, ' ', CONCAT(UPPER(SUBSTRING(x,1,1)),LOWER(SUBSTRING(x,2)))));
+        END $$
+
+    DELIMITER ;
+
+To use the INITCAP function, write the following:
+    SELECT employ_name AS Original, INITCAP(employ_name) AS After FROM employ;
+    +-------------------+-------------------+
+    | Original          | After             |
+    +-------------------+-------------------+
+    | rajat singh       | Rajat Singh       |
+    | vijay rana        | Vijay Rana        |
+    | shyamji yadav     | Shyamji Yadav     |
+    | lisa willium      | Lisa Willium      |
+    | jully oak         | Jully Oak         |
+    | simran saah       | Simran Saah       |
+    | suraj yadav       | Suraj Yadav       |
+    | jetha lal         | Jetha Lal         |
+    | aatma ram         | Aatma Ram         |
+    | abhijeet singh    | Abhijeet Singh    |
+    | preeti paal       | Preeti Paal       |
+    | lucifer the devil | Lucifer The Devil |
+    | iyyaar            | Iyyaar            |
+    | ram lakhn singh   | Ram Lakhn Singh   |
+    | vishal maurya     | Vishal Maurya     |
+    | shani parihar     | Shani Parihar     |
+    | ali muraad        | Ali Muraad        |
+    | sameera singh     | Sameera Singh     |
+    | ammir khan        | Ammir Khan        |
+    | shruti hussan     | Shruti Hussan     |
+    | vansika maurya    | Vansika Maurya    |
+    +-------------------+-------------------+
