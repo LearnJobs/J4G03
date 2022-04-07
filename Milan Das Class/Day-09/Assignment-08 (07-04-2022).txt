@@ -1,4 +1,12 @@
 ASSIGNMENT-08 (07-04-2022)
-    Write a program to take a string, i.e. SQL statement from the user. The user has to type the SQL statement
+1.  Write a program to take a string, i.e. SQL statement from the user. The user has to type the SQL statement
     in the keyboard. For example: SELECT * FROM employ
-    Write code to disply the table data and the header on the screen.
+    Write a Java program to display the table-data and the header on the screen.
+
+2.  Use the following MySSQL functions in your query and create SELECT Queries.
+    a)  CONCAT
+    b)  LOCATE
+    c)  MID
+    d)  REVERSE
+    e)  SUBSTRING
+
