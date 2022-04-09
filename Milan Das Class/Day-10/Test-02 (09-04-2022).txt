@@ -1,0 +1,8 @@
+Find all perfect number between 2 given numbers?
+(A PERFECT number is that number which is equal to the sum of all numbers divisible to it)
+
+        Example:   2 and 10000
+                       6 = 1+2+3
+                      28 = 1+2+4+7+14
+                     496 = 1+2+4+8+16+31+62+124+248
+                    8128 = 1+2+4+8+16+32+64+127+254+508+1016+2032+4064
