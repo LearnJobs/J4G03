@@ -37,6 +37,6 @@ public class PERFECT {
 	        if (isPerfect(n))
 	            System.out.println( n +
 	                    " is a perfect number");
-	}
+   }
 
 }
