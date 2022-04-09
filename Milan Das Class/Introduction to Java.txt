@@ -295,7 +295,7 @@ abstract
     class isn't required to have an abstract method at all.
 
 assert (added in J2SE 1.4)
-    Assert describes a predicate (a trueÂ–false statement) placed in a Java program to indicate that the 
+    Assert describes a predicate (a true–false statement) placed in a Java program to indicate that the 
     developer thinks that the predicate is always true at that place. If an assertion evaluates to false
     at run-time, an assertion failure results, which typically causes execution to abort. Assertions are
     disabled at runtime by default, but can be enabled through a command-line option or programmatically
@@ -723,7 +723,7 @@ Date, LocalDate, LocalTime classes:
 
 ASSIGNMENT-03
     1.  Write a program to find how many days are there between today and Sunday?
-    2.  Define a Â“ClockÂ” class that does the following: -
+    2.  Define a “Clock” class that does the following: -
         a. Accept hours, minutes and seconds.
         b. Check the validity numbers.
         c. Set the time to AM/PM mode.
@@ -936,12 +936,12 @@ ASSIGNMENT-05 (02-03-2022)
 04-04-2022
 ----------
 COLLECTIONS FRAMEWORK
-    1.  List Â– ArrayList, LinkedList
-    2.  Set Â– HashSet, LinkedHashSet, TreeSet
-    3.  Map Â– TreeMap, ConcurrencyMap
+    1.  List – ArrayList, LinkedList
+    2.  Set – HashSet, LinkedHashSet, TreeSet
+    3.  Map – TreeMap, ConcurrencyMap
     4.  Iterator, ListIterator
     5.  Sorting using Comparator and Comparable
-    6.  Method References Â– overview and example
+    6.  Method References – overview and example
 
 
 WHAT IS A LinkedList?
@@ -1692,14 +1692,70 @@ WHAT IS A WEB APPLICATION?
 
 
 ASSIGNMENT-08 (07-04-2022)
-1.  Write a program to take a string, i.e. SQL statement from the user. The user has to type the SQL statement
+    Write a program to take a string, i.e. SQL statement from the user. The user has to type the SQL statement
     in the keyboard. For example: SELECT * FROM employ
-    Write a Java program to display the table-data and the header on the screen.
+    Write code to disply the table data and the header on the screen.
 
-2.  Use the following MySSQL functions in your query and create SELECT Queries.
-    a)  CONCAT
-    b)  LOCATE
-    c)  MID
-    d)  REVERSE
-    e)  SUBSTRING
 
+TEST-02 (Saturday, 09-04-2022)
+Find all perfect number between 2 given numbers?
+(A PERFECT number is that number which is equal to the sum of all numbers divisible to it)
+
+        Example:   2 and 10000
+                       6 = 1+2+3
+                      28 = 1+2+4+7+14
+                     496 = 1+2+4+8+16+31+62+124+248
+                    8128 = 1+2+4+8+16+32+64+127+254+508+1016+2032+4064
+
++------------+
+| 09-04-2022 |
++------------+
+WHAT IS A THREAD?
+    Thread is a process for executing more than one program concurrently in the computer sharing the CPU time.
+    Every modern OS (Operating System) are capable of executing serveral programs concurrently. Today, all OS are 
+    Thread enabled.
+
+WHAT IS JAVA THREAD?
+    Java programs run within the JRE (Java Runtime Environment). The JRE provdes facilities to run several
+    Java programs concurrently. This ability in Java is unique and is known as Java Thread.
+
+HOW TO CREATE A THREAD PROGRAM IN JAVA?
+    Java API provides classes that make the Java programmes multi-programming. The java.lang.Thread is the main
+    class that provides facility to create Java threading or multi-programming.
+
+HOW TO USE java.lang.Thread
+    There are 2 ways to create a Thread program in Java
+
+    The first way:
+        Steps to create a Java Thread program:
+        1.  Inherit the java.lang.Thread class
+        2.  Override the run() method in the Thread class.
+        3.  Call the start() method to wrap the run() method as a new thread.
+
+        Your main method is one Thread, and the run() method is another Thread.
+
+        The developer of Java API have made it that way, when you call the start() method, the run() method of that
+        class is taken as another thread.
+
+    The second way:
+        Steps to create a Java Thread program:
+        1.  Create a class and implement the Runnable interface
+        2.  Override the run() method from the Runnable interface
+        3.  Create a Thread object by calling the Thread(Runnable) constructor and providing the Runnable object
+        4.  With the Thread object reference, call the start() method.
+
+WHAT IS AN Executor INTERFACE?
+    The Executor interface exists in the java.util.concurrent package.
+    The concurrent API in Java provides a feature known as an executor that initiates and controls the 
+    execution of threads. As such, an executor offers an alternative to managing threads using the thread class.
+    At the core of an executor is the Executor interface. It refers to the objects that execute submitted 
+    Runnable tasks.
+
+    java.util.concurrent.Executor
+    java.util.concurrent.ExecutorService
+    java.util.concurrent.ScheduledExecutorService
+
+
+ASSIGNMENT-09 (09-04-2022):
+    Create 2 List<String> object with 25 items in each.
+    Write a program to create a Thread that will print the content of the 2 Lists using 2 Threads.
