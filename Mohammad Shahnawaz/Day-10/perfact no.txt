@@ -1,0 +1,20 @@
+public class Perfect_no {
+	
+
+		public static void main(String[] args) {
+		int n=6; int i; int sum=0;
+		for(i=1;i<6;i++)
+		{
+			if(n%i==0)
+			{
+				sum=sum+i;
+			}
+		}
+	  if(n==sum)
+		  System.out.print("perfect Number");
+		 else 
+			 System.out.print("Not perfect number");
+			 
+		}
+
+	}
