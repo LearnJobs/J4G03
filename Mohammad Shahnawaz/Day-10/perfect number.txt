@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Class_A {
+
+	public static void main(String[] args) {
+	 int n,sum=0;
+	 System.out.print("Enter any number");
+	 Scanner r=new Scanner(System.in);
+	 n=r.nextInt();
+	 for(int i=1; i<n; i++)
+	 {
+		 if(n%i==0)
+		 {
+			 sum=sum+i;
+		 }
+	 }
+	 if(n==sum)
+		 System.out.print("perfect Number");
+	 else 
+		 System.out.print("Not perfect number");
+		 
+	}
+
+}
