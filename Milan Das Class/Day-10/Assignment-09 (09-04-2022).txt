@@ -1,0 +1,7 @@
+ASSIGNMENT:
+--
+ASSIGNMENT-09 (09-04-2022):
+    Create 2 List<String> object with 25 items in each.
+    Write a program to create a Thread that will print the content of the 2 Lists using 2 Threads.
+
+
