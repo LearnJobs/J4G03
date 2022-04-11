@@ -1597,3 +1597,417 @@ Write a Java to display the query?
 ===========================================================================================================================
 
 07/04/2022
+
+HOW TO TAKE BACKUP OF A DATABASE?
+    mysqldump.exe is a tool that comes with mysql. This tool is used to take backup of a database.
+    The command syntax for mysqldump used from the DOS prompt is as follows:
+        mysqldump -uroot -proot j4g03 > j4g03.sql
+        mysqldump -uroot -proot employee > employee.sql
+
+    To restore start mysql and type the following command:
+        create database if not exists j4g03;
+        use j4g03;
+        source j4g03.sql;
+
+HOW TO USE THE BUILT-IN FUNCTION IN MySQL?
+    date_format
+        SELECT doj AS original, DATE_FORMAT(doj,"%d-%m-%Y") AS after FROM employ;
+
+HOW TO CREATE A USER DEFINED USER DEFINED FUNCTION?
+    DELIMITER $$
+
+    DROP FUNCTION IF EXISTS initcap$$
+    CREATE FUNCTION initcap(x char(100)) RETURNS char(100) CHARSET utf8
+        BEGIN
+            SET @str='';
+            SET @l_str='';
+            WHILE x REGEXP ' ' DO
+                SELECT SUBSTRING_INDEX(x, ' ', 1) INTO @l_str;
+                SELECT SUBSTRING(x, LOCATE(' ', x)+1) INTO x;
+                SELECT CONCAT(@str, ' ', CONCAT(UPPER(SUBSTRING(@l_str,1,1)),LOWER(SUBSTRING(@l_str,2)))) INTO @str;
+            END WHILE;
+            RETURN LTRIM(CONCAT(@str, ' ', CONCAT(UPPER(SUBSTRING(x,1,1)),LOWER(SUBSTRING(x,2)))));
+        END $$
+
+    DELIMITER ;
+
+To use the INITCAP function, write the following:
+    SELECT employ_name AS Original, INITCAP(employ_name) AS After FROM employ;
+    +-------------------+-------------------+
+    | Original          | After             |
+    +-------------------+-------------------+
+    | rajat singh       | Rajat Singh       |
+    | vijay rana        | Vijay Rana        |
+    | shyamji yadav     | Shyamji Yadav     |
+    | lisa willium      | Lisa Willium      |
+    | jully oak         | Jully Oak         |
+    | simran saah       | Simran Saah       |
+    | suraj yadav       | Suraj Yadav       |
+    | jetha lal         | Jetha Lal         |
+    | aatma ram         | Aatma Ram         |
+    | abhijeet singh    | Abhijeet Singh    |
+    | preeti paal       | Preeti Paal       |
+    | lucifer the devil | Lucifer The Devil |
+    | iyyaar            | Iyyaar            |
+    | ram lakhn singh   | Ram Lakhn Singh   |
+    | vishal maurya     | Vishal Maurya     |
+    | shani parihar     | Shani Parihar     |
+    | ali muraad        | Ali Muraad        |
+    | sameera singh     | Sameera Singh     |
+    | ammir khan        | Ammir Khan        |
+    | shruti hussan     | Shruti Hussan     |
+    | vansika maurya    | Vansika Maurya    |
+    +-------------------+-------------------+
+
+WHAT IS META-DATA?
+    The information about the information is meta-data.
+    The column names, column type and the column constraints are the meta-data of a table.
+    Using JDBC, the meta-data of a ResultSet can be obtained.
+
+    +-----------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
+    | EMPLOY_ID |                    EMPLOY_NAME                     |                     DESIG_DESC                     |                    DEPART_NAME                     | 
+    +-----------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
+    |         1 | Rajat Singh                                        | Chief Operating Officer                            | Transportation Department                          | 
+    |         2 | Vijay Rana                                         | Chief Executive Officer                            | Human Resource Department                          | 
+    |         3 | Shyamji Yadav                                      | Director General                                   | Accounting Department                              | 
+    |         4 | Lisa Willium                                       | General Manager                                    | Accounting Department                              | 
+    |         5 | Jully Oak                                          | Director General                                   | Research & Development Department                  | 
+    |         6 | Simran Saah                                        | Director General                                   | Transportation Department                          | 
+    |         7 | Suraj Yadav                                        | Chief Operating Officer                            | Research & Development Department                  | 
+    |         8 | Jetha Lal                                          | Chief Operating Officer                            | Accounting Department                              | 
+    |         9 | Aatma Ram                                          | Director General                                   | Accounting Department                              | 
+    |        10 | Abhijeet Singh                                     | Chief Executive Officer                            | Research & Development Department                  | 
+    |        11 | Preeti Paal                                        | Chief Operating Officer                            | Research & Development Department                  | 
+    |        12 | Lucifer The Devil                                  | Director General                                   | Technical Depertment                               | 
+    |        13 | Iyyaar                                             | Director General                                   | Research & Development Department                  | 
+    |        14 | Ram Lakhn Singh                                    | Chief Executive Officer                            | Human Resource Department                          | 
+    |        15 | Vishal Maurya                                      | Director General                                   | Accounting Department                              | 
+    |        16 | Shani Parihar                                      | Chief Executive Officer                            | Transportation Department                          | 
+    |        17 | Ali Muraad                                         | Manager Production                                 | Accounting Department                              | 
+    |        18 | Sameera Singh                                      | Chief Operating Officer                            | Human Resource Department                          | 
+    |        19 | Ammir Khan                                         | Director General                                   | Accounting Department                              | 
+    |        20 | Shruti Hussan                                      | Director General                                   | Transportation Department                          | 
+    |        21 | Vansika Maurya                                     | Manager Production                                 | Human Resource Department                          | 
+    +-----------+----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
+
+
+WHAT IS THE NEW IO (java.nio)?
+    java.nio is a set of classes provided in later version of Java. It probably started from JDK ver 1.4.
+    The reason for creating a new IO package was to make the IO operation faster. The older version of IO,
+    java.io was slow.
+
+    java.nio
+        1. Creates a Channel
+        2. From the Channel, it creates a buffer
+           The buffer has the ability to read/write in blocks. A block is multiple bytes.
+
+WHAT IS A WEB APPLICATION?
+    The term web application refers to a software system that provides a user interface through a web browser. 
+    Examples of web applications include blogs, online shopping, search engines, etc. Web applications can be
+    simple consisting of only static web pages or they can be dynamic and interactive.
+
+
+ASSIGNMENT-08 (07-04-2022)
+    Write a program to take a string, i.e. SQL statement from the user. The user has to type the SQL statement
+    in the keyboard. For example: SELECT * FROM employ
+    Write code to disply the table data and the header on the screen.
+
+
+TEST-02 (Saturday, 09-04-2022)
+Find all perfect number between 2 given numbers?
+(A PERFECT number is that number which is equal to the sum of all numbers divisible to it)
+
+        Example:   2 and 10000
+                       6 = 1+2+3
+                      28 = 1+2+4+7+14
+                     496 = 1+2+4+8+16+31+62+124+248
+                    8128 = 1+2+4+8+16+32+64+127+254+508+1016+2032+4064
+
++------------+
+| 09-04-2022 |
++------------+
+WHAT IS A THREAD?
+    Thread is a process for executing more than one program concurrently in the computer sharing the CPU time.
+    Every modern OS (Operating System) are capable of executing serveral programs concurrently. Today, all OS are 
+    Thread enabled.
+
+WHAT IS JAVA THREAD?
+    Java programs run within the JRE (Java Runtime Environment). The JRE provdes facilities to run several
+    Java programs concurrently. This ability in Java is unique and is known as Java Thread.
+
+HOW TO CREATE A THREAD PROGRAM IN JAVA?
+    Java API provides classes that make the Java programmes multi-programming. The java.lang.Thread is the main
+    class that provides facility to create Java threading or multi-programming.
+
+HOW TO USE java.lang.Thread
+    There are 2 ways to create a Thread program in Java
+
+    The first way:
+        Steps to create a Java Thread program:
+        1.  Inherit the java.lang.Thread class
+        2.  Override the run() method in the Thread class.
+        3.  Call the start() method to wrap the run() method as a new thread.
+
+        Your main method is one Thread, and the run() method is another Thread.
+
+        The developer of Java API have made it that way, when you call the start() method, the run() method of that
+        class is taken as another thread.
+
+    The second way:
+        Steps to create a Java Thread program:
+        1.  Create a class and implement the Runnable interface
+        2.  Override the run() method from the Runnable interface
+        3.  Create a Thread object by calling the Thread(Runnable) constructor and providing the Runnable object
+        4.  With the Thread object reference, call the start() method.
+
+WHAT IS AN Executor INTERFACE?
+    The Executor interface exists in the java.util.concurrent package.
+    The concurrent API in Java provides a feature known as an executor that initiates and controls the 
+    execution of threads. As such, an executor offers an alternative to managing threads using the thread class.
+    At the core of an executor is the Executor interface. It refers to the objects that execute submitted 
+    Runnable tasks.
+
+    java.util.concurrent.Executor
+    java.util.concurrent.ExecutorService
+    java.util.concurrent.ScheduledExecutorService
+
+
+ASSIGNMENT-09 (09-04-2022):
+    Create 2 List<String> object with 25 items in each.
+    Write a program to create a Thread that will print the content of the 2 Lists using 2 Threads.
+
+
++------------+
+| 11-04-2022 |
++------------+
+WHAT IS HTML?
+    HTML stands for Hyper Text Markup Language. HTML is a scripting language that is intended to run within
+    an internet browser.
+
+    HTML transmits across the HTTP protocal instantly. The script is transformed to HTTP packet instantly and
+    get transmitted.
+
+WHAT IS A PROGRAMMING LANGUAGE?
+    A programming language is a human readable code that is converted to the machine language in order to be
+    executed by the machine.
+
+    The features of a programing language are:
+    1.  It executes in sequence of line numbers
+    2.  It has ability to compute, to add, to subtract, to multiply and to divide
+    3.  It can iterate across a set of lines repeatedly, i.e. known as looping
+    4.  It can do condition checking
+
+    There are 3 categories of Programming Languages:
+    1.  Passive language
+            This category of language doesn't adire to the features of a programming language.
+            It doesn't have ability to compute, to iterate and to do condition checking.
+            Passive languages are used for presentation purpose only. It displays the data in a presentable fashion.
+            Example: SGML, HTML, etc.
+    2.  Active language
+            The real programming languages are known as active language. It follows all the features of a 
+            programming language. It is used to solve mission critical problems. The programs written in the
+            active language executes using the resources of the computer in which it is requested to run.
+            Example: BASIC, Pascal, COBOL, Java, Python, etc.
+    3.  Dynamic language
+            The dynamic language programs execute in the machine in which it resides. The result of the program
+            is converted and presented in a passive language and transmitted to the requesting machine.
+            Example: Php, Java Servlets, etc.
+
+HTML HAS A LIST OF RESERVE WORDS. The elements in HTML are the reserve words. The elements are nested within each other.
+    1.  <html></html>                   Principal element.
+    2.  <head></head>
+    3.  <body></body>
+
+There are 2 categories of HTML element:
+    1.  Terminator element required
+    2.  Self terminated element
+        <br>, <img>, <hr>, etc.
+
+LIST OF HTML 4.0 ELEMENTS
+    A           - Anchor
+    ABBR        - Abbreviation
+    ACRONYM     - Acronym
+    ADDRESS     - Address
+    APPLET      - Java applet
+    AREA        - Image map region
+    B           - Bold text
+    BASE        - Document base URI
+    BASEFONT    - Base font change
+    BDO         - BiDi override
+    BIG         - Large text
+    BLOCKQUOTE  - Block quotation
+    BODY        - Document body
+    BR          - Line break
+    BUTTON      - Button
+    CAPTION     - Table caption
+    CENTER      - Centered block
+    CITE        - Citation
+    CODE        - Computer code
+    COL         - Table column
+    COLGROUP    - Table column group
+    DD          - Definition description
+    DEL         - Deleted text
+    DFN         - Defined term
+    DIR         - Directory list
+    DIV         - Generic block-level container
+    DL          - Definition list
+    DT          - Definition term
+    EM          - Emphasis
+    FIELDSET    - Form control group
+    FONT        - Font change
+    FORM        - Interactive form
+    FRAME       - Frame
+    FRAMESET    - Frameset
+    H1          - Level-one heading
+    H2          - Level-two heading
+    H3          - Level-three heading
+    H4          - Level-four heading
+    H5          - Level-five heading
+    H6          - Level-six heading
+    HEAD        - Document head
+    HR          - Horizontal rule
+    HTML        - HTML document
+    I           - Italic text
+    IFRAME      - Inline frame
+    IMG         - Inline image
+    INPUT       - Form input
+    INS         - Inserted text
+    ISINDEX     - Input prompt
+    KBD         - Text to be input
+    LABEL       - Form field label
+    LEGEND      - Fieldset caption
+    LI          - List item
+    LINK        - Document relationship
+    MAP         - Image map
+    MENU        - Menu list
+    META        - Metadata
+    NOFRAMES    - Frames alternate content
+    NOSCRIPT    - Alternate script content
+    OBJECT      - Object
+    OL          - Ordered list
+    OPTGROUP    - Option group
+    OPTION      - Menu option
+    P           - Paragraph
+    PARAM       - Object parameter
+    PRE         - Preformatted text
+    Q           - Short quotation
+    S           - Strike-through text
+    SAMP        - Sample output
+    SCRIPT      - Client-side script
+    SELECT      - Option selector
+    SMALL       - Small text
+    SPAN        - Generic inline container
+    STRIKE      - Strike-through text
+    STRONG      - Strong emphasis
+    STYLE       - Embedded style sheet
+    SUB         - Subscript
+    SUP         - Superscript
+    TABLE       - Table
+    TBODY       - Table body
+    TD          - Table data cell
+    TEXTAREA    - Multi-line text input
+    TFOOT       - Table foot
+    TH          - Table header cell
+    THEAD       - Table head
+    TITLE       - Document title
+    TR          - Table row
+    TT          - Teletype text
+    U           - Underlined text
+    UL          - Unordered list
+    VAR         - Variable
+
+ELEMENTS in HTML as a set of ATTRIBUTES.
+
+WHAT ARE ATTRIBUTES IN HTML ELEMENT?
+    The attributes are functions that describe more about the element.
+    There are 3 types of attributes:
+    1.  Dedicated attributes
+        The dedicated attributes are designed exclusively for the element concerned.
+    2.  Common attributes
+        Common attributes are a set of attributes that apply to all elements.
+        ID, NAME, CLASS, STYLE, DIR, TITLE, LAND and DIR
+    3.  Event attributes
+        The event attributes work with UI (User Interface) elements
+            ONCLICK, when the mouse button is clicked on an element;
+            ONDBLCLICK, when the mouse button is double-clicked on an element;
+            ONMOUSEDOWN, when the mouse button is pressed over an element;
+            ONMOUSEUP, when the mouse button is released over an element;
+            ONMOUSEOVER, when the mouse is moved onto an element;
+            ONMOUSEMOVE, when the mouse is moved while over an element;
+            ONMOUSEOUT, when the mouse is moved away from an element;
+            ONKEYPRESS, when a key is pressed and released over an element;
+            ONKEYDOWN, when a key is pressed down over an element;
+            ONKEYUP, when a key is released over an element.
+
+WHAT ARE CHARACTER DESIGN ELEMENTS?
+    Please see intro.html
+
+WHAT IS ANCHOR ELEMENT?
+    Anchor is represented by <a></a> element. Anchor takes to another page or another location of the same
+    page that is defined in the href attribute.
+    Please see anchor.html and anchor2.html
+
+WHAT IS LIST ELEMENT?
+    There are 3 list elements:
+    1.  <ol></ol>           Ordered list
+                            Generates an item number such as, 1,2,3 or a,b,c or i,ii,iii, or A,B,C
+    2.  <ul></ul>           Unordered list
+                            Generates bullets such as square, disc or circle
+    3.  <dl></dl>           Definition list
+                            A definition term and a defination description
+
+
+HTML TABLE:
+    <table></table>
+    <tr></tr>
+    <th></th>
+    <td></td>
+    <caption></caption>
+    <thead></thead>
+    <tfoot></tfoot>
+
+TABLE SPAN:
+    There are 2 types of span:
+    1.  COLSPAN
+    2.  ROWSPAN
+
+
+    +-------+---------------------------+------------+---------------------------------------------+
+    |       |                           |            |                   AGE GROUP                 |
+    |       |                           |            +-----------+------------+------------+-------+
+    |  SLNO |  CANDIDATE NAME           |     DOB    | >5 & <=10 | >10 & <=15 | >15 & <=20 |  >20  |
+    +-------+---------------------------+------------+-----------+------------+------------+-------+
+
+
+ASSIGNMENT-10 (11-04-2022)
+    1.  Write a HTML program to display a calculator as given below:
+
+        +-------------------------------+
+        |                             0 |
+        +-------+-------+-------+-------+
+        |  AC   |    Œ  |   √   |   x   |
+        +-------+-------+-------+-------+
+        |   7   |   8   |   9   |   /   |
+        +-------+-------+-------+-------+
+        |   4   |   5   |   6   |   -   |
+        +-------+-------+-------+-------+
+        |   1   |   2   |   3   |   +   |
+        +-------+-------+-------+-------+
+        |   7   |   8   |   9   |       |
+        +-------+-------+-------+   =   |
+        |           0           |       |
+        +-----------------------+-------+
+
+    2.  Complete the anchor2.html program to navigate to a different location within the same page?
+
+    3.  Complete the images.html program by adding area to Sonia Gandhi and Rahul Gandhi picture?
+
+    4.  Create the following table header in HTML?
+        +-------+---------------------------+------------+-------------------------------------------------+
+        |       |                           |            |                      AGE GROUP                  |
+        |       |                           |            +-----------+------------+------------+-----------+
+        |       |                           |            | >5 & <=10 | >10 & <=15 | >15 & <=20 |    >20    |
+        |       |                           |            +-----+-----+------+-----+------+-----+-----+-----+
+        |  SLNO |  COUNTRY NAME             |    AREA    |  M  |  F  |   M  |  F  |   M  |  F  |  M  |  F  |
+        +-------+---------------------------+------------+-----+-----+------+-----+------+-----+-----+-----+
+
