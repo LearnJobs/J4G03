@@ -1994,5 +1994,6 @@ ASSIGNMENT-10 (11-04-2022)
         |       |                           |            +-----+-----+------+-----+------+-----+-----+-----+
         |  SLNO |  COUNTRY NAME             |    AREA    |  M  |  F  |   M  |  F  |   M  |  F  |  M  |  F  |
         +-------+---------------------------+------------+-----+-----+------+-----+------+-----+-----+-----+
+    5.Write a html program to display the output of college timetable ?    
 
 
