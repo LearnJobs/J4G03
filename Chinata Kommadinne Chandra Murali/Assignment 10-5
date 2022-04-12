@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Table Span</title>
+    </head>
+
+    <body>
+        <h2>Table Span</h2>
+        <table border="1">
+            <tr>
+                <th rowspan="2" valign="bottom">SLNO</th>
+                <th rowspan="2" valign="bottom">CANDIDATE NAME</th>
+                <th rowspan="2" valign="bottom">DOB</th>
+                <th colspan="4">AGE GROUP</th>
+            </tr>
+            <tr>
+                <th>&gt;5 & &lt;=10</th>
+                <th>&gt;10 & &lt;=15</th>
+                <th>&gt;15 & &lt;=20</th>
+                <th>&gt;20</th>
+            </tr>
+        </table>
+    </body>
+</html>
