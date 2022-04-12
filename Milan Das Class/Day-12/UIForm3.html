@@ -2,12 +2,12 @@
     <head>
         <title>Personal Information System</title>
     </head>
-    <body>
+    <body bgcolor="lime" background="mountain.jpg" no-repeat>
         <br><br><br><br><br><br>
         <center>
-        <form method="post">
+        <form action="#" method="get">
             <h2>PERSONAL INFORMATION SYSTEM</h2>
-            <table>
+            <table cellpadding="5" cellspacing="1">
                 <tr>
                     <td><label>Name of the person: </label></td>
                     <td><input type="text" name="userid" id="userid" /></td>
@@ -48,9 +48,14 @@
                     <td><label>Height in centimeter: </label></td>
                     <td><input type="number" name="height" id="height" /></td>
                 </tr>
+                <tr>
+                    <td><label>Curriculum Vitea: </label></td>
+                    <td><input type="file" name="curriculum" id="curriculum" /></td>
+                </tr>
             </table>
             <br>
-            <input type="submit">
+            <input type="submit" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Clear">
         </form>
         </center>
     </body>
