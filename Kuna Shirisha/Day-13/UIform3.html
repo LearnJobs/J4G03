@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Personal Information System</title>
+        <style>
+            .style{
+                border: solid;
+            }
+        </style>
+    </head>
+    <body bgcolor="lime" background="mountain.jpg" no-repeat class="style">
+       <br><br><br><br><br><br>
+        <center>
+        <form action="#" method="get">
+            <h2>PERSONAL INFORMATION SYSTEM</h2>
+            <table cellpadding="5" cellspacing="1">
+                <tr>
+                    <td><label>Name of the person: </label></td>
+                    <td><input type="text" name="userid" id="userid" /></td>
+                </tr>
+                <tr>
+                    <td><label>Father's Name: </label></td>
+                    <td><input type="text" name="father" id="father" /></td>
+                </tr>
+                <tr>
+                    <td><label>Gender: </label></td>
+                    <td>
+                        <input type="radio" name="gender" id="gender" value="M" />Male 
+                        <input type="radio" name="gender" id="gender" value="F" />Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Date of Birth: </label></td>
+                    <td><input type="date" name="dob" id="dob" /></td>
+                </tr>
+                <tr>
+                    <td><label>Highest Qualification: </label></td>
+                    <td>
+                        <select name="qualif">
+                            <option value="HSC">Higher Secondary Certificate</option>
+                            <option value"+2">Intermediate School Certificate</option>
+                            <option value="+3">Bachelor Degree</option>
+                            <option value="PG">Master Degree</option>
+                            <option value="MPhil">Master in Phylosophy</option>
+                            <option value="PhD">Doctoral Degree</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Identification Mark: </label></td>
+                    <td><input type="text" name="imark" id="imark" /></td>
+                </tr>
+                <tr>
+                    <td><label>Height in centimeter: </label></td>
+                    <td><input type="number" name="height" id="height" /></td>
+                </tr>
+                <tr>
+                    <td><label>Curriculum Vitea: </label></td>
+                    <td><input type="file" name="curriculum" id="curriculum" /></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Clear">
+        </form>
+        </center>
+    </body>
+</html>
