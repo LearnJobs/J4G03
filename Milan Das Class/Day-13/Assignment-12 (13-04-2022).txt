@@ -1,0 +1,7 @@
+ASSIGNMENT-12 (13-04-2022)
+    1.  Create a HTML table for 20 country names, population, area in acre and serial-number.
+        Add CSS to beautify the table.
+    2.  Display your photo within a rounded image.
+    3.  Use bootstrap classes to design a table.
+    
+    
