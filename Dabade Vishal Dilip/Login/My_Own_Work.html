@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-image: url("");
+        }
+        .mai{
+            opacity: 80px;
+            width: 400px;
+            height: 500px;
+            border-radius: 120px;
+            background-color: blue;
+            box-shadow: 10px 10px 20px 5px black;
+        }
+        h3{
+            padding-top: 30px;
+            text-decoration: underline;
+        }
+        .txt
+        {
+            outline: none;
+            border: none;
+            color: white;
+            font-size: larger;
+            background-color: blue;
+            border-bottom: 1px solid black;
+        }
+        .sub
+        {
+            width: 100px;
+            height: 40px;
+            
+            border-radius: 20px;
+        }
+       .eml
+       {
+           margin-top: 80px;
+       }
+       .pass
+       {
+           margin-top: 60px;
+       }
+       .mai:hover{
+        box-shadow: 5px 5px 10px 5px green; 
+       }
+       .sub
+       {
+           margin-top: 40px;
+       }
+       .txt:hover
+       {
+        box-shadow: 5px 5px 10px 5px white;
+       }
+       .login
+       {
+           width: 100px;
+           background-image: url("user-icon.png");
+           background-position: center;
+           height: 100px;
+           padding-top: 30px;
+           border-radius: 50px;
+           animation-name:mov;
+           animation-duration: 5s;
+           animation-iteration-count: infinite;
+           animation-direction: alternate-reverse;          
+       }
+       @keyframes mov {
+        from{transform: rotateX(0deg);}
+        to{transform: rotateX(360deg);}
+           
+           
+       }
+       body
+       {
+        background-image: url("Capture.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="mai">
+            <div class="login"></div>
+            <div class="eml">
+                    Email ID :</td>
+                    <input type="email" class="txt" name="" id="">
+                </div>
+                <div class="pass">
+                    Password:
+                    <input type="password" name="" class="txt" id="">
+                </dir>
+                <div class="sub">
+                    <input type="submit" style="background-color: aqua;" class="sub" value="submit">
+                </div>
+            
+        </div>
+    </center>
+   
+</body>
+</html>
