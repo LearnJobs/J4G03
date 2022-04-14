@@ -1,0 +1,17 @@
+<html><head>
+ <form>
+ <script language="JavaScript">
+ document.write("<table border='2' width='30%'>");
+ document.write("<tr><th>X</th><th>Y</th><th>X*Y</th></tr>");
+ for(i=1;i<=20;i++)
+ {
+ document.write("<tr><td>"+i+"</td>"+"<td>3</td>"+"<td><input type='text' id='sum" + i +"'></td></tr>");
+ 
+ var x=i*3;
+ document.getElementById("sum" + i).value=x;
+ }
+ document.write("</table>");
+</script>
+</head><body>
+</body>
+</html>  
