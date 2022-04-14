@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="eport" content="width=device-width, initial-scale=1.0">
+    <title> multiplictionDocument</title>
+    <style>
+        table{
+            width: 300px;
+            height: 300px;
+            margin-top: 40px;
+            background-color: yellow;;
+            border-radius: 30px;
+        }
+        .txt
+        {
+            background-color: orange;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid green;
+        }
+            .btn
+            {
+                width: 80px;
+                height: 80px;
+                background-color: springgreen;
+            }
+            .tableres
+            {
+                border: 1px solid black;
+                background-color: blue;
+            }
+    </style>
+</head>
+<body>
+ 
+       <center>
+           <table>
+               <tr>
+                   <td>Start Table</td>
+                   <td><input type="text" id="start" class="txt"></td>
+               </tr>
+                <tr>
+                    <td>End Table</td>
+                    <td><input class="txt" type="text" id="end"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center" ><input class="btn" type="button" value="Submit" id="display" ></td>
+                </tr>
+           </table>
+       </center>
+       <script>
+                let start=document.getElementById("start");
+                let end=document.getElementById("end");              
+                let sub=document.getElementById("display");
+               sub.addEventListener("click",function() {
+            
+                   var startValue=parseInt(start.value);
+                   var endValue=parseInt(end.value);
+                   document.write("<table border='3'>");
+                    
+                        for(let i=1;i<11;i++){
+                        document.write("<tr>");
+
+                            for(let j=startValue;j<=endValue;j++){
+                            document.write("<td>"+i*j+"</td>");
+                                
+                            }
+                        document.write("</tr>");
+
+                        }
+                   document.write("</table>")
+                        
+            });
+       </script>
+
+</body>
+</html>

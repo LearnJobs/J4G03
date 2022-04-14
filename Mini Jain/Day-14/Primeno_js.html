@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function findPrime() {
+                var startNo = document.getElementById("start").value;
+                var endNo = document.getElementById("end").value;
+                startNo = parseInt(startNo);
+                endNo = parseInt(endNo);
+                var yesNo;
+                var count = 0;
+
+                document.writeln("<html>");
+                document.writeln("<body>");
+                document.writeln("<h1>Prime Number Generator</h1>");
+                document.writeln("<h2>Prime Numbers between "+startNo+" and "+endNo+"</h2>");
+                document.writeln("<hr><br>");
+                document.writeln("<table border='1' cellspacing='5' cellpadding='5'>");
+                document.writeln("<tr>");
+                for(var i=startNo; i<=endNo; i++) {
+                    yesNo = true;
+                    for(var j=2; j<i; j++) {
+                        if(i%j==0) {
+                            yesNo = false;
+                            break;
+                        }
+                    }
+                    if(yesNo) {
+                        document.write("<td>"+i+"</td>");
+                        count++;
+                        if(count>=15) {
+                            document.writeln("</tr>");
+                            document.writeln("<tr>");
+                            count = 0;
+                        }
+                    }
+                }
+                document.writeln("</body>");
+                document.writeln("</html>");
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Prime Number Generator</h1>
+        <table>
+            <tr>
+                <td>Start Number: </td>
+                <td><input type="text" id="start"></td>
+            </tr>
+            <tr>
+                <td>End Number: </td>
+                <td><input type="text" id="end"></td>
+            </tr>
+        </table>
+        <br><br>
+        <button onclick="findPrime();">Find Prime Numbers</button>
+        <br><br>
+    </body>
+</html>

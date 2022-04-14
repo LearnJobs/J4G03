@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Check a number is Prime or
+		not using JavaScript
+	</title>
+	
+	<style>
+		body {
+			border:2px solid black;
+			width:400px;
+			height:150px;
+			text-align:center;
+		}
+		h1 {
+			color:green;
+		}
+	</style>
+	
+	<script type="text/javascript">
+	
+		// Function to check for prime number
+		function checkPrime() {
+			
+			var n, i, flag = true;
+			
+			// Getting the value form the
+			// text field using DOM
+			n = document.myform.n.value;
+			n = parseInt(n)
+			for (i = 2; i <= n - 1; i++)
+				if (n % i == 0) {
+					flag = false;
+					break;
+				}
+				
+			// Check and display output
+			if (flag == true)
+				console.log(n + " is prime");
+			else
+				console.log(n + " is not prime");
+		}
+	</script>
+</head>
+
+<body>
+		<h1>GeeksforGeeks</h1>
+		<h4>check number is prime or not</h4>
+	
+		<form name="myform">
+			Enter the number:
+			<input type="text" name=n value="">
+			<input type="button" value="Check" onClick="checkPrime()">
+			<br>
+		</form>
+	</center>
+</body>
+
+</html>								
