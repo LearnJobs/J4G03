@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+             
+</head>
+<body>
+       <center>
+           <table>
+               <tr>
+                   <td>Enter String</td>
+                   <td><input type="text" id="area"></td>
+               </tr>
+               <tr>
+                   <td>Total Chrector</td>
+                   <td><h1 id="char">0</h1></td>
+               </tr>
+               <tr>
+                   <td>Total Word</td>
+                   <td><h1 id="word">0</h1></td>
+               </tr>
+               <tr>
+                   <td>Vovel</td>
+                   <td><h1 id="vovel">0</h1></td>
+               </tr>
+               <tr>
+                   <td colspan="2" align="center"> <input type="button" value="Show" id="submit"></td>
+               </tr>
+           </table>
+       </center>
+       <script>
+                        var sub=document.getElementById("submit");
+                        var are=document.getElementById("area");
+                        var vovel=['a','e','i','o','u'];//'A','E','I','O','U'];
+                        var co=0;
+                               sub.addEventListener("click",function()
+                           {
+                            
+                            var data=are.value;
+                            var charLen=data.length;
+                            var Word=data.split(' ');
+                            for(let i=0;i<charLen;i++)
+                            {
+                                for(let j=0;j<vovel.length;j++)
+                                {
+                                    if(data.charAt(i)==vovel[j])
+                                    {
+                                        co++;
+                                    }
+                                }
+                            }
+                            alert("Total Word+-----+"+Word.length+"   "+"Total Chrecotor+-----+"+charLen+"  "+"Total Vovel+-----+"+co);
+                        });
+       </script>
+</body>
+</html>
