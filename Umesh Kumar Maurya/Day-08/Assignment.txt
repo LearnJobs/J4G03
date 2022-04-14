@@ -1,0 +1,4 @@
+ASSIGNMENT-08 (07-04-2022)
+    Write a program to take a string, i.e. SQL statement from the user. The user has to type the SQL statement
+    in the keyboard. For example: SELECT * FROM employ
+    Write code to disply the table data and the header on the screen.
