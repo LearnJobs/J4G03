@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript">
+	function perfectNumber()
+	{
+		var flag,number,remainder,addition = 0,i;
+		number = Number(document.getElementById("N").value);
+		flag = number;
+		for(i = 0; i < number; i++)
+		{
+			remainder = number%i;
+			if(remainder==0)
+			{
+				addition += i;
+			}
+		}
+		if(addition == flag)
+		{
+			window.alert("-The inputed number is Perfect");
+		}
+		else
+		{
+			window.alert("-The inputed number is not Perfect");
+		}
+	}
+</script>
+    </head>
+</html>
