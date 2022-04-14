@@ -1,85 +1,104 @@
 <html>
-    <head>
-        <title>Table Span</title>
-        
-    </head>
-
-    <body>
-        <h1 style="color: green">Table Span</h1>
-        <table border="1">
-            <tr>
-                  
-                <th rowspan="3" valign="bottom"> SLNO </th>
-                <th rowspan="3" valign="bottom">  CANDITATE NAME</th>
-                <th rowspan="3" valign="bottom"> DOB</th>
-                <th colspan="8">AGE GROUP</th>
-
-            </tr>
-
-            <tr>
+<head></head>
+<body bgcolor="creme" font-color="creme">
+ 
+    <body bgcolor="creme" style="padding: 50px 300px; ">
+        <div class="container" style="border: 5px solid lightslategray; border-radius: 5px; margin: 5px; box-shadow: 6px 6px 6px rgba(56, 54, 85, 0.605);">
+           <br><br>
     
-                <td align="center" colspan="2">>5 & <=10 </td>
-                <td align="center" colspan="2">>10 & <=15</td>
-                <td align="center" colspan="2">>15 & <=20</td>
-                <td align="center" colspan="2">>15 & >20</td>
-          
-            </tr>
+<center><tr>
+   <td><h1> &emsp; Admission in a college  </h1></td>
+</tr><center>
 
+<table>
+<tr>
+    
+    <center>
 
-            <tr>
-                <td> M </td>
-                <td> F </td>
-                <td> M </td>
-                <td> F </td>
-                <td> M </td>
-                <td> F </td>
-                <td> M </td>
-             </tr>
-           
-            
-            
-            
-           
-        </table>
-    </body>
-</html>
+        <form action="" class="cont">
 
--------------------------------------------------------------
-<html>
-    <head>
-        <title>Table Span</title>
-    </head>
+          <table cellpadding="5" cellspacing="1">
+               <tr>
+                  <td>Name</td>
+                  <td><input class="textBox" type="text" name="" id=""></td>
+                  <td>Father Name</td>
+                   <td><input class="textBox" type="text" name="" id=""></td>
+               </tr>
 
-    <body>
-        <h1 style="color: greenyellow">Table Span</h1>
-        <table border="1">
-            <tr>
+              <tr>
+                   <td>Mother Name</td>
+                   <td><input class="textBox" type="text" name="" id=""></td>     
+                   <td>Birth Date</td>
+                   <td><input  type="date" name="" id=""></td>
+               </tr>
+                
+               <tr>
+                  <td> Gender</td>
+                  <td><input type="radio" name="gen" id="">Male
+                      <input type="radio" name="gen" id="">Female</td>
+                      <td>
+                      previous school
+                  </td>
+                  <td> <input class="textBox" type="text"  name="" id=""></td>
+               </tr>
+               
+               <tr>
+                   <td>Chose Class</td>
+                   <td>
+                        <select name="" id="">
+                            <option value="">10<sup>th</sup></option>
+                            <option value="">12<sup>th</sup></option>
+                            <option value="">13<sup>th</sup></option>
+                            <option value="">Bsc</sup></option>
+                            <option value="">Msc</option>
+                        </select>
+                  </td>
+                  <td>Evaluation Taken</td>
+                  <td>
+                      <select name="" id="">
+                          <option value="">1<sup>th</sup></option>
+                          <option value="">2<sup>th</sup></option>
+                          <option value="">3<sup>th</sup></option>
+                          <option value="">4<sup>th</sup></sup></option>
+                          
+                      </select>
+                  </td>
+               </tr>
+               <tr>
+                   <td>Adhar No</td>
+                   <td><input class="textBox" type="text"></td>
                   
-                                
-                </tr>
-                <th rowspan="2" >  </th>
-                <th colspan="4">AGE GROUP </th>
-
+                   <td>Citizenship</td>
+                   <td><input class="textBox" type="text"></td>
+               </tr>
+               <tr>
+                   <td>Phycical Ability</td>
+                   <td>
+                       <input type="radio" name="gen" id="">Yes
+                      <input type="radio" name="gen" id="">No</td>
+                  </td>
+               </tr>
+               <tr>
+                   <td>current Address</td>
+                   <td><textarea name="" id="" cols="20" rows="2"></textarea></td>
+                   <td>permant Address</td>
+                   <td><textarea name="" id="" cols="20" rows="2"></textarea></td>
+               </tr>
+               <tr>
+                <td><label>Curriculum Vitea: </label></td>
+                <td><input type="file" name="curriculum" id="curriculum" /></td>
             </tr>
-            <tr>
-                <th>&gt;5 & &lt;=10</th>
-                <th>&gt;10 & &lt;=15</th>
-                <th>&gt;15 & &lt;=20</th>
-                <th>&gt;20</th>
-                
-            </tr>
-            <tr>
-                <th colspan="1">&ensp;SLNO&ensp;  |  &ensp; CANDIDATE NAME&ensp;  | &ensp;DOB&ensp; </th>
-                <th>&ensp; M &ensp; | &ensp; F &ensp;</th>
-                <th>&ensp; M &ensp; | &ensp; F &ensp;</th>
-                <th>&ensp; M &ensp; | &ensp; F &ensp;</th>
-                <th>&ensp; M &ensp; | &ensp; F &ensp;</th>
-                
-            </tr>
-            
-            
-            
-           
-        </table>
-    </body>
+              
+               <tr align="center">
+                   <td colspan="2"><input class="btn btn_hover" type="submit" id="click" value="submit"></td>
+                   <td colspan="2"><input type="reset" class="btn btn_hover" value="reset"></td>
+               </tr>
+          </table>
+        
+        </form>
+    </center>
+</table>
+ 
+</table>
+</body>
 </html>
