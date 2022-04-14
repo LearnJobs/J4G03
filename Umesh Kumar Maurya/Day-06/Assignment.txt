@@ -1,1 +1,16 @@
 
+ASSIGNMENT-06:
+    1   Write a program to assign 10 items to an ArrayList. Swap values from the 1 with 6, 2 with 7, 3 with 8,
+        4 with 9 and 5 with 10.
+
+                Before          After
+        1       10              60
+        2       20              70
+        3       30              80
+        4       40              90
+        5       50             100
+        6       50              10
+        7       70              20
+        8       80              30
+        9       90              40
+       10      100              50
