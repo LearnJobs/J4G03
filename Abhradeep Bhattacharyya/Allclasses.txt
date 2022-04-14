@@ -1,4 +1,4 @@
-WhatsApp Group Invite: https://chat.whatsapp.com/G04YyfYpD3E8c8HHE16zlH
+﻿WhatsApp Group Invite: https://chat.whatsapp.com/G04YyfYpD3E8c8HHE16zlH
 
 What is Java? 
     A simple
@@ -32,7 +32,6 @@ JAVA COMES IN 3 MODULES
 USING JAVA ONE CAN DEVELOP 3 TYPES OF PROGRAMS:
 1.  Application
         An application is a program that starts from the main() method
-
 2.  Applet
 3.  Servlet (Web-application)
 
@@ -296,7 +295,7 @@ abstract
     class isn't required to have an abstract method at all.
 
 assert (added in J2SE 1.4)
-    Assert describes a predicate (a true?false statement) placed in a Java program to indicate that the 
+    Assert describes a predicate (a true–false statement) placed in a Java program to indicate that the 
     developer thinks that the predicate is always true at that place. If an assertion evaluates to false
     at run-time, an assertion failure results, which typically causes execution to abort. Assertions are
     disabled at runtime by default, but can be enabled through a command-line option or programmatically
@@ -724,16 +723,11 @@ Date, LocalDate, LocalTime classes:
 
 ASSIGNMENT-03
     1.  Write a program to find how many days are there between today and Sunday?
-    2.  Define a ?Clock? class that does the following: -
+    2.  Define a “Clock” class that does the following: -
         a. Accept hours, minutes and seconds.
         b. Check the validity numbers.
         c. Set the time to AM/PM mode.
         Use necessary constructors and methods to do the above task.
-
-
-==========================================================================================================================
-==========================================================================================================================
-02/04/2022
 
 WHAT IS REFLECTION?
 
@@ -938,18 +932,16 @@ ASSIGNMENT-05 (02-03-2022)
         Ask the file the source and destination file names from the console.
         Show progress bar during the copy process.
 
-============================================================================================================================
-==========================================================================================================================
 
-04/04/2022
+04-04-2022
 ----------
 COLLECTIONS FRAMEWORK
-    1.  List ? ArrayList, LinkedList
-    2.  Set ? HashSet, LinkedHashSet, TreeSet
-    3.  Map ? TreeMap, ConcurrencyMap
+    1.  List – ArrayList, LinkedList
+    2.  Set – HashSet, LinkedHashSet, TreeSet
+    3.  Map – TreeMap, ConcurrencyMap
     4.  Iterator, ListIterator
     5.  Sorting using Comparator and Comparable
-    6.  Method References ? overview and example
+    6.  Method References – overview and example
 
 
 WHAT IS A LinkedList?
@@ -986,9 +978,6 @@ ASSIGNMENT-06:
         8       80              30
         9       90              40
        10      100              50
-===========================================================================================================================
-===========================================================================================================================
-05/04/2022
 
 
 MySQL Link: https://dev.mysql.com/downloads/installer/
@@ -1291,13 +1280,6 @@ ASSIGNEMENT PROJECT EMPLOYEE:
 
         20 ROWS
 
-
-===========================================================================================================================
-===========================================================================================================================
-
-06/04/2022
-
-
 WHAT IS VIEW?
     VIEW is a logical TABLE. It keeps the complicated SELECT command.
     In SQL, a view is a virtual table based on the result-set of an SQL statement. 
@@ -1569,12 +1551,17 @@ ASSIGNMENT (06-04-2022)
 1.  Warehouse
     a)  warehouse_id
     b)  warehouse_name
+    c)  warehouse_location
+    d)  warehouse_area
+    e)  warehouse_fencing
 
     10 ROWS
 
 2.  Process
     a)  process_id
-
+    b)  process_name
+    c)  process_type
+    d)  process_time
 
     10 ROWS
 
@@ -1584,20 +1571,17 @@ ASSIGNMENT (06-04-2022)
     c)  expiry_dt
     d)  warehouse_id
     e)  process_id
-    f)
-    g)
+    f)  prod_mfg_dt
+    g)  prod_exp_dt
 
     20 ROWS
 
-Create a view from the SQL statement that will display all products with their warehouse name and process name.
+Create a view using the SQL statement that will display all products with their warehouse name and process name.
 Write a Java to display the query?
 
-
-===========================================================================================================================
-===========================================================================================================================
-
-07/04/2022
-
++------------+
+| 07-04-2022 |
++------------+
 HOW TO TAKE BACKUP OF A DATABASE?
     mysqldump.exe is a tool that comes with mysql. This tool is used to take backup of a database.
     The command syntax for mysqldump used from the DOS prompt is as follows:
@@ -2008,6 +1992,308 @@ ASSIGNMENT-10 (11-04-2022)
         |       |                           |            +-----------+------------+------------+-----------+
         |       |                           |            | >5 & <=10 | >10 & <=15 | >15 & <=20 |    >20    |
         |       |                           |            +-----+-----+------+-----+------+-----+-----+-----+
-        |  SLNO |  COUNTRY NAME             |    AREA    |  M  |  F  |   M  |  F  |   M  |  F  |  M  |  F  |
+        |  SLNO |  CANDIDATE NAME           |     DOB    |  M  |  F  |   M  |  F  |   M  |  F  |  M  |  F  |
         +-------+---------------------------+------------+-----+-----+------+-----+------+-----+-----+-----+
+
+    5.  Write a HTML program to display the output of college timetable?
+
+
++------------+
+| 12-04-2022 |
++------------+
+WHAT IS A <iframe></iframe>?
+    IFRAME provides a window within the HTML page that displays another HTML file.
+
+WHAT IS A FRAMESET?
+    A frameset is an element that divides the body of the browser of the body of a frame into rows and columns.
+    Each area is represented by a frame element. Each area can be displayed with content of a different HTML file.
+
+WHAT IS <input> ELEMENT?
+    The INPUT element defines the form control for the user to enter input.
+
+WHAT ARE BASICALLY THE INPUT TYPES?
+    1.  Text box
+    2.  Check box
+    3.  Radio button
+    4.  Drop down box - Combo box
+    5.  List box
+    6.  Button
+
+
+ASSIGNMENT-11 (12-04-2022)
+    1.  Create a HTML program to display the list of countries in one window. When any one country is selected the
+        list of the states will be displayed in another corresponding window and when the state is selected the
+        data about that state will displayed on the third window.
+
+        +-------------------------------------------+----------------------------------------------+
+        |                                           |                                              |
+        |                                           |                                              |
+        |       List of the countries               |       List of the states                     |
+        |                                           |                                              |
+        |                                           |                                              |
+        +-------------------------------------------+----------------------------------------------+
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                             Data about the selected state                                |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        +------------------------------------------------------------------------------------------+
+
+    2.  Write a HTML program to get enrolled or take admission in a school?
+        a)  Name of the candidate
+        b)  Father's Name
+        c)  Mother's Name
+        d)  Date of Birth
+        e)  Gender
+        f)  Previous School Name
+        g)  Admission required for which class
+        h)  Innoculation taken (4 items)
+        i)  Permanent Address
+        j)  Current Address
+        k)  Aadhaar Card Number
+        l)  Any Physical disability [Y/N] and description
+        m)  Citizenship
+        n)  
+
++------------+
+| 13-04-2022 |
++------------+
+WHAT ARE THE ADDITIONAL ELEMENT PROVIDED IN HTML5?
+    <article>	    Represents an independent piece of content of a document, such as a blog entry or newspaper article
+    <aside >	    Represents a piece of content that is only slightly related to the rest of the page.
+    <audio>	        Defines an audio file.
+    <canvas>	    This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.
+    <command>	    Represents a command the user can invoke.
+    <datalist>	    Together with the a new list attribute for input can be used to make comboboxes
+    <details>	    Represents additional information or controls which the user can obtain on demand
+    <embed>	        Defines external interactive content or plugin.
+    <figure>	    Represents a piece of self-contained flow content, typically referenced as a single unit from the main flow of the document.
+    <footer>	    Represents a footer for a section and can contain information about the author, copyright information, et cetera.
+    <header>	    Represents a group of introductory or navigational aids.
+    <hgroup>	    Represents the header of a section.
+    <keygen>	    Represents control for key pair generation.
+    <mark>	        Represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.
+    <meter>	        Represents a measurement, such as disk usage.
+    <nav>	        Represents a section of the document intended for navigation.
+    <output>	    Represents some type of output, such as from a calculation done through scripting.
+    <progress>	    Represents a completion of a task, such as downloading or when performing a series of expensive operations.
+    <ruby>	        Together with <rt> and <rp> allow for marking up ruby annotations.
+    <section>	    Represents a generic document or application section
+    <time>	        Represents a date and/or time.
+    <video>	        Defines a video file.
+    <wbr>	        Represents a line break opportunity.
+
+WHAT ARE THE ADDITONAL ATTRIBUTES IN HTML5 FOUND IN THE INPUT ELEMENT?
+    color	        Color selector, which could be represented by a wheel or swatch picker
+    date	        Selector for calendar date
+    datetime-local	Date and time display, with no setting or indication for time zones
+    datetime	    Full date and time display, including a time zone.
+    email	        Input type should be an email.
+    month	        Selector for a month within a given year
+    number	        A field containing a numeric value only
+    range	        Numeric selector within a range of values, typically visualized as a slider
+    search	        Term to supply to a search engine. For example, the search bar atop a browser.
+    tel	            Input type should be telephone number.
+    time	        Time indicator and selector, with no time zone information
+    url	            Input type should be URL type.
+    week	        Selector for a week within a given year
+    text	
+    password	
+    submit	
+    reset	
+    file	
+    hidden	
+    checkbox	
+    radio	
+    image	
+
+EXAMPLE OF <audio> AND <video> ELEMENT
+
+    <video controls width="250">
+        <source src="H:\PuzzlePic\Good-Morning\02.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="myVideo.webm" type="video/webm">
+        <source src="myVideo.mp4" type="video/mp4">
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="myVideo.mp4">link to the video</a> instead.</p>
+    </video>
+
+    <audio controls>
+        <source src="H:\Milan\SpritNews.mp3" type="audio/mpeg">
+        <source src="horse.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+WHAT IS CSS?
+    CSS stands for Cascading Style Sheet. The CSS provides us to beautify the page.
+
+HOW MANY TYPES CSS ARE THERE?
+    There are 3 types of CSS:
+    1.  Inline
+        =   The common attribute STYLE is used to give inline CSS.
+        =   The STYLE attribute is applied to all elements.
+        =   A set of properties are pre-defined, that is given in the value of the STYLE attribute.
+        =   Each property=value pair is separated by a semi-colon (;)
+        Example:
+            <h1 style="font-family:Arial;color:blue;background-color:yellow;text-align:center;border:solid;">
+                This is a inline styling
+            </h1>
+    2.  Internal
+        =   The internal styling is given in the top of the HTML script within the <head></head> element.
+        =   The STYLE element defines the styling properties of the element within a pair of curly braces preceeding
+            the element name.
+        =   In case of the element name, you can also provide the class name. The class name is superceeded by a
+            dot (.) operator.
+        =   Each property=value pair is separated by a semi-colon (;)
+
+        Example:
+            <html>
+                <head>
+                    <style>
+                        h1 {font-family:Arial;
+                            color:blue;
+                            background-color:yellow;
+                            text-align:center;
+                            border:solid;
+                        }
+
+                        h1.h1class {
+                            font-family:Arial;
+                            color:blue;
+                            background-color:yellow;
+                            text-align:center;
+                            border:solid;
+                        }
+
+                        .mystyle {
+                            font-family:Script;
+                            color:magenta;
+                            background-color:pink;
+                            text-align:center;
+                            border:solid;
+                        }
+                    </style>
+                </head>
+                <body>
+                        <h1>Quick Brown Fox Jumps Over The Lazy Dog</h1>
+                        <h1 class="mystyle">Quick Brown Fox Jumps Over The Lazy Dog</h1>
+                </body>
+            </html>
+    3.  External
+        When the styling is defined in a separate file. The styling file is linked with the help of <link> element,
+        it is known as external styling. The styling file must have a .css extension.
+
+        style.css
+            .mystyle {
+                font-family:Script;
+                color:magenta;
+                background-color:pink;
+                text-align:center;
+                border:solid;
+            }
+
+            .other {
+                font-family:Arial;
+                color:blue;
+                background-color:yellow;
+                text-align:center;
+                border:solid;
+            }
+
+        The above file is linked with the help of <link> element.
+            <link rel="Stylesheet" href="style.css" />
+
+        In the HTML file:
+            <h1 class="other">This is a sample text</h1>
+
+WHAT IS BOOTSTRAP?
+    Bootstrap is a CSS framework. It provides many many CSS classes. You can use the bootstrap classes by linking
+    the bootstrap css file using its URL. You will find the CSS file URL from the bootstrap website.
+
+    <link rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">
+
+    <img class="rounded-circle" src="sonia_gandhi.jpg" width="300" height="300"/>
+
+WHERE TO FIND THE COMPLETE LIST OF BOOTSTRAP CLASSES?
+    https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp
+
+
+CLASS WORK:
+    Surround the form with a border in UIForm3.html
+
+ASSIGNMENT-12 (13-04-2022)
+    1.  Create a HTML table for 20 country names, population, area in acre and serial-number.
+        Add CSS to beautify the table.
+    2.  Display your photo within a rounded circle.
+    3.  Use bootstrap classes to design a table.
+
+
++------------+
+| 14-04-2022 |
++------------+
+WHAT ARE THE 10 POPULAR CSS FRAMEWORKS?
+    1.  Bootstrap
+    2.  Tailwind CSS
+    3.  Foundation
+    4.  Bulma
+    5.  Skeleton
+    6.  Ulkit
+    7.  Semantic UI
+    8.  Susy
+    9.  Materialize
+   10.  Pure
+
+WHY THE FRAMEWORKS ARE POPULAR?
+    They provide responsive pages. Responsive means, the webpage is plesantly presented in all devices. Be it
+    a mobile device or a laptop screen.
+
+WHAT IS JAVASCRIPT?
+    JavaScript is a programming language. JavaScript programs run within a internet browser. JavaScript is
+    created with the following objective:
+    1.  Client-side validation
+    2.  Manipulating HTML pages
+    3.  User Notification
+    4.  Back-end Data Loading
+    5.  Presentations
+    6.  Sever Applications
+
+    The JavaScript was basically created to make the web-page interactive.
+
+WHICH COMPANY CREATED JAVASCRIPT?
+    Netscape Inc. that created JavaScript. The name of the browser is Netscape Navigator.
+
+Alpha-Sort      Number-Sort
+---------------+----------------
+1               1
+10              2
+100             10
+1000            20
+2               100
+20              200
+200             1000
+2000            2000
+
+Ryan Dahi create a compiler to test JavaScript programs. The compiler name is NodeJs.
+
+
+ASSIGNMENT-13 (14-04-2022)
+    1.  Write a JavaScript program to take 2 numbers from the html form and print
+        the multiplication tables for all numbers that fall between the 2 numbers?
+    2.  Write a JavaScript program to print all perfect numbers between 2 given number?
+    3.  Write a JavaScript program to count the number of vowels in a given string?
+
+
 
