@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function myfunc() {
+                textObj = document.getElementById("name");
+                textVal = textObj.value;
+                //alert("I am in myfunc() function");
+                //textObj.select();
+                document.write("Welcome "+textVal);
+            }
+        </script>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <td>What is your name? </td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+        </table>
+        <br><br>
+        <button onclick="myfunc();">Run</button>
+    </body>
+</html>
