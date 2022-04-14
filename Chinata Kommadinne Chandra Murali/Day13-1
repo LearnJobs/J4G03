@@ -1,0 +1,104 @@
+<html>
+<head></head>
+<body bgcolor="creme" font-color="creme">
+ 
+    <body bgcolor="creme" style="padding: 50px 300px; ">
+        <div class="container" style="border: 5px solid lightslategray; border-radius: 5px; margin: 5px; box-shadow: 6px 6px 6px rgba(56, 54, 85, 0.605);">
+           <br><br>
+    
+<center><tr>
+   <td><h1> &emsp; Admission in a college  </h1></td>
+</tr><center>
+
+<table>
+<tr>
+    
+    <center>
+
+        <form action="" class="cont">
+
+          <table cellpadding="5" cellspacing="1">
+               <tr>
+                  <td>Name</td>
+                  <td><input class="textBox" type="text" name="" id=""></td>
+                  <td>Father Name</td>
+                   <td><input class="textBox" type="text" name="" id=""></td>
+               </tr>
+
+              <tr>
+                   <td>Mother Name</td>
+                   <td><input class="textBox" type="text" name="" id=""></td>     
+                   <td>Birth Date</td>
+                   <td><input  type="date" name="" id=""></td>
+               </tr>
+                
+               <tr>
+                  <td> Gender</td>
+                  <td><input type="radio" name="gen" id="">Male
+                      <input type="radio" name="gen" id="">Female</td>
+                      <td>
+                      previous school
+                  </td>
+                  <td> <input class="textBox" type="text"  name="" id=""></td>
+               </tr>
+               
+               <tr>
+                   <td>Chose Class</td>
+                   <td>
+                        <select name="" id="">
+                            <option value="">10<sup>th</sup></option>
+                            <option value="">12<sup>th</sup></option>
+                            <option value="">13<sup>th</sup></option>
+                            <option value="">Bsc</sup></option>
+                            <option value="">Msc</option>
+                        </select>
+                  </td>
+                  <td>Evaluation Taken</td>
+                  <td>
+                      <select name="" id="">
+                          <option value="">1<sup>th</sup></option>
+                          <option value="">2<sup>th</sup></option>
+                          <option value="">3<sup>th</sup></option>
+                          <option value="">4<sup>th</sup></sup></option>
+                          
+                      </select>
+                  </td>
+               </tr>
+               <tr>
+                   <td>Adhar No</td>
+                   <td><input class="textBox" type="text"></td>
+                  
+                   <td>Citizenship</td>
+                   <td><input class="textBox" type="text"></td>
+               </tr>
+               <tr>
+                   <td>Phycical Ability</td>
+                   <td>
+                       <input type="radio" name="gen" id="">Yes
+                      <input type="radio" name="gen" id="">No</td>
+                  </td>
+               </tr>
+               <tr>
+                   <td>current Address</td>
+                   <td><textarea name="" id="" cols="20" rows="2"></textarea></td>
+                   <td>permant Address</td>
+                   <td><textarea name="" id="" cols="20" rows="2"></textarea></td>
+               </tr>
+               <tr>
+                <td><label>Curriculum Vitea: </label></td>
+                <td><input type="file" name="curriculum" id="curriculum" /></td>
+            </tr>
+              
+               <tr align="center">
+                   <td colspan="2"><input class="btn btn_hover" type="submit" id="click" value="submit"></td>
+                   <td colspan="2"><input type="reset" class="btn btn_hover" value="reset"></td>
+               </tr>
+          </table>
+        
+        </form>
+    </center>
+</table>
+ 
+</table>
+</body>
+</html>
