@@ -1,115 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="eport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        table{
-            width: 300px;
-            height: 300px;
-            margin-top: 50px;
-            background-color: aqua;;
-            border-radius: 20px;
-        }
-        .txt
-        {
-            background-color: aqua;
-            outline: none;
-            border: none;
-            border-bottom: 1px solid black;
-        }
-            .btn
-            {
-                width: 100px;
-                height: 30px;
-                background-color: springgreen;
-            }
-            .tableres
-            {
-                border: 1px solid black;
-                background-color: blue;
-            }
-    </style>
-</head>
-<body>
+   <html><head>
+ <form>
+ <script language="JavaScript">
+ document.write("<table border='2' width='30%'>");
+ document.write("<tr><th>X</th><th>Y</th><th>X*Y</th></tr>");
+ for(i=1;i<=20;i++)
+ {
+ document.write("<tr><td>"+i+"</td>"+"<td>3</td>"+"<td><input type='text' id='sum" + i +"'></td></tr>");
  
-       <center>
-           <table>
-               <tr>
-                   <td>Start Table</td>
-                   <td><input type="text" id="start" class="txt"></td>
-               </tr>
-                <tr>
-                    <td>End Table</td>
-                    <td><input class="txt" type="text" id="end"></td>
-                </tr>
-                <tr>
-                    <td  align="center" ><input class="btn" type="button" value="Create Table" id="display1" ></td>
-                    <td  align="center" ><input class="btn" type="button" value="Show Perfact" id="display2" ></td>
-                </tr>
-           </table>
-       </center>
-       <script>
-                let start=document.getElementById("start");/* --------------------------START---------------------*/
-                let end=document.getElementById("end");/* --------------------------END---------------------*/
-              
-                let sub=document.getElementById("display1");/* --------------------------button---------------------*/
-               sub.addEventListener("click",function() {
-            
-                   var startValue=parseInt(start.value);
-                   var endValue=parseInt(end.value);
-                   document.write("<table border='3'>");
-                    
-                        for(let i=1;i<11;i++){
-                        document.write("<tr>");
-
-                            for(let j=startValue;j<=endValue;j++){
-                            document.write("<td>"+i*j+"</td>");
-                                
-                            }
-                        document.write("</tr>");
-
-                        }
-                   document.write("</table>")
-                        
-            });
-
-            let dis2=document.getElementById("display2");/* --------------------------button---------------------*/
-               dis2.addEventListener("click",function() {
-            
-                   var startValue=parseInt(start.value);
-                   var endValue=parseInt(end.value);
-                   document.write("<table border='3'>");
-                     var sum=0;
-                        for(let i=startValue;i<=endValue;i++)
-                        {
-                            document.write("<tr>");
-                            sum=0;
-                            for(let j=1;j<i;j++)
-                            {
-                                if(i%j==0)
-                                {
-                                    sum=sum+j;
-                                }
-
-                            }
-
-                            if(i==sum)
-                            {
-                                document.write("<td>"+i+"</td>");
-                            }
-                            document.write("</tr>");
-                        }
-                        
-                   document.write("</table>")
-                        
-            });
-
-
-
-       </script>
-
+ var x=i*3;
+ document.getElementById("sum" + i).value=x;
+ }
+ document.write("</table>");
+</script>
+</head><body>
 </body>
-</html>
+</html>  
