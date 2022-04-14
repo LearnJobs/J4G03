@@ -1,1 +1,8 @@
 
+ASSIGNMENT-03
+    1.  Write a program to find how many days are there between today and Sunday?
+    2.  Define a “Clock” class that does the following: -
+        a. Accept hours, minutes and seconds.
+        b. Check the validity numbers.
+        c. Set the time to AM/PM mode.
+        Use necessary constructors and methods to do the above task.
