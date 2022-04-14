@@ -22,7 +22,7 @@
         }
             .btn
             {
-                width: 100px;
+                width: 60px;
                 height: 30px;
                 background-color: springgreen;
             }
@@ -46,8 +46,7 @@
                     <td><input class="txt" type="text" id="end"></td>
                 </tr>
                 <tr>
-                    <td  align="center" ><input class="btn" type="button" value="Create Table" id="display1" ></td>
-                    <td  align="center" ><input class="btn" type="button" value="Show Perfact" id="display2" ></td>
+                    <td colspan="2" align="center" ><input class="btn" type="button" value="Submit" id="display" ></td>
                 </tr>
            </table>
        </center>
@@ -55,7 +54,7 @@
                 let start=document.getElementById("start");/* --------------------------START---------------------*/
                 let end=document.getElementById("end");/* --------------------------END---------------------*/
               
-                let sub=document.getElementById("display1");/* --------------------------button---------------------*/
+                let sub=document.getElementById("display");/* --------------------------button---------------------*/
                sub.addEventListener("click",function() {
             
                    var startValue=parseInt(start.value);
@@ -75,40 +74,6 @@
                    document.write("</table>")
                         
             });
-
-            let dis2=document.getElementById("display2");/* --------------------------button---------------------*/
-               dis2.addEventListener("click",function() {
-            
-                   var startValue=parseInt(start.value);
-                   var endValue=parseInt(end.value);
-                   document.write("<table border='3'>");
-                     var sum=0;
-                        for(let i=startValue;i<=endValue;i++)
-                        {
-                            document.write("<tr>");
-                            sum=0;
-                            for(let j=1;j<i;j++)
-                            {
-                                if(i%j==0)
-                                {
-                                    sum=sum+j;
-                                }
-
-                            }
-
-                            if(i==sum)
-                            {
-                                document.write("<td>"+i+"</td>");
-                            }
-                            document.write("</tr>");
-                        }
-                        
-                   document.write("</table>")
-                        
-            });
-
-
-
        </script>
 
 </body>

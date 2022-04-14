@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>count vowels</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var ch,len,i,count=0,c;
+            ch=prompt("enter the string");
+            for(i=0;i<=ch.length;i++)
+            {
+                c= ch.charAt(i);
+                if(c=="a"||c=="A"||c=="e"||c=="E"||c=="i"||c=="I"||c=="o"||c=="O"||c=="u"||c=="U")
+                {
+                    count++;
+                }
+            }
+            document.write("String is "+ch+"<br>");
+            document.write("number of vowels in the string are "+count);
+        </script>
+    </body>
+</html>

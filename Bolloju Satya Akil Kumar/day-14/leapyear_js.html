@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Find Leap Year</title>
+        <script>
+            function isLeapYear(year) {
+                return (year%100==0) ? (year%400==0) : (year%4==0);
+            }
+        </script>
+    </head>
+
+    <body>
+        <script>
+            document.writeln("2020: " + isLeapYear(2020) + "<br>");
+            document.writeln("2016: " + isLeapYear(2016) + "<br>");
+            document.writeln("2000: " + isLeapYear(2000) + "<br>");
+            document.writeln("1700: " + isLeapYear(1700) + "<br>");
+        </script>
+    </body>
+</html>
