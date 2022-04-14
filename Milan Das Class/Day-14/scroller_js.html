@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Text Scroller</title>
+        <script type="text/javascript">
+            function scroller(id) {
+                var object = document.getElementById(id);
+                var textNode = object.childNodes[0];
+                var text = textNode.data;
+
+                setInterval(
+                    function() {
+                        text = text[text.length-1] + text.substring(0, text.length-1);
+                        textNode.data = text;
+                    }, 200
+				);
+            }
+        </script>
+    </head>
+
+    <body onload="scroller('target')">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <center>
+        <pre id="target">LearnJobs by The Coders Nation  </pre>
+        </center>
+    </body>
+</html>

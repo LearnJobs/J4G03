@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Styling a table</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            .content-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                min-width: 400px;
+                border-radius: 5px 5px 0 0;
+                overflow: hidden;
+            }
+
+            .content-table thead tr {
+                background-color: #009897;
+                color: #ffffff;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .content-table th,
+            .content-table td {
+                padding: 12px 15px;
+            }
+
+            .content-table tbody tr {
+                border-bottom: 3px solid #dddddd;
+                border-left: 1px solid #dddddd;
+                border-right: 1px solid #dddddd;
+            }
+
+            .content-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            .content-table tbody tr:last-of-type {
+                border-bottom: 5px solid #009897;
+            }
+        </style>
+        <script type="text/javascript">
+            function print_current_page() {
+                window.print();
+            }
+        </script>
+    </head>
+    <body class="container">
+        <table class="content-table shadow p-3 mb-5 bg-white rounded">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>Designation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Satyanarayan</td>
+                    <td>45,000</td>
+                    <td>Manager</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>V V Giri</td>
+                    <td>55,500</td>
+                    <td>President</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Shaid Rahim</td>
+                    <td>33,500</td>
+                    <td>Accountant</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Supria Pathak</td>
+                    <td>41,300</td>
+                    <td>Human Resource Officer</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br>
+        <button onclick="print_current_page();">Print the page</button>
+        <br><br><br>
+    </body>
+</html>
