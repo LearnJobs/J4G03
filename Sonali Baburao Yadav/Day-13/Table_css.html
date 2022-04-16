@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Styling a table</title>
+        <style>
+            .content-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                min-width: 400px;
+                border-radius: 5px 5px 0 0;
+                overflow: hidden;
+            }
+
+            .content-table thead tr {
+                background-color: #009897;
+                color: #ffffff;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .content-table th,
+            .content-table td {
+                padding: 12px 15px;
+            }
+
+            .content-table tbody tr {
+                border-bottom: 1px solid #dddddd;
+                border-left: 1px solid #009897;
+                border-right: 1px solid #009897;
+            }
+
+            .content-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            .content-table tbody tr:last-of-type {
+                border-bottom: 3px solid #009897;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>Birth-Dt</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Satyanarayan</td>
+                    <td>45,000</td>
+                    <td>Manager</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>V V Giri</td>
+                    <td>55,500</td>
+                    <td>President</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Shaid Rahim</td>
+                    <td>33,500</td>
+                    <td>Accountant</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Supria Pathak</td>
+                    <td>41,300</td>
+                    <td>Human Resource Officer</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
