@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>COUNTING VOWELS</title>
+    </head>
+    <body>
+      <script>
+        function noOfVowels(string)
+        {
+          var listOfVowels = 'aAeEiIoOuU';
+          var vowelsCount = 0;
+          for(var i=0;i<string.length;i++)
+          {
+              if(listOfVowels.indexOf(string[i]) !==-1)
+              {
+                  vowelsCount += 1;
+              }
+          }
+          return vowelsCount
+         
+        }
+        document.write(noOfVowels("shirisha kuna"));
+     </script>
+   </body>
+ </html>
