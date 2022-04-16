@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            margin-top: 100px;
+        }
+          .di
+          {
+             background-color:rgb(207, 250, 250);
+             border-radius: 20px;
+             width: 200px;
+             height: 130px;              
+          }
+
+          .in
+          {
+              margin-top: 50px;
+              
+              margin-left: 10px;
+              line-height: 40px;
+              border: none;
+              outline: none;
+              /* border-bottom: 1px solid black; */
+             background-color:rgb(207, 250, 250);
+
+              
+          }
+    </style>
+</head>
+<body>
+               <center>
+                   <table>
+                       <tr>
+                           <td><div class="di"><input type="text" name="" class="in" id="fir"></div></td>
+                           <td><div class="di"><input type="text" name="" id="sec" class="in"></div></td>
+                       </tr>
+                   </table>
+               </center>
+
+    <script>
+        
+            var s=document.getElementById("fir");
+            var f=document.getElementById("sec");
+            // +-------------------S TO F--------------------------------+
+
+            s.addEventListener("input",function()
+            {
+                  s_value=s.value;
+                  FinalValue=s_value*(9/5)+32;
+                  f.value=FinalValue+'   F';
+            });
+            // +-------------------F TO S-----------------------+
+            f.addEventListener("input",function()
+            {
+                  f_value=f.value;
+                  FinalValue=(5/9)*(f_value-32);
+                  s.value=FinalValue+' S';
+            });
+    </script>
+</body>
+</html>
