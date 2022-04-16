@@ -1,0 +1,21 @@
+<html>
+<body>
+    <h2>Celcius to Fahrenhet</h2>
+    <p>Enter a number:</p>
+    <p><input id="c" onkeyup="convert('C')"> degrees Celsius</p>
+    <p><input id="f" onkeyup="convert('F')"> degrees Fahrenheit</p> 
+    <p style="background-color: rgb(159, 10, 137);">
+<script>
+     function convert(degree) {
+    var x;
+    if (degree == "C") {
+    x = document.getElementById("c").value * 9 / 5 + 32;
+    document.getElementById("f").value = Math.round(x);
+   } else {
+    x = (document.getElementById("f").value -32) * 5 / 9;
+    document.getElementById("c").value = Math.round(x);
+   }
+  }
+</script>
+</body>
+</html>
