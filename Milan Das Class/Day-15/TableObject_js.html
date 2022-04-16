@@ -16,12 +16,21 @@
                 var tableObj = document.getElementById("table");
                 var trObj = btnObj.parentNode.parentNode;
                 var index = trObj.rowIndex;
-                tableObj.insertRow(index);
-                trObj.insertCell();
-                trObj.insertCell();
-                trObj.insertCell();
-                trObj.insertCell();
-                trObj.insertCell();
+                var rowObj = tableObj.insertRow(index);
+                var cell1 = rowObj.insertCell(0);
+                var cell2 = rowObj.insertCell(1);
+                var cell3 = rowObj.insertCell(2);
+                var cell4 = rowObj.insertCell(3);
+                var cell5 = rowObj.insertCell(4);
+                var cell6 = rowObj.insertCell(5);
+                var cell7 = rowObj.insertCell(6);
+                cell1.innerHTML = tableObj.rows.length-1;
+                cell2.innerHTML = "Name";
+                cell3.innerHTML = "dd-mm-yyyy";
+                cell4.innerHTML = "Male/Female";
+                cell5.innerHTML = "Occupation";
+                cell6.innerHTML = "<button onclick='deleteRow(this);'>Del</button>";
+                cell7.innerHTML = "<button onclick='insertRow(this);'>Ins</button>";
             }
             function reserveTable() {
                 var tableObj = document.getElementById("table");
@@ -58,7 +67,7 @@
                 <th>DATE_OF_BIRTH</th>
                 <th>GENDER</th>
                 <th>OCCUPATION</th>
-                <th cols="2">ACTION</th>
+                <th cols="2" align="center">ACTION</th>
             </tr>
             <tr>
                 <td>1</td>
