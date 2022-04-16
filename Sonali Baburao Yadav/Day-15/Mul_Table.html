@@ -1,0 +1,59 @@
+
+<html>
+    <head>
+        <title>Multiplication Tables</title>
+        <script>
+            function tables() {
+                var start_no = parseInt(document.getElementById('start').value);
+                var end_no = parseInt(document.getElementById('end').value);
+                var buffer = "";
+                var count = 0;
+
+                buffer += "<html><body>\r\n";
+                buffer += "<h1>Multiplication Tables</h1>\r\n";
+                buffer += "<h2>Tables from "+start_no+" to "+end_no+"</h2>\r\n";
+                buffer += "<hr><br>";
+                buffer += "<table border='1'>\r\n";
+                buffer += "<tr>\r\n";
+
+                for(var i=start_no; i<=end_no; i++) {
+                    buffer += "<td><table>\r\n";
+                    for(var j=1; j<=10; j++) {
+                        buffer += "<tr>\r\n";
+                        buffer += "<td align='right'>" + i + "</td>\r\n";
+                        buffer += "<td align='center'>x</td>\r\n";
+                        buffer += "<td align='right'>" + j + "</td>\r\n";
+                        buffer += "<td align='center'>=</td>\r\n";
+                        buffer += "<td align='right'>" + (i*j) + "</td>\r\n";
+                        buffer += "</tr>\r\n";
+                    }
+                    buffer += "</table></td>\r\n";
+                    count++;
+                    if(count>=10) {
+                        buffer += "</tr><tr>";
+                        count = 0;
+                    }
+                }
+                buffer += "</tr></table>\r\n";
+                document.writeln(buffer);
+            }
+            </script>
+    </head>
+
+    <body>
+        <h1>Multiplication Tables</h1>
+        <hr><br>
+        <table>
+            <tr>
+                <td>Enter the start number: </td>
+                <td><input type="text" id="start"></td>
+            </tr>
+            <tr>
+                <td>Enter the end number: </td>
+                <td><input type="text" id="end"></td>
+            </tr>
+        </table>
+        <br><br><br>
+        <button onclick="tables();">Show Tables</button>
+    </body>
+</html>
