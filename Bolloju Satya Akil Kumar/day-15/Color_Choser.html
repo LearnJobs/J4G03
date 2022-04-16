@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+         .ma
+         {
+             width: 400px;
+             height: 400px;
+             background-color: rgb(223, 207, 207);
+         }
+         .co1
+         {
+             background-color: red;
+             width: 40px;
+            float: right;
+             height: 40px;
+             border-radius: 20px;
+         }
+         .co2
+         {
+             background-color:blue;
+            float: right;
+             width: 40px;
+             height: 40px;
+             border-radius: 20px;
+         }
+         .co3
+         {
+             background-color: green;
+             width: 40px;
+            float: right;
+
+             height: 40px;
+             border-radius: 20px;
+         }
+         .co4
+         {
+             background-color: yellow;
+             width: 40px;
+             height: 40px;
+             border-radius: 20px;
+            float: right;
+
+         }
+         .co5
+         {
+             background-color: black;
+             width: 40px;
+             height: 40px;
+            float: right;
+
+             border-radius: 20px;
+         }
+     </style>
+</head>
+<body>
+    
+    <div>
+         <div class="co1"  onclick="red()"></div>
+         <div class="co2" onclick="blue()" ></div>
+         <div class="co3" onclick="green()" ></div>
+         <div class="co4" onclick="yellow()" ></div>
+         <div class="co5" onclick="black()" ></div>
+    </div>
+    <center>
+    <div class="ma" id="cont">
+                 
+    </div>
+    </center>
+    <script>
+       
+        
+          function red()
+          {
+              color_Box.style.backgroundColor="red";
+          }
+       
+          function blue()
+          {
+              color_Box.style.backgroundColor="blue";
+          }
+       
+          function green()
+          {
+              color_Box.style.backgroundColor="green";
+          }
+       
+          function yellow()
+          {
+              color_Box.style.backgroundColor="yellow";
+          }
+       
+          function black()
+          {
+              color_Box.style.backgroundColor="black";
+          }
+       
+    </script>
+</body>
+</html>
