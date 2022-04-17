@@ -1,0 +1,168 @@
+<html>
+
+<head>
+    <title></title>
+    <script>
+        function ShowTable() {
+            var tableObj = document.getElementById("table");
+            tableObj.deleteRow(5);
+        }
+        function deleteRow(btnObj) {
+            var tableObj = document.getElementById("table");
+            var trObj = btnObj.parentNode.parentNode;
+            var index = trObj.rowIndex;
+            tableObj.deleteRow(index);
+        }
+        function insertRow(btnObj) {
+            var tableObj = document.getElementById("table");
+            var trObj = btnObj.parentNode.parentNode;
+            var index = trObj.rowIndex;
+            var rowObj = tableObj.insertRow(index);
+            var cell1 = rowObj.insertCell(0);
+            var cell2 = rowObj.insertCell(1);
+            var cell3 = rowObj.insertCell(2);
+            var cell4 = rowObj.insertCell(3);
+            var cell5 = rowObj.insertCell(4);
+            var cell6 = rowObj.insertCell(5);
+            var cell7 = rowObj.insertCell(6);
+            cell1.innerHTML = tableObj.rows.length - 1;
+            cell2.innerHTML = "Name";
+            cell3.innerHTML = "dd-mm-yyyy";
+            cell4.innerHTML = "Male/Female";
+            cell5.innerHTML = "Occupation";
+            cell6.innerHTML = "<button onclick='deleteRow(this);'>Del</button>";
+            cell7.innerHTML = "<button onclick='insertRow(this);'>Ins</button>";
+        }
+        function reserveTable() {
+            var tableObj = document.getElementById("table");
+            document.writeln("<table border='1'>");
+            document.writeln("<tr>");
+            for (var j = 0; j < tableObj.rows[0].cells.length; j++) {
+                document.write("<td>");
+                document.write(tableObj.rows[0].cells[j].innerHTML);
+                document.writeln("</td>");
+            }
+            document.writeln("</tr>");
+
+            for (var i = tableObj.rows.length - 1; i >= 1; i--) {
+                document.writeln("<tr>");
+                for (var j = 0; j < tableObj.rows[i].cells.length; j++) {
+                    document.write("<td>");
+                    document.write(tableObj.rows[i].cells[j].innerHTML);
+                    document.writeln("</td>");
+                }
+                document.writeln("</tr>");
+            }
+            document.writeln("</table>");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Table Object</h1>
+    <hr><br>
+    <table border="1" id="table">
+        <tr>
+            <th>SLNO</th>
+            <th>PARTICIPANT'S NAME</th>
+            <th>DATE_OF_BIRTH</th>
+            <th>GENDER</th>
+            <th>OCCUPATION</th>
+            <th cols="2" align="center">ACTION</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Narendra Modi</td>
+            <td>25-11-1966</td>
+            <td>Male</td>
+            <td>Instructor</td>
+            <td><button onclick="deleteRow(this);">Del</button></td>
+            <td><button onclick="insertRow(this);">Ins</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Indira Gandhi</td>
+            <td>25-11-1953</td>
+            <td>Female</td>
+            <td>Prime Minister</td>
+            <td><button onclick="deleteRow(this);">Del</button></td>
+            <td><button onclick="insertRow(this);">Ins</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Atal Bihari Bajpai</td>
+            <td>25-11-1966</td>
+            <td>Male</td>
+            <td>Instructor</td>
+            <td><button onclick="deleteRow(this);">Del</button></td>
+            <td><button onclick="insertRow(this);">Ins</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sonia Gandhi</td>
+            <td>25-11-1953</td>
+            <td>Female</td>
+            <td>Prime Minister</td>
+            <td><button onclick="deleteRow(this);">Del</button></td>
+            <td><button onclick="insertRow(this);">Ins</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Rabindranath Tagore</td>
+            <td>25-11-1966</td>
+            <td>Male</td>
+            <td>Instructor</td>
+            <td><button onclick="deleteRow(this);">Del</button></td>
+            <td><button onclick="insertRow(this);">Ins</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Indira Gandhi</td>
+            <td>25-11-1953</td>
+            <td>Female</td>
+            <td>Prime Minister</td>
+            <td><button onclick="deleteRow(this);">Del</button></td>
+            <td><button onclick="insertRow(this);">Ins</button></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Milan Das</td>
+            <td>25-11-1966</td>
+            <td>Male</td>
+            <td>Instructor</td>
+            <td><button onclick="deleteRow(this);">Del</button></td>
+            <td><button onclick="insertRow(this);">Ins</button></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Indira Gandhi</td>
+            <td>25-11-1953</td>
+            <td>Female</td>
+            <td>Prime Minister</td>
+            <td><button onclick="deleteRow(this);">Del</button></td>
+            <td><button onclick="insertRow(this);">Ins</button></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Milan Das</td>
+            <td>25-11-1966</td>
+            <td>Male</td>
+            <td>Instructor</td>
+            <td><button onclick="deleteRow(this);">Del</button></td>
+            <td><button onclick="insertRow(this);">Ins</button></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Indira Gandhi</td>
+            <td>25-11-1953</td>
+            <td>Female</td>
+            <td>Prime Minister</td>
+            <td><button onclick="deleteRow(this);">Del</button></td>
+            <td><button onclick="insertRow(this);">Ins</button></td>
+        </tr>
+    </table>
+    <br><br>
+    <button onclick="reserveTable();">Reverse Table</button>
+</body>
+
+</html>
