@@ -1,1 +1,2 @@
 
+ 2.  Write a JavaScript program to print all perfect numbers between 2 given number?
