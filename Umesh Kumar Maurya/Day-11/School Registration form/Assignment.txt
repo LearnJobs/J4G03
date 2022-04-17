@@ -1,0 +1,17 @@
+
+    2.  Write a HTML program to get enrolled or take admission in a school?
+        a)  Name of the candidate
+        b)  Father's Name
+        c)  Mother's Name
+        d)  Date of Birth
+        e)  Gender
+        f)  Previous School Name
+        g)  Admission required for which class
+        h)  Innoculation taken (4 items)
+        i)  Permanent Address
+        j)  Current Address
+        k)  Aadhaar Card Number
+        l)  Any Physical disability [Y/N] and description
+        m)  Citizenship
+        n)  password 
+        o) Confirm password 
