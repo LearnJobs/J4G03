@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> Perfect no.</title>
+        <style>
+           
+            body{
+                color: white; background: url('./bg.jpg') no-repeat; background-size: cover;
+               }
+            .input-form {
+                position:absolute ;
+                width:350px;
+                top: 50%;
+                left:50%;
+                transform: translate(-50% , -50%);
+                color: #fff;
+            }
+            h1 {
+                text-align: center;
+            }
+            .input-form  p{
+                font-size:20px;
+                margin:15px 0;        
+            } 
+            .input-form input{
+                border: 0;
+                border-radius: 5px;
+                font-size: 15px;
+                margin: 15px;   
+                padding: 15px 10px ;
+                outline: none;
+            }
+            .input-form button{
+                font-size: 18px;
+                border-radius: 10px;
+            }
+
+        </style>
+        <script>
+            function isPerfect(){
+                 var number= parseInt(document.getElementById('number').value);
+                 var temp=0
+                 var buffer="";
+
+            
+                 for(var i=1;i<=number/2;i++)
+                 {
+                     if(number%i==0)
+                     {
+                         temp+=i;
+                     }
+                 }
+                 if(temp===number && temp!=0)
+                 {
+                     document.writeln("<h1 style='color: Green;' > "+number+" is perfect number .</h1>");
+                 }
+                 else 
+                    document.writeln("<h1 style='color: Red ;'> "+number+" is not perfect number .</h1>");
+            }
+               
+
+               
+        </script>
+    </head>
+    <body>
+       <div><h1> Perfect Number </h1></div> 
+       <div class="input-form">
+           <form action="#" Method="Post">
+               <div><p>Enter The Number :</p></div>
+               <div><input type="text"id= "number" name="number" placeholder="Enter The Number "></div>
+               <div><button onclick="isPerfect();">Is Perfect</button>
+           </form>
+       </div>
+    </body>
+</html>
