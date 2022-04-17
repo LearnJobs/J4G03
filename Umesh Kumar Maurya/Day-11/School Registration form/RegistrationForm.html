@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>table</title>    
+        <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+       * {
+     padding :0;
+     margin:0;
+     font-family: sans-serif;    
+        }
+  table, th ,tr,h1 
+   {
+    border: 2px solid black;
+    border-radius: 10px;
+    opacity:90%;
+    padding: 10px;
+     margin:auto; 
+     color:rgba(11, 11, 253, 0.979);
+     background-color: #8bfbe4 
+
+  }  
+  body {
+             background: url('./bg.jpg') no-repeat;
+             background-size: cover  ;    
+               padding: 20px;
+                margin: auto;
+                color:rgb(40, 13, 247);
+               background-color : #13f39d;
+
+      }
+  select
+   {
+                height:40px;
+                width: 300px;
+                padding: 5px;
+                margin:auto;
+                border-radius: 20px;
+                
+   }
+     button 
+     {
+                height:40px;
+                width: 200px;
+                padding: 5px;
+                margin:auto;
+                border-radius: 20px;
+                
+     }
+        
+     input
+      {
+                height: 20px;
+                width: 200px;
+                outline:none;
+
+      }
+           </style>
+
+           
+    </head>
+
+    <body>
+        <h1 align="middle" >School Registration form </h1>
+        <br>
+        <form action="#" method="post" align="middle" >
+            
+            <table  class="input-group" align="middle">
+                <tr align="middle">
+                    <td><label for="input default" >Candidate Name :*</label></td>
+                    <td><input id="name" type="text" class="form-control" name="name" placeholder="User Name"/></td>
+                </tr>
+                <tr align="middle">
+                    <td><label>Father Name :*</label></td>
+                    <td><input id="fname" type="text" class="form-control" name="fname" placeholder="Father Name"/></td>
+                </tr>
+                <tr align="middle">
+                    <td><label>Mother Name :*</label></td>
+                    <td><input id="mname" type="text" class="form-control" name="mname" placeholder="Mother Name"/></td>
+                </tr>
+                
+                <tr align="middle">
+                    <td><label>Date Of Birth :*</label></td>
+                    <td><input id="dob" type="Date" class="form-control" name="dob" placeholder="Date Of Birth"/></td>
+                </tr>
+                <tr align="middle">
+                    <td><label> Gender  :*</label></td>
+                    <td>
+                        <input id="gender" type="radio"  value="M" name="gender" placeholder="male"/>Male
+                        <input id="gender" type="radio"  value="F" name="gender" placeholder="female"/>Female
+                    </td>
+                </tr>          
+                
+                <tr align="middle">
+                    <td><label>Previous School Name :*</label></td>
+                    <td><input id="schoolname" type="text" class="form-control" name="schoolname" placeholder="Previous School Name"/></td>
+                </tr>
+
+                <tr align="middle">
+                    <td><label>Admission in Class :*</label></td>
+                    <td>
+                        <select class="form-control" id="admission_class" >
+                            <option > Select </option>
+                            <option>LKG</option>
+                            <option>UKG</option>
+                            <option>Class 1</option>
+                            <option>Class 2</option>
+                            <option>Class 3</option>
+                            <option>Class 4</option>
+                            <option>Class 5</option>
+                            <option>Class 6</option>
+                            <option>Class 7</option>
+                            <option>Class 8</option>
+                            <option>Class 9</option>
+                            <option>Class 10</option>
+                            <option>Class 11</option>
+                            <option>Class 12</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr align="middle">
+                    <td><label>Email id :*</label></td>
+                    <td><input id="email" type="email" class="form-control" name="email" placeholder="Email id "/></td>
+                </tr>
+                <tr align="middle">
+                    <td><label>Aadhaar Card :*</label></td>
+                    <td><input id="aadhaar" type="text" class="form-control" name="aadhaar" placeholder="Aadhaar Card "/></td>
+                </tr>
+                <tr align="middle">
+                    <td><label>Religion :*</label></td>
+                    <td><input id="religion" type="text" class="form-control" name="religion" placeholder="Religion"/></td>
+                </tr>
+                <tr align="middle">
+                    <td><label>Nationality :*</label></td>
+                    <td><input id="nationality" type="text" class="form-control" name="nationality" placeholder="Nationality"/></td>
+                </tr>
+            
+                <tr align="middle">
+                    <td><label>Any Physical Disability [Y/N] :*</label></td>
+                    <td>
+                        <select id="disability" class="form-control">
+                            <option > Select  </option>
+                            <option id="YES" value="YES">Y</option>
+                            <option id="NO" vlaue="NO">N</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr align="middle">    
+                        <td><label>Description :</label></td>
+                        <td><input type="text" id="description" class="form-control"placeholder="Description"/></td>
+                </tr>   
+                               
+                
+                <tr align="middle">
+                    <td><label>Residence Address :*</label></td>
+                    <td><input type="address" id="address1"class="form-control"placeholder="Residence Address"/></td>
+                </tr>
+                <tr align="middle">
+                    <td><label>Permanent Address :*</label></td>
+                    <td><input type="address" id="address2"class="form-control"placeholder="Permanent Address"/></td>
+                </tr>
+                <tr align="middle">
+                    <td><label>Enter Password :*</label></td>
+                    <td><input type="password" id="pass1"class="form-control"placeholder="Enter The Password"/></td>
+                </tr>
+                <tr align="middle">
+                    <td><label> Confirm Password :</label></td>
+                    <td><input type="password" id="pass2"class="form-control"placeholder="Confirm Password"/></td>
+                </tr>   
+               
+            </table>
+                 <hr>
+                <button type="reset" id="reset" > Reset</button>
+                 <!-- <input type="reset" id="reset"/> -->
+                <button type="submit" id="submit">Submit</button>
+        </form>
+    </body>
+</html>
