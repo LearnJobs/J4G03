@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>How to get file extensions using JavaScript? </title>
+</head>
+
+<body style="text-align: center;">
+	<h1 style="color: red;">welcome to file extension</h1>
+	<b>Here we will get "Extension" of selected file</b>
+	<p>Select a file and click on the button
+		to check the file extension.</p>
+	<form>
+		<input type="file" id="file1" />
+		<input type="button" value="Check Extension"
+							onclick="checkFileExtension();" />
+	</form>
+	<p>The file extension is: <span class="output"></span></p>
+	<script language="javascript">
+		function checkFileExtension() {
+			fileName = document.querySelector('#file1').value;
+			extension = fileName.substring(fileName.lastIndexOf('.') + 1);
+			document.querySelector('.output')
+									.textContent = extension;
+		};
+	</script>
+</body>
+
+</html>
