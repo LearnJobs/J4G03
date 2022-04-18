@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Title Bar Clock</title>
+	</head>
+
+	<body>
+		<script language="javascript" type="text/javascript">
+			<!-- Begin
+			var clocktext, timeday;
+			var pagetitle = document.title;
+
+			function Scroll() {
+				today = new Date();
+				sec = today.getSeconds();
+				hr = today.getHours();
+				min = today.getMinutes();
+				if (hr < 12) { timeday = " AM"; }
+				else { timeday = " PM"; }
+				if (hr > 12) hr = hr - 12;
+				if (hr <= 9) hr = "0" + hr;
+				if (min <= 9) min = "0" + min;
+				if (sec <= 9) sec = "0" + sec;
+				var clocktext = " - " + hr + ":" + min + ":" + sec + timeday;
+				document.title = pagetitle + clocktext;
+				clocktimer = setTimeout("Scroll()", 1000);
+			}
+			window.onload = Scroll;
+			//  End -->
+		</script>
+	</body>
+</html>
