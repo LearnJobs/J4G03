@@ -1,0 +1,30 @@
+
+<html>
+   <head>
+    <title> Number Convert Into Words </title>
+</head>
+<body>
+    <input type="text" id="num">
+    <button onclick="toWords()">click</button>
+</body>
+ <script>
+     function toWords()
+     {
+         var val;
+         var Show;
+         var result;
+         var num=document.getElementById("num");
+         var arr=["Zero","one","two","three","four","five","six","seven","eight","nine"];
+         for(var i=0;i<num.value.length;i++)
+         {
+               val=num.value;
+               result=val.charAt(i);
+               show=arr[result];
+               document.writeln(show);
+               
+         }
+        
+
+     }
+ </script>
+</html>
