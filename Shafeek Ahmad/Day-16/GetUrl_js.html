@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <Title>Find URL</Title>
+        <style>
+
+        </style>
+    </head>
+    <Body>
+        <h1>
+            Js Program to get the Website URL
+        </h1>
+        <p>
+            <b>
+                Click the button to get the URL
+            </b>
+        </p>
+            <button onclick="GetURL()"> URL
+            </button>
+            <p id="url"></p>
+    <Script>
+        function GetURL(){
+            var jgu = document.URL;
+            document.getElementById("url").html = jgu;
+        }
+    </Script>
+    </Body>
+</html>
