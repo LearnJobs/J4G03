@@ -1,0 +1,33 @@
+<html>
+  
+<head>
+    <title> to  get the website url code</title>
+    
+</head>
+  
+<body>
+    
+    <h1>
+        JavaScript: Program to 
+        get the website URL ?
+    </h1>
+    <p>
+        <b>
+            Click on Below Button 
+            To Get Current URL
+        </b>
+    </p>
+  
+    <button onclick="GetURL()"> Get URL </button>
+    <p id="url"></p>
+  
+      
+    <script>
+    function GetURL() {
+        var gfg = document.URL;
+        document.getElementById("url").innerHTML = gfg;
+    }
+    </script>
+</body>
+  
+</html>
