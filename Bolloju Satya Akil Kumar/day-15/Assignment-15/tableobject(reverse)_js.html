@@ -1,134 +1,115 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HTML Table Row Up And Down</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            
-            tr{cursor: pointer}
-            
-            .selected{background-color: red; color: #fff; font-weight: bold }
-            
-            button{margin-top:10px;background-color: #eee;border: 2px solid #00F;
-                  color: #17bb1c;font-weight: bold;font-size: 25px;cursor: pointer}
-            
-        </style>
+
+        <title>Reverse table</title>
+        <script>
+            function reserveTable(){
+                var tableObj = document.getElementById("table");
+
+                document.writeln("<table><body><table><tr>");
+
+                for(var i = tableObj.rows[0].cells.length-1; i>0; i--) {
+                    
+                }    
+            }
+        
+    </script>
     </head>
     <body>
-        <table id="myTable" border="1">
-            <tr onclick="selectRow(this)">
+        <h1>Reverse table</h1>
+        <table id="table" border="1">
+            <tr>
                     <th>sl.no</th>
                     <th>name</th>
                      <th>gender</th>
                      <th>country</th>
-                </tr>
+                     <th cols="2">ACTION</th>
             </tr>
-            <tr onclick="selectRow(this)">
+            <tr>
                 <td>1</td>
                 <td>akhil</td>
                 <td>M</td>
                 <td>usa</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
             </tr>
-            <tr onclick="selectRow(this)">
+            <tr >
                 <td>2</td>
                 <td>kala</td>
                 <td>F</td>
                 <td>india</td> 
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
             </tr>
-            <tr onclick="selectRow(this)">
+            <tr>
                 <td>3</td>
                 <td>divya</td>
                 <td>F</td>
                 <td>australia</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
             </tr>
-            <tr onclick="selectRow(this)">
+            <tr>
                 <td>4</td>
                 <td>nikila</td>
                 <td>F</td>
                 <td>dubai</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
             </tr>
-            <tr onclick="selectRow(this)">
+            <tr>
                 <td>5</td>
                 <td>rakul</td>
                 <td>F</td>
                 <td>egypt</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
             </tr>
-            <tr onclick="selectRow(this)">
+            <tr>
                 <td>6</td>
                 <td>kajal</td>
                 <td>F</td>
                 <td>Finland</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
             </tr>
-            <tr onclick="selectRow(this)">
+            <tr>
                 <td>7</td>
                 <td>ntr</td>
                 <td>M</td>
                 <td>china</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
             </tr>
-            <tr onclick="selectRow(this)">
+            <tr>
                 <td>8</td>
                 <td>yash</td>
                 <td>M</td>
                 <td>belgium</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
             </tr>
-            <tr onclick="selectRow(this)">
+            <tr>
                 <td>9</td>
                 <td>nani</td>
                 <td>M</td>
                 <td>australia</td>
-            
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
             </tr>
-            <tr onclick="selectRow(this)">
+            <tr>
                 <td>10</td>
                 <td>maheshbabu</td>
                 <td>M</td>
                 <td>albania</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
             </tr>
         </table>
-        <button onclick="upNdown('up');">&ShortUpArrow;</button>
-        <button onclick="upNdown('down');">&ShortDownArrow;</button>
-        
-
-        <script>
-            var index;
-
-            function selectRow(x) {
-                var table = document.getElementById("myTable");
-                //remove the "selected" class from all rows;
-                for (var i=0; i<table.rows.length; i++) {
-                    table.rows[i].classList.toggle("selected", false);
-                }
-
-                //assign the "selected" class to the clicked row
-                table.rows[x.rowIndex].classList.toggle("selected");
-                //assign row index number to "index"
-                index = x.rowIndex;
-            }
-
-            function upNdown(direction)
-            {
-                var rows = document.getElementById("myTable").rows,
-                    parent = rows[index].parentNode;
-                 if(direction === "up")
-                 {
-                     if(index > 1){
-                        parent.insertBefore(rows[index],rows[index - 1]);
-                        // when the row go up the index will be equal to index - 1
-                        index--;
-                    }
-                 }
-                 
-                 if(direction === "down")
-                 {
-                     if(index < rows.length -1){
-                        parent.insertBefore(rows[index + 1],rows[index]);
-                        // when the row go down the index will be equal to index + 1
-                        index++;
-                    }
-                 }
-            }
-           
-        </script>
+        <br><br>
+        <button onclick="reserveTable();">Reverse Table</button>
     </body>
 </html>
+
+ 
