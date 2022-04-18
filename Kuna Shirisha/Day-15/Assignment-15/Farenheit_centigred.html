@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CONVERTING CELSIUS TO FAHRENHEIT
+        </title>
+    </head>
+<body>
+ <center>
+
+<h2> Celcius to Fahrenhet</h2>
+
+<label>degrees Celsius</label>
+
+<input id="c" onkeyup="convert('C')"/>
+
+<label> degrees Fahrenheit</label>
+
+<input id="f" onkeyup="convert('F')"/> 
+<script>
+function convert(degree) {
+  var x;
+  if (degree == "C") {
+    x = document.getElementById("c").value * 9 / 5 + 32;
+    document.getElementById("f").value = Math.round(x);
+  } else {
+    x = (document.getElementById("f").value -32) * 5 / 9;
+    document.getElementById("c").value = Math.round(x);
+  }
+}
+</script>
+</center>
+
+</body>
+</html>
