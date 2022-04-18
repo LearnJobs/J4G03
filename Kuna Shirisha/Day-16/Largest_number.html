@@ -1,0 +1,45 @@
+<html>
+ <head>
+ <title>FIND LARGEST NUMBER</title>
+</head>
+ <body>
+ <table>
+ <tr>
+ <td> <input type="text" name="a" id="first" placeholder="Enter first number"/> </td>
+ </tr>
+ <tr>
+ <td> <input type="text" name="b" id="second" placeholder="Enter second number"/> </td>
+ </tr>
+ <tr>
+ <td> <input type="text" name="c" id="third" placeholder="Enter third number"/> </td>
+ </tr>
+ <tr>
+ <button onclick = "largest()">Submit</button> 
+</tr>
+</table>
+<div id = "num"></div>
+</body>
+
+<script type="text/javascript">
+function largest()
+{
+var a,b,c;
+a = parseInt(document.getElementById ("first").value);
+b = parseInt(document.getElementById ("second").value);
+c = parseInt(document.getElementById ("third").value);
+if(a > b && a > c)
+{
+ document.getElementById ("num").innerHTML = a+ " is the largest number";
+}
+else
+if(b > c && b > a)
+{
+ document.getElementById ("num").innerHTML = b+ " is the largest number";
+}
+else
+{
+ document.getElementById ("num").innerHTML = c+ "is the largest number";
+}
+}
+</script>
+</html>
