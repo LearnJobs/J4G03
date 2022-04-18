@@ -20,13 +20,15 @@ CREATE A Student Information Systems WITH THE FOLLOWING FIELDS:
    19   Permanent Address                       textarea
    20.  Remark                                  textbox
 
+    List of Vaccines:
+    1.  Diphtheria+
+    2.  Pertussis+
+    3.  Tetanus+
+    4.  Haemophilus Influenzae Type b (Hib) +
+    5.  Hepatitis B
+    6.  Covit-91 Dose-1
+    7.  Covit-91 Dose-2
 
-List of Vaccines:
-1.  Diphtheria+
-2.  Pertussis+
-3.  Tetanus+
-4.  Haemophilus Influenzae Type b (Hib) +
-5.  Hepatitis B
-6.  Covit-91 Dose-1
-7.  Covit-91 Dose-2
-
+2.  Show month of the current date in words?
+3.  Show week-day of the current date in words?
+4.  Write a JavaScript program to change all digits of a phone number to words?
