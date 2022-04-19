@@ -54,15 +54,12 @@
                 // Validation of NAME field
                 var name = document.getElementById("name");
                 value = name.value;
-                alert(value);
                 for(let i=0; i<value.length; i++) {
                     c = value.charCodeAt(i);
-                    if( c!=32 || !(c>=97 && c<=90) || !(c>=97 && c<=122) ) {
+                    if((c<65 || c>90) && (c<97 || c>122) && c!=32) {
                         alert("Special Character in Name!\nNot allowed.");
                         name.focus();
                         return false;
-                    } else {
-                        document.write(c);
                     }
                 }
 
@@ -73,7 +70,7 @@
     <body>
         <h1>Student's Admission Enrollment Form</h1>
         <hr><br>
-        <form action="http://localhost:8080/student/something.jsp" onsubmit="return validate()" method="post">
+        <form action="http://localhost:8080/student/something.jsp" onsubmit="validate();" method="post">
         <table>
             <tr>
                 <td>Student ID: </td>
