@@ -1,0 +1,32 @@
+<html>  
+    <body>  
+        <script>
+            var i, j;
+            document.write("Entering the loop!<br /> ");
+
+            outerloop:
+            for (i=0; i<5; i++) {
+                document.write("<h2><b> Outerloop i: </b>" + i + "</h2>");
+                innerloop:
+                for (j=0; j <= 4; j++) {
+                        if (j>3 ) {
+                            document.write("<b> Break innermost loop when j>3 </b></br>");
+                            break;
+                        }
+
+                        if (i==2) {
+                            document.write("<b> Break innerloop when i=2 </b></br>");
+                            break innerloop;
+                        }  
+
+                        if (i==4) {
+                            document.write("<b> Break outerloop when i=4 </b></br>");
+                            break outerloop;
+                        }
+                        document.write("Innerloop execution j: " + j + " <br>");
+                }
+            }
+            document.write("Exit from all loops! </br> ");
+        </script>
+    </body>  
+</html>
