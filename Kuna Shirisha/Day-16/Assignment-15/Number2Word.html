@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script>
+        function toWords(){
+            var digitWord = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"];
+            var number = document.getElementById("number").value;
+            var buffer = "";
+            var c;
+            for(var i=0;i<number.length;i++){
+                c= number.charAt(i);
+                document.write(digitWord[c]+"");
+            }
+            document.writeln();
+        }
+    </script>
+    </head>
+    <body>
+    <center>
+        <h1>NUMBER TO WORD</h1>
+        <hr><br><br><br><br>
+        <label>ENTER A NUMBER :</label>
+        <input type ="text" id="number"/>
+        <br><br><br>
+        <button onclick="toWords();">CONVERT TO WORD</button>
+        <br><br><br>
+      </center>
+    </body>
+</html>
