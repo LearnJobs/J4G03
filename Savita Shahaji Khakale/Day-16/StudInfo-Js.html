@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <script>
+            function validate() {
+                var c;
+                var id = document.getElementById("id");
+                var value = id.value;
+
+                // Validation of ID field
+                // ####/yyyy
+                if(value.length != 9) {
+                    alert("Invalid Serial Number\nThe length is less than 9");
+                    id.focus();
+                    return false;
+                } else {
+
+                }
+
+                for(let i=0; i<=9; i++) {
+                    c = value.charCodeAt(i);
+                    if(i>=0 && i<=3) {
+                        if( !(c>=48 || c<57) ) {
+                            alert("Invalid Serial Number\nFirst 4 digits are not correct");
+                            id.focus();
+                            return false;
+                        }
+                    } else if(i==4) {
+                        if(c!==47) {
+                            alert("Invalid Student ID\nThe 5th position is not slash (/) "+c);
+                            id.focus();
+                            return false;
+                        }
+                    } else if(i>=5 && i<=8) {
+                        if( !(c>=48 && c<57) ) {
+                            alert("Invalid Year\nLast 4 digits must be the year");
+                            id.focus();
+                            return false;
+                        }
+                    }
+                }
+
+                if(isNaN(value.substring(0,4))) {
+                    alert("Not a Number!");
+                    id.focus();
+                    return false;
+                }
+
+                if(isNaN(value.substring(5))) {
+                    alert("Not a Year!" + value.substr(5));
+                    id.focus();
+                    return false;
+                }
+
+                // Validation of NAME field
+                var name = document.getElementById("name");
+                value = name.value;
+                alert(value);
+                for(let i=0; i<value.length; i++) {
+                    c = value.charCodeAt(i);
+                    if( c!=32 || !(c>=97 && c<=90) || !(c>=97 && c<=122) ) {
+                        alert("Special Character in Name!\nNot allowed.");
+                        name.focus();
+                        return false;
+                    } else {
+                        document.write(c);
+                    }
+                }
+
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Student's Admission Enrollment Form</h1>
+        <hr><br>
+        <form action="http://localhost:8080/student/something.jsp" onsubmit="return validate()" method="post">
+        <table>
+            <tr>
+                <td>Student ID: </td>
+                <td><input type="text" id="id" placeholder="####/yyyy"></td>
+            </tr>
+            <tr>
+                <td>Student Name: </td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth: </td>
+                <td><input type="date" id="dob"></td>
+            </tr>
+            <tr>
+                <td>Current Class: </td>
+                <td>
+                    <select id="class">
+                        <option value="">-- Select --</option>
+                        <option value="LKG">Lower Kinder Garten</option>
+                        <option value="UKG">Uper Kinder Garten</option>
+                        <option value="1">Class I</option>
+                        <option value="2">Class II</option>
+                        <option value="3">Class III</option>
+                        <option value="4">Class IV</option>
+                        <option value="5">Class V</option>
+                        <option value="6">Class VI</option>
+                        <option value="7">Class VII</option>
+                        <option value="8">Class VIII</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gen" id=""> Male
+                    <input type="radio" name="gen" id=""> FeMale
+                    <input type="radio" name="gen" id=""> other
+                </td>
+                <td><h5  id="s_ge"></h5></td>
+        </tr>
+        <tr>
+                <td>Father-Name</td>
+                 <td><input type="text" id="f_name" class="text" placeholder=""></td>
+                 <td><h5  id="f_n"></h5></td>
+        </tr>
+        <tr>         
+                <td>Mobile No</td>
+                 <td><input type="number" id="s_phone" maxlength="10" class="text" placeholder=""></td>
+                 <td><h5  id="f_p"></h5></td>                  
+        </tr>
+        <tr>
+            <td>Father-Occuptions</td>
+            <td>
+                <select name="" id="occup">
+                    <option value="Doctoe">Farmer</option>
+                    <option value="Lawer">Doctor</option>
+                    <option value="Enggi">Enggi</option>
+                    <option value="farmer">Marketing</option>
+                    <option value="Manager">PostMan</option>
+                    <option value="Bussiness Men">Teacher</option>
+                </select>
+            </td>
+            <td><h5 id="f_oc"></h5></td>
+        </tr>
+        <tr>
+            <td>Father Annual Inocome</td>
+            <td>
+                <select name="" id="incom">
+                    <option value="3-5">3-5 lack</option>
+                    <option value="6-8">6-8 lack</option>
+                    <option value="9-12">9-12 lack</option>
+                    <option value="above">above</option>
+                    <td><h5 id="in"></h5></td>
+                </select>
+            </td>
+        </tr>
+        <tr>    
+            <td>Mother Name</td>
+            <td><input type="text" class="text" id="" placeholder=""></td>
+            <td><h5 id="m_n"></h5></td>
+        </tr>
+        <tr>
+            <td>Mother Mobile NO</td>
+            <td><input type="number" maxlength="10" id="mo_mo_no"></td>
+            <td><h5 id="m_n"></h5></td>
+         </tr>
+         <tr>   
+            <td>Mother Occuption</td>
+            <td>
+                <select name="" id="mo_occup">
+                    <option value="House Wife">House Wife</option>
+                    <option value="Farmer">Farmer</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Social Work">Social Work</option>
+                    
+                </select>
+            </td>
+            <td><h5 id="m_o"></h5></td>
+        </tr>
+        <tr>
+            <td>Sibliing</td>
+            <td>
+                <input type="radio" name="sib" id="">yes
+                <input type="radio" name="sib" id="">no
+            </td>
+            <td><h5 id="sib"></h5></td>
+        </tr>
+        <tr>
+            <td>
+                Innoculation
+            </td>
+            <td>
+                <input type="radio" name="sib" id="">yes
+                <input type="radio" name="sib" id="">no
+            </td>
+            <td><h5 id="vac"></h5></td>
+        </tr>
+        <tr>
+            <td>Photo student</td>
+            <td><input type="file" name="" id="photo"></td>
+            <td><h5 id="p_s"></h5></td>
+    </td>
+    <tr>
+        <td>Photograph with parent </td>
+        <td><input type="file" name="" id="photo_parent"></td>
+       <td><h5 id="p_p"></h5></td>
+    </tr>
+    <tr>
+        <td>Present address </td>
+        <td><input type="text" id="p_addr" class="text" placeholder=""></td>
+                 <td><h5  id="p_a"></h5></td>
+
+    </tr>
+    <tr>
+        <td>Permanant address </td>
+        <td><input type="text" id="p_addr" class="text" placeholder=""></td>
+        <td><h5  id="p_a"></h5></td>
+    </tr>
+    <tr>
+             <td>Remark</td>
+             <td><input type="text" id="remark"></td>
+             <td><h5 id="re"></h5></td>
+    </tr>
+<tr>
+        <input type="submit" value=" Save ">
+        </tr>
+        </form>
+    </body>
+</html>
