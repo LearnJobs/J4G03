@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     Chose Date<input type="date" name="" id="data">
+     <h5 id="error1"></h5>
+     Chose Gender 
+     <input type="radio" name="gen " value="male" id=""> male
+     <input type="radio" name="gen " value="female" id=""> female
+     <input type="radio" name="gen " value="other" id=""> other
+     <br>
+     Select class
+     <select name="" id="sele">
+         <option value="select">select</option>
+         <option value="10th">10th</option>
+         <option value="11th">11th</option>
+         <option value="12">12th</option>
+         <option value="graduate">graduate</option>
+     </select>
+     <h5 id="class_error"></h5>
+     <br>
+    <button onclick="fun()" id="bt" >click</button>
+    <script>
+        var date=document.getElementById("date");
+        var bt=document.getElementById("bt");
+        // bt.setAttribute("disabled",true);
+        var error1=document.getElementById("error1");
+        var error2=document.getElementById("class_error");
+        var gen=document.getElementsByName("gen");
+        var clas=document.getElementById("sele");
+        
+  
+        function fun(){     
+            
+          var va=clas.options[clas.selectedIndex].text;
+            
+           
+             var val=data.value;
+             if(val==""){
+                error1.innerHTML="Date Field is Empty";
+                error1.style.color="red";
+                
+             }
+             else{
+                 error1.innerHTML="";
+            
+             }
+
+            
+                if(va=="select"){
+                 error2.innerHTML="please select class";
+                 error2.style.color="red"
+                 
+                }
+                else{
+                    error2.style.color="black";
+    
+                }
+        }
+
+    </script>
+</body>
+</html>
+
