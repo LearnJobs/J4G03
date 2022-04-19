@@ -1,28 +1,28 @@
 ASSIGNMENT-16 (19-04-2022)
 	1.  Add other required fields in StudentInfo_js.html
-		  a.  Student ID / Roll Number                textbox
-		  b.  Name of the Student                     textbox
-		  c.  Date of Birth                           datebox
-		  d.  Current Class                           dropdown
-		  e.  Gender                                  radio button
-		  f.  Father's Name                           textbox
-		  g.  Father's Mobile Number                  numberbox
-		  h.  Father's Occupation                     dropdown
-		  i.  Father's Annual Income                  dropdown          (3-5 lakhs), (6-8 lakhs), (9-12 lakhs), above
-	    j.  Mother's Name                           textbox
-	    k.  Mother's Mobile Number                  numberbox
-	    l.  Mother's Occupation                     dropdown
-	    m.  Mother's Annual Income                  dropdown          (3-5 lakhs), (6-8 lakhs), (9-12 lakhs), above
-	    n.  Any Sibling in the School               radio button
-	    o.  Innoculation                            checkbox
-	    p.  Photograph of the candidate             file
-	    q.  Photograph with parents                 file
-	    r.  Present Address                         textarea
-	    s   Permanent Address                       textarea
-	    t.  Remark                                  textbox
+		a.  Student ID / Roll Number                textbox
+		b.  Name of the Student                     textbox
+		c.  Date of Birth                           datebox
+		d.  Current Class                           dropdown
+		e.  Gender                                  radio button
+		f.  Father's Name                           textbox
+		g.  Father's Mobile Number                  numberbox
+		h.  Father's Occupation                     dropdown
+		i.  Father's Annual Income                  dropdown          (3-5 lakhs), (6-8 lakhs), (9-12 lakhs), above
+	    	j.  Mother's Name                           textbox
+	    	k.  Mother's Mobile Number                  numberbox
+	    	l.  Mother's Occupation                     dropdown
+	    	m.  Mother's Annual Income                  dropdown          (3-5 lakhs), (6-8 lakhs), (9-12 lakhs), above
+	    	n.  Any Sibling in the School               radio button
+	    	o.  Innoculation                            checkbox
+	    	p.  Photograph of the candidate             file
+	    	q.  Photograph with parents                 file
+	    	r.  Present Address                         textarea
+	    	s   Permanent Address                       textarea
+	    	t.  Remark                                  textbox
 
-	2.	Complete the validation of StudentInfo_js.html
-		  =	Date field must not be empty
-		  =	Drop down fields must be selected values
-		  =	Radio button fields must be selected
-		  =	
+	2.  Complete the validation of StudentInfo_js.html
+		=  Date field must not be empty
+		=  Drop down fields must be selected values
+		=  Radio button fields must be selected
+		=  
