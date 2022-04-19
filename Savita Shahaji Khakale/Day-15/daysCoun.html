@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Number of Days Count</title>
+    </head>
+
+    <body>
+        <h2>Number of days until Christmas</h2>
+        <script>
+            var today = new Date();
+            var christmas_day = new Date(today.getFullYear(), 11, 25);
+            if(today.getMonth()==11 && today.getDate>25) {
+                christmas_day.setFullYear(christmas_day.getFullYear()+1);
+            }
+            var one_day_ms = 1000 * 60 * 60 * 24;
+            var christmas_day_ms = christmas_day.getTime();
+            var today_ms = today.getTime();
+            document.writeln( Math.ceil((christmas_day_ms-today_ms)/one_day_ms) + " days left until Christmas");
+        </script>
+    </body>
+</html>
