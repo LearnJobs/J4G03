@@ -1,0 +1,158 @@
+<html>
+    <Head>
+        <title>Student Management System</title>
+        <style>
+            .text
+            {
+                line-height: 35px;
+                font-size: 15px;
+                border: 2px solid rgb(51, 47, 47);
+                border-radius: 5px;
+                outline:none;
+    
+            }
+            table
+            {
+                background-color: rgb(25, 155, 236);
+                width: 400px;
+                height: auto;
+            }
+        </style>
+    </Head>
+    <body>
+        <center>
+            <h1>Student Manegment System</h1>
+            <table>
+                <tr>
+                    <td>Student_ID</td>
+                     <td><input type="text" class="text" id="s_id" placeholder="Student_ID"></td>
+                     <td><h5 id="s_i">*</h5></td>
+                    <td>Student_Name</td>
+                     <td><input type="text" id="s_name" class="text" placeholder="Student_Name"></td>
+                     <td><h5 id="s_n" >*</h5></td>
+                </tr>
+                <tr>
+                    <td>Current_Class</td>
+                    <td>
+                        <select name="class" id="classes">
+                            <option value="Select">select</option>
+                            <option value="10th">10th</option>
+                            <option value="11th">11th</option>
+                            <option value="12th">12th</option>
+                            <option value="Batulares">Batulares</option>
+                            <option value="Master">Master</option>
+                            <option value="Doctor">Doctor</option>
+                        </select>
+                    </td>
+                    <td><h5  id="s_cl">*</h5></td>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gen" id="" value="male"> Male
+                        <input type="radio" name="gen" id="" value="female"> FeMale
+                        <input type="radio" name="gen" id="" value="other"> other
+                    </td>
+                    <td><h5  id="s_ge">*</h5></td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td>Father_Name</td>
+                         <td><input type="text" id="f_name" class="text" placeholder="Father_Name"></td>
+                         <td><h5  id="f_n">*</h5></td>
+                        <td>Phone No</td>
+                         <td><input type="number" id="s_phone" maxlength="10" class="text" placeholder="Phone_NO"></td>
+                         <td><h5  id="f_p">*</h5></td>                  
+                   </tr>
+                </tr>
+                <tr>
+                    <td>Birth_Date</td>
+                    <td><input type="date" name="" id="bd"></td>
+                    <td><h5 id="s_b">*</h5></td>
+                    <td>Father_Occuptions</td>
+                    <td>
+                        <select name="" id="occup">
+                            <option value="Former">Former</option>
+                            <option value="Doctor">Doctor</option>
+                            <option value="Engineer">Engineer</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="PostMan">PostMan</option>
+                            <option value="Teacher">Teacher</option>
+                        </select>
+                    </td>
+                    <td><h5 id="f_oc">*</h5></td>
+                </tr>
+                <tr>
+                    <td>Father Annual Inocom</td>
+                    <td>
+                        <select name="" id="incom">
+                            <option value="3-5">3-5 lack</option>
+                            <option value="6-8">6-8 lack</option>
+                            <option value="9-12">9-12 lack</option>
+                            <option value="above">above</option>
+                            
+                        </select>
+                    </td>
+                    <td><h5 id="in">*</h5></td>
+                    <td>Mother Name</td>
+                    <td><input type="text" class="text" id="mother_name" placeholder="Mother Name"></td>
+                    <td><h5 id="m_n">*</h5></td>
+                </tr>
+                <tr>
+                    <td>Mother Mobile_NO</td>
+                    <td><input type="number" maxlength="10" id="mo_mo_no"></td>
+                    <td><h5 id="m_nn">*</h5></td>
+                    <td>Mother Occuption</td>
+                    <td>
+                        <select name="" id="mo_occup">
+                            <option value="House Wife">House Wife</option>
+                            <option value="Farmer">Farmer</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Social Work"">Social Work</option>
+                            
+                        </select>
+                    </td>
+                    <td><h5 id="m_o">*</h5></td>
+                </tr>
+                <tr>
+                    <td>Sibliing</td>
+                    <td>
+                        <input type="radio" name="sib" id="ye">yes
+                        <input type="radio" name="sib" id="no">no
+                    </td>
+                    <td><h5 id="sib">*</h5></td>
+                    <td>
+                        Innoculation
+                    </td>
+                    <td>
+                        <input type="checkbox" name="vc" id="" value="val_1"> var_1
+                        <input type="checkbox" name="vc" id="" value="val_1"> var_2
+                        <input type="checkbox" name="vc" id="" value="val_1"> var_3
+                        <input type="checkbox" name="vc" id="" value="val_1"> var_4
+                        <input type="checkbox" name="vc" id="" value="val_1"> var_5
+                    </td>
+                    <td><h5 id="vac"></h5></td>
+                </tr>
+                <tr>
+                    <td>Chose Photo</td>
+                    <td><input type="file" name="" id="photo"></td>
+                    <td><h5 id="p">*</h5></td>
+                    >
+                    <td>Chose Photo with parent </td>
+                    <td><input type="file" name="" id="photo_parent"></td>
+                    <td><h5 id="p_p">*</h5></td>
+                </tr>
+                 <tr>
+                     <td>Remark</td>
+                     <td><input type="text" id="remark"></td>
+                     <td><h5 id="re">*</h5></td>
+                     <td>Age</td>
+                     <td><input type="number" name="" id="age"></td>
+                     <td><h5 id="ag">*</h5></td>
+                 </tr>
+                 <tr>
+                     <td colspan="6" align="center"><input type="button" id="sub" value="Sumit"></td>
+                 </tr>
+            </table>
+        </center>
+    </body>
+
+</html>
