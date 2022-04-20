@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <script>
+            function validate() {
+                var c;
+                var id = document.getElementById("id");
+                var value = id.value;
+
+                // Validation of ID field
+                // ####/yyyy
+                if(value.length != 9) {
+                    alert("Invalid Serial Number\nThe length is less than 9");
+                    id.focus();
+                    return false;
+                } else {
+
+                }
+
+                for(let i=0; i<=9; i++) {
+                    c = value.charCodeAt(i);
+                    if(i>=0 && i<=3) {
+                        if( !(c>=48 || c<57) ) {
+                            alert("Invalid Serial Number\nFirst 4 digits are not correct");
+                            id.focus();
+                            return false;
+                        }
+                    } else if(i==4) {
+                        if(c!==47) {
+                            alert("Invalid Student ID\nThe 5th position is not slash (/) "+c);
+                            id.focus();
+                            return false;
+                        }
+                    } else if(i>=5 && i<=8) {
+                        if( !(c>=48 && c<57) ) {
+                            alert("Invalid Year\nLast 4 digits must be the year");
+                            id.focus();
+                            return false;
+                        }
+                    }
+                }
+
+                if(isNaN(value.substring(0,4))) {
+                    alert("Not a Number!");
+                    id.focus();
+                    return false;
+                }
+
+                if(isNaN(value.substring(5))) {
+                    alert("Not a Year!" + value.substr(5));
+                    id.focus();
+                    return false;
+                }
+
+                // Validation of NAME field
+                var name = document.getElementById("name");
+                value = name.value;
+                for(let i=0; i<value.length; i++) {
+                    c = value.charCodeAt(i);
+                    if((c<65 || c>90) && (c<97 || c>122) && c!=32) {
+                        alert("Special Character in Name!\nNot allowed.");
+                        name.focus();
+                        return false;
+                    }
+                }
+
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Student's Admission Enrollment Form</h1>
+        <hr><br>
+        <form action="http://localhost:8080/student/something.jsp" onsubmit="validate();" method="post">
+        <table>
+            <tr>
+                <td>Student ID: </td>
+                <td><input type="text" id="id" placeholder="####/yyyy"></td>
+            </tr>
+            <tr>
+                <td>Student Name: </td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth: </td>
+                <td><input type="date" id="dob"></td>
+            </tr>
+            <tr>
+                <td>Current Class: </td>
+                <td>
+                    <select id="class">
+                        <option value="">-- Select --</option>
+                        <option value="LKG">Lower Kinder Garten</option>
+                        <option value="UKG">Uper Kinder Garten</option>
+                        <option value="1">Class I</option>
+                        <option value="2">Class II</option>
+                        <option value="3">Class III</option>
+                        <option value="4">Class IV</option>
+                        <option value="5">Class V</option>
+                        <option value="6">Class VI</option>
+                        <option value="7">Class VII</option>
+                        <option value="8">Class VIII</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="submit" value=" Save ">
+        </form>
+    </body>
+</html>
