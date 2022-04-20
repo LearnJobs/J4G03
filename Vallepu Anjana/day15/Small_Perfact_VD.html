@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            
+        }
+        .cont{
+                   width: 600px;
+                   height: 550px;
+                   margin-top: 30px;
+                   
+                   background-color: rgb(5, 63, 63);
+        }
+        .qustion
+        {
+            background-color: rgb(105, 105, 248);
+            line-height: 40px;
+
+        }
+        .divop
+        {
+            /* margin-left: -500px; */
+            color: gold;
+        }
+        .btn
+        {
+            margin-top: 50px;
+            border-radius: 10px;
+            width: 70px;
+            height: 35px;
+            background-color:rgb(119, 201, 119)
+        }
+        .scor
+        {
+            width: 200px;
+            border-radius: 20px;
+            line-height: 40px;
+            background-color: chocolate;
+            color: white;
+            margin-top: 30px;
+        }
+        .pov
+        {
+            background-color: green;
+            width: 300px;
+            border-radius: 10px;
+            line-height: 30px;
+            cursor:pointer;
+        }
+        .pov:hover{
+            background-color: orange;
+            color: black;
+        }
+        .message
+        {
+            width: 300px;
+            line-height: 40px;
+            background-color: rgb(169, 78, 221);
+        }
+    </style>
+</head>
+<body>
+
+
+                  <center>
+                    <div class="cont">
+                      
+                    
+                              <div class="di1">
+                                  <h4 class="qustion" id="ques">question</h4>
+                              </div>
+                       
+                          
+                            <div class="divop">
+                              <h5 id="a" class="pov">text</h5>
+                               <h5 id="b" class="pov">text</h5>
+                               <h5 id="c" class="pov">text</h5>
+                               <h5 id="d" class="pov">text</h5>
+                            </div>
+                            <div class="message" id="mess">Message</div>
+                            <div>
+                                <input  class="btn" type="submit" value="Submit" id="sub">
+                            </div>
+                            <div>
+                                <h1 id="score" class="scor">0</h1>
+                            </div>
+                    </div>
+            
+                         
+                  </center>
+              <script>
+                               var score=0;
+                             
+                            //    you can add every question own your choice
+                             var objects=[
+                             {qustion:"Grand Central Terminal, Park Avenue, New York is the world's",Aoption:"largest railway station",Boption:"highest railway station",Coption:"longest railway station",Doption:"None of the above",Ans:"largest railway station"},
+                             {qustion:"Entomology is the science that studies",Aoption:"	Asia",Boption:"	Africa",Coption:"Europe",Doption:"Australia",Ans:"Africa"},
+                             {qustion:"	Garampani sanctuary is located at",Aoption:"Junagarh, Gujara",Boption:"Diphu, Assam",Coption:"Kohima, Nagaland",Doption:"Gangtok, Sikkim",Ans:"2Diphu, Assam"},
+                             {qustion:"	For which of the following disciplines is Nobel Prize awarded?",Aoption:"Physics and Chemistry",Boption:"Physiology or Medicine",Coption:"Literature, Peace and Economics",Doption:"All of the above",Ans:"All of the above"},
+                             {qustion:"what is your sister name",Aoption:"swait",Boption:"mohini",Coption:"rohini",Doption:"diwya",Ans:"swait"},
+                            //  {qustion:"what is your name",Aoption:"vishal",Boption:"rahul",Coption:"pravin",Doption:"ajinkya",Ans:"vishal"},
+                            //  {qustion:"what is your name",Aoption:"vishal",Boption:"rahul",Coption:"pravin",Doption:"ajinkya",Ans:"vishal"},
+                            //  {qustion:"what is your name",Aoption:"vishal",Boption:"rahul",Coption:"pravin",Doption:"ajinkya",Ans:"vishal"},
+                            //  {qustion:"what is your name",Aoption:"vishal",Boption:"rahul",Coption:"pravin",Doption:"ajinkya",Ans:"vishal"},
+                            //  {qustion:"what is your name",Aoption:"vishal",Boption:"rahul",Coption:"pravin",Doption:"ajinkya",Ans:"vishal"},
+                            //  {qustion:"what is your name",Aoption:"vishal",Boption:"rahul",Coption:"pravin",Doption:"ajinkya",Ans:"vishal"},
+                            //  {qustion:"what is your name",Aoption:"vishal",Boption:"rahul",Coption:"pravin",Doption:"ajinkya",Ans:"vishal"},
+                            //  {qustion:"what is your name",Aoption:"vishal",Boption:"rahul",Coption:"pravin",Doption:"ajinkya",Ans:"vishal"},
+                           ]
+                        //    get object of all document
+                           var Que=document.getElementById("ques");
+                           var Aop=document.getElementById("a");
+                           var Bop=document.getElementById("b");
+                           var mes=document.getElementById("mess");
+                           var Cop=document.getElementById("c");
+                           var Dop=document.getElementById("d");
+                           var Score=document.getElementById("score");
+                           var ans="";        
+                           
+                        //    click on option 
+                           Aop.addEventListener("click",function()
+                           {
+                                        ans=Aop.innerHTML;
+                                        Aop.style.backgroundColor="red"
+                                        Aop.style.color="white";
+                           });
+                           Bop.addEventListener("click",function()
+                           {
+                                        ans=Bop.innerHTML;
+                                        Aop.style.backgroundColor="red"
+
+                           });
+                           Cop.addEventListener("click",function()
+                           {
+                                        ans=Cop.innerHTML;
+                                        Aop.style.backgroundColor="red"
+
+                           });
+                           Dop.addEventListener("click",function()
+                           {
+                                        ans=Dop.innerHTML;
+                                        Aop.style.backgroundColor="red"
+
+                           });
+                               
+                        //    load event work 
+                        window.addEventListener("load",function()
+                        {
+                            Que.innerHTML=objects[0].qustion;
+                            Aop.innerHTML=objects[0].Aoption;
+                            Bop.innerHTML=objects[0].Boption;
+                            Cop.innerHTML=objects[0].Coption;
+                            Dop.innerHTML=objects[0].Doption;
+                        });
+                    
+                        //  submit button work
+                        var co=0;
+                           var bt=document.getElementById("sub");
+                           bt.addEventListener("click",function()
+                           {
+                            if(String(ans)==String(objects[co].Ans))
+                            {
+                            
+                                mes.innerHTML="Correct........!"
+
+                                Score.innerHTML=score+=1;
+                               
+                            }
+                            else{
+                                mes.innerHTML="Wrong..........!"
+                            }
+                            
+                           co++; 
+                            Que.innerHTML=objects[co].qustion;
+                            Aop.innerHTML=objects[co].Aoption;
+                            Bop.innerHTML=objects[co].Boption;
+                            Cop.innerHTML=objects[co].Coption;
+                            Dop.innerHTML=objects[co].Doption;
+                                            
+                           });
+              </script>  
+                  
+                
+            </body>
+</html>
