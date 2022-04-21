@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> New Document </title>
+		<meta name="Generator" content="EditPlus">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+	</head>
+
+	<body>
+		<script language="javascript" type="text/javascript">
+			fCol='#000000';		//face colour.
+			sCol='#ff0000';		//seconds colour.
+			mCol='#000000';		//minutes colour.
+			hCol='#000000';		//hours colour.
+
+			H='....';
+			H=H.split('');
+			M='.....';
+			M=M.split('');
+			S='......';
+			S=S.split('');
+			Ypos=0;
+			Xpos=0;
+			Ybase=8;
+			Xbase=8;
+			dots=12;
+			ns=(!document.all)?1:0;
+			document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+			for (i=0; i < dots; i++){
+				document.write('<div id="ieDigits'+i+'" style="position:absolute;top:0px;left:0px;width:30px;height:30px;font-family:Arial,Verdana;font-size:10px;color:'+fCol+';text-align:center;padding-top:10px">'+i+'</div>');
+			}
+			document.write('</div></div>')
+			document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+			for (i=0; i < M.length; i++){
+				document.write('<div id=y'+i+' style="position:absolute;width:2px;height:2px;font-size:2px;background:'+mCol+'"></div>');
+			}
+			document.write('</div></div>')
+			document.write('</div></div>')
+			document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+			for (i=0; i < H.length; i++){
+				document.write('<div id=z'+i+' style="position:absolute;width:2px;height:2px;font-size:2px;background:'+hCol+'"></div>');
+			}
+			document.write('</div></div>')
+			document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+			for (i=0; i < S.length; i++){
+				document.write('<div id=x'+i+' style="position:absolute;width:2px;height:2px;font-size:2px;background:'+sCol+'"></div>');
+			}
+			document.write('</div></div>')
+			//}
+			function clock() {
+				time = new Date ();
+				secs = time.getSeconds();
+				sec = -1.57 + Math.PI * secs/30;
+				mins = time.getMinutes();
+				min = -1.57 + Math.PI * mins/30;
+				hr = time.getHours();
+				hrs = -1.57 + Math.PI * hr/6 + Math.PI*parseInt(time.getMinutes())/360;
+				if (ns) {
+					Ypos=window.pageYOffset+window.innerHeight-60;
+					Xpos=window.pageXOffset+window.innerWidth-80;
+				} else {
+					Ypos=document.body.scrollTop+window.document.body.clientHeight-60;
+					Xpos=document.body.scrollLeft+window.document.body.clientWidth-60;
+				}
+				if (ns){
+					for (i=0; i < dots; ++i){
+						document.getElementById("ieDigits"+i+"").style.top=Ypos-5+40*Math.sin(-0.49+dots+i/1.9);
+						document.getElementById("ieDigits"+i+"").style.left=Xpos-15+40*Math.cos(-0.49+dots+i/1.9);
+					}
+					for (i=0; i < S.length; i++){
+						document.getElementById("x"+i+"").style.top=Ypos+i*Ybase*Math.sin(sec);
+						document.getElementById("x"+i+"").style.left=Xpos+i*Xbase*Math.cos(sec);
+					}
+					for (i=0; i < M.length; i++){
+						document.getElementById("y"+i+"").style.top=Ypos+i*Ybase*Math.sin(min);
+						document.getElementById("y"+i+"").style.left=Xpos+i*Xbase*Math.cos(min);
+					}
+					for (i=0; i < H.length; i++){
+						document.getElementById("z"+i+"").style.top=Ypos+i*Ybase*Math.sin(hrs);
+						document.getElementById("z"+i+"").style.left=Xpos+i*Xbase*Math.cos(hrs);
+					}
+				} else {
+					for (i=0; i < dots; ++i){
+						document.getElementById("ieDigits"+i+"").style.pixelTop=Ypos-15+40*Math.sin(-0.49+dots+i/1.9);
+						document.getElementById("ieDigits"+i+"").style.pixelLeft=Xpos-14+40*Math.cos(-0.49+dots+i/1.9);
+					}
+					for (i=0; i < S.length; i++){
+						document.getElementById("x"+i+"").style.pixelTop =Ypos+i*Ybase*Math.sin(sec);
+						document.getElementById("x"+i+"").style.pixelLeft=Xpos+i*Xbase*Math.cos(sec);
+					}
+					for (i=0; i < M.length; i++){
+						document.getElementById("y"+i+"").style.pixelTop =Ypos+i*Ybase*Math.sin(min);
+						document.getElementById("y"+i+"").style.pixelLeft=Xpos+i*Xbase*Math.cos(min);
+					}
+					for (i=0; i < H.length; i++){
+						document.getElementById("z"+i+"").style.pixelTop =Ypos+i*Ybase*Math.sin(hrs);
+						document.getElementById("z"+i+"").style.pixelLeft=Xpos+i*Xbase*Math.cos(hrs);
+					}
+				}
+				setTimeout('clock()',50);
+			}
+			window.onload=clock;
+			//-->
+		</script>
+	</body>
+</html>
