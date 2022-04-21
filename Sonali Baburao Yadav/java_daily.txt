@@ -1707,3 +1707,896 @@ API
 Training
 Blog
 About
+
+TEST-02 (Saturday, 09-04-2022)
+Find all perfect number between 2 given numbers?
+(A PERFECT number is that number which is equal to the sum of all numbers divisible to it)
+
+        Example:   2 and 10000
+                       6 = 1+2+3
+                      28 = 1+2+4+7+14
+                     496 = 1+2+4+8+16+31+62+124+248
+                    8128 = 1+2+4+8+16+32+64+127+254+508+1016+2032+4064
+
++------------+
+| 09-04-2022 |
++------------+
+WHAT IS A THREAD?
+    Thread is a process for executing more than one program concurrently in the computer sharing the CPU time.
+    Every modern OS (Operating System) are capable of executing serveral programs concurrently. Today, all OS are 
+    Thread enabled.
+
+WHAT IS JAVA THREAD?
+    Java programs run within the JRE (Java Runtime Environment). The JRE provdes facilities to run several
+    Java programs concurrently. This ability in Java is unique and is known as Java Thread.
+
+HOW TO CREATE A THREAD PROGRAM IN JAVA?
+    Java API provides classes that make the Java programmes multi-programming. The java.lang.Thread is the main
+    class that provides facility to create Java threading or multi-programming.
+
+HOW TO USE java.lang.Thread
+    There are 2 ways to create a Thread program in Java
+
+    The first way:
+        Steps to create a Java Thread program:
+        1.  Inherit the java.lang.Thread class
+        2.  Override the run() method in the Thread class.
+        3.  Call the start() method to wrap the run() method as a new thread.
+
+        Your main method is one Thread, and the run() method is another Thread.
+
+        The developer of Java API have made it that way, when you call the start() method, the run() method of that
+        class is taken as another thread.
+
+    The second way:
+        Steps to create a Java Thread program:
+        1.  Create a class and implement the Runnable interface
+        2.  Override the run() method from the Runnable interface
+        3.  Create a Thread object by calling the Thread(Runnable) constructor and providing the Runnable object
+        4.  With the Thread object reference, call the start() method.
+
+WHAT IS AN Executor INTERFACE?
+    The Executor interface exists in the java.util.concurrent package.
+    The concurrent API in Java provides a feature known as an executor that initiates and controls the 
+    execution of threads. As such, an executor offers an alternative to managing threads using the thread class.
+    At the core of an executor is the Executor interface. It refers to the objects that execute submitted 
+    Runnable tasks.
+
+    java.util.concurrent.Executor
+    java.util.concurrent.ExecutorService
+    java.util.concurrent.ScheduledExecutorService
+
+
+ASSIGNMENT-09 (09-04-2022):
+    Create 2 List<String> object with 25 items in each.
+    Write a program to create a Thread that will print the content of the 2 Lists using 2 Threads.
+
+
++------------+
+| 11-04-2022 |
++------------+
+WHAT IS HTML?
+    HTML stands for Hyper Text Markup Language. HTML is a scripting language that is intended to run within
+    an internet browser.
+
+    HTML transmits across the HTTP protocal instantly. The script is transformed to HTTP packet instantly and
+    get transmitted.
+
+WHAT IS A PROGRAMMING LANGUAGE?
+    A programming language is a human readable code that is converted to the machine language in order to be
+    executed by the machine.
+
+    The features of a programing language are:
+    1.  It executes in sequence of line numbers
+    2.  It has ability to compute, to add, to subtract, to multiply and to divide
+    3.  It can iterate across a set of lines repeatedly, i.e. known as looping
+    4.  It can do condition checking
+
+    There are 3 categories of Programming Languages:
+    1.  Passive language
+            This category of language doesn't adire to the features of a programming language.
+            It doesn't have ability to compute, to iterate and to do condition checking.
+            Passive languages are used for presentation purpose only. It displays the data in a presentable fashion.
+            Example: SGML, HTML, etc.
+    2.  Active language
+            The real programming languages are known as active language. It follows all the features of a 
+            programming language. It is used to solve mission critical problems. The programs written in the
+            active language executes using the resources of the computer in which it is requested to run.
+            Example: BASIC, Pascal, COBOL, Java, Python, etc.
+    3.  Dynamic language
+            The dynamic language programs execute in the machine in which it resides. The result of the program
+            is converted and presented in a passive language and transmitted to the requesting machine.
+            Example: Php, Java Servlets, etc.
+
+HTML HAS A LIST OF RESERVE WORDS. The elements in HTML are the reserve words. The elements are nested within each other.
+    1.  <html></html>                   Principal element.
+    2.  <head></head>
+    3.  <body></body>
+
+There are 2 categories of HTML element:
+    1.  Terminator element required
+    2.  Self terminated element
+        <br>, <img>, <hr>, etc.
+
+LIST OF HTML 4.0 ELEMENTS
+    A           - Anchor
+    ABBR        - Abbreviation
+    ACRONYM     - Acronym
+    ADDRESS     - Address
+    APPLET      - Java applet
+    AREA        - Image map region
+    B           - Bold text
+    BASE        - Document base URI
+    BASEFONT    - Base font change
+    BDO         - BiDi override
+    BIG         - Large text
+    BLOCKQUOTE  - Block quotation
+    BODY        - Document body
+    BR          - Line break
+    BUTTON      - Button
+    CAPTION     - Table caption
+    CENTER      - Centered block
+    CITE        - Citation
+    CODE        - Computer code
+    COL         - Table column
+    COLGROUP    - Table column group
+    DD          - Definition description
+    DEL         - Deleted text
+    DFN         - Defined term
+    DIR         - Directory list
+    DIV         - Generic block-level container
+    DL          - Definition list
+    DT          - Definition term
+    EM          - Emphasis
+    FIELDSET    - Form control group
+    FONT        - Font change
+    FORM        - Interactive form
+    FRAME       - Frame
+    FRAMESET    - Frameset
+    H1          - Level-one heading
+    H2          - Level-two heading
+    H3          - Level-three heading
+    H4          - Level-four heading
+    H5          - Level-five heading
+    H6          - Level-six heading
+    HEAD        - Document head
+    HR          - Horizontal rule
+    HTML        - HTML document
+    I           - Italic text
+    IFRAME      - Inline frame
+    IMG         - Inline image
+    INPUT       - Form input
+    INS         - Inserted text
+    ISINDEX     - Input prompt
+    KBD         - Text to be input
+    LABEL       - Form field label
+    LEGEND      - Fieldset caption
+    LI          - List item
+    LINK        - Document relationship
+    MAP         - Image map
+    MENU        - Menu list
+    META        - Metadata
+    NOFRAMES    - Frames alternate content
+    NOSCRIPT    - Alternate script content
+    OBJECT      - Object
+    OL          - Ordered list
+    OPTGROUP    - Option group
+    OPTION      - Menu option
+    P           - Paragraph
+    PARAM       - Object parameter
+    PRE         - Preformatted text
+    Q           - Short quotation
+    S           - Strike-through text
+    SAMP        - Sample output
+    SCRIPT      - Client-side script
+    SELECT      - Option selector
+    SMALL       - Small text
+    SPAN        - Generic inline container
+    STRIKE      - Strike-through text
+    STRONG      - Strong emphasis
+    STYLE       - Embedded style sheet
+    SUB         - Subscript
+    SUP         - Superscript
+    TABLE       - Table
+    TBODY       - Table body
+    TD          - Table data cell
+    TEXTAREA    - Multi-line text input
+    TFOOT       - Table foot
+    TH          - Table header cell
+    THEAD       - Table head
+    TITLE       - Document title
+    TR          - Table row
+    TT          - Teletype text
+    U           - Underlined text
+    UL          - Unordered list
+    VAR         - Variable
+
+ELEMENTS in HTML as a set of ATTRIBUTES.
+
+WHAT ARE ATTRIBUTES IN HTML ELEMENT?
+    The attributes are functions that describe more about the element.
+    There are 3 types of attributes:
+    1.  Dedicated attributes
+        The dedicated attributes are designed exclusively for the element concerned.
+    2.  Common attributes
+        Common attributes are a set of attributes that apply to all elements.
+        ID, NAME, CLASS, STYLE, DIR, TITLE, LAND and DIR
+    3.  Event attributes
+        The event attributes work with UI (User Interface) elements
+            ONCLICK, when the mouse button is clicked on an element;
+            ONDBLCLICK, when the mouse button is double-clicked on an element;
+            ONMOUSEDOWN, when the mouse button is pressed over an element;
+            ONMOUSEUP, when the mouse button is released over an element;
+            ONMOUSEOVER, when the mouse is moved onto an element;
+            ONMOUSEMOVE, when the mouse is moved while over an element;
+            ONMOUSEOUT, when the mouse is moved away from an element;
+            ONKEYPRESS, when a key is pressed and released over an element;
+            ONKEYDOWN, when a key is pressed down over an element;
+            ONKEYUP, when a key is released over an element.
+
+WHAT ARE CHARACTER DESIGN ELEMENTS?
+    Please see intro.html
+
+WHAT IS ANCHOR ELEMENT?
+    Anchor is represented by <a></a> element. Anchor takes to another page or another location of the same
+    page that is defined in the href attribute.
+    Please see anchor.html and anchor2.html
+
+WHAT IS LIST ELEMENT?
+    There are 3 list elements:
+    1.  <ol></ol>           Ordered list
+                            Generates an item number such as, 1,2,3 or a,b,c or i,ii,iii, or A,B,C
+    2.  <ul></ul>           Unordered list
+                            Generates bullets such as square, disc or circle
+    3.  <dl></dl>           Definition list
+                            A definition term and a defination description
+
+
+HTML TABLE:
+    <table></table>
+    <tr></tr>
+    <th></th>
+    <td></td>
+    <caption></caption>
+    <thead></thead>
+    <tfoot></tfoot>
+
+TABLE SPAN:
+    There are 2 types of span:
+    1.  COLSPAN
+    2.  ROWSPAN
+
+
+    +-------+---------------------------+------------+---------------------------------------------+
+    |       |                           |            |                   AGE GROUP                 |
+    |       |                           |            +-----------+------------+------------+-------+
+    |  SLNO |  CANDIDATE NAME           |     DOB    | >5 & <=10 | >10 & <=15 | >15 & <=20 |  >20  |
+    +-------+---------------------------+------------+-----------+------------+------------+-------+
+
+
+ASSIGNMENT-10 (11-04-2022)
+    1.  Write a HTML program to display a calculator as given below:
+
+        +-------------------------------+
+        |                             0 |
+        +-------+-------+-------+-------+
+        |  AC   |    Œ  |   √   |   x   |
+        +-------+-------+-------+-------+
+        |   7   |   8   |   9   |   /   |
+        +-------+-------+-------+-------+
+        |   4   |   5   |   6   |   -   |
+        +-------+-------+-------+-------+
+        |   1   |   2   |   3   |   +   |
+        +-------+-------+-------+-------+
+        |   7   |   8   |   9   |       |
+        +-------+-------+-------+   =   |
+        |           0           |       |
+        +-----------------------+-------+
+
+    2.  Complete the anchor2.html program to navigate to a different location within the same page?
+
+    3.  Complete the images.html program by adding area to Sonia Gandhi and Rahul Gandhi picture?
+
+    4.  Create the following table header in HTML?
+        +-------+---------------------------+------------+-------------------------------------------------+
+        |       |                           |            |                      AGE GROUP                  |
+        |       |                           |            +-----------+------------+------------+-----------+
+        |       |                           |            | >5 & <=10 | >10 & <=15 | >15 & <=20 |    >20    |
+        |       |                           |            +-----+-----+------+-----+------+-----+-----+-----+
+        |  SLNO |  CANDIDATE NAME           |     DOB    |  M  |  F  |   M  |  F  |   M  |  F  |  M  |  F  |
+        +-------+---------------------------+------------+-----+-----+------+-----+------+-----+-----+-----+
+
+    5.  Write a HTML program to display the output of college timetable?
+
+
++------------+
+| 12-04-2022 |
++------------+
+WHAT IS A <iframe></iframe>?
+    IFRAME provides a window within the HTML page that displays another HTML file.
+
+WHAT IS A FRAMESET?
+    A frameset is an element that divides the body of the browser of the body of a frame into rows and columns.
+    Each area is represented by a frame element. Each area can be displayed with content of a different HTML file.
+
+WHAT IS <input> ELEMENT?
+    The INPUT element defines the form control for the user to enter input.
+
+WHAT ARE BASICALLY THE INPUT TYPES?
+    1.  Text box
+    2.  Check box
+    3.  Radio button
+    4.  Drop down box - Combo box
+    5.  List box
+    6.  Button
+
+
+ASSIGNMENT-11 (12-04-2022)
+    1.  Create a HTML program to display the list of countries in one window. When any one country is selected the
+        list of the states will be displayed in another corresponding window and when the state is selected the
+        data about that state will displayed on the third window.
+
+        +-------------------------------------------+----------------------------------------------+
+        |                                           |                                              |
+        |                                           |                                              |
+        |       List of the countries               |       List of the states                     |
+        |                                           |                                              |
+        |                                           |                                              |
+        +-------------------------------------------+----------------------------------------------+
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                             Data about the selected state                                |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        |                                                                                          |
+        +------------------------------------------------------------------------------------------+
+
+    2.  Write a HTML program to get enrolled or take admission in a school?
+        a)  Name of the candidate
+        b)  Father's Name
+        c)  Mother's Name
+        d)  Date of Birth
+        e)  Gender
+        f)  Previous School Name
+        g)  Admission required for which class
+        h)  Innoculation taken (4 items)
+        i)  Permanent Address
+        j)  Current Address
+        k)  Aadhaar Card Number
+        l)  Any Physical disability [Y/N] and description
+        m)  Citizenship
+        n)  
+
++------------+
+| 13-04-2022 |
++------------+
+WHAT ARE THE ADDITIONAL ELEMENT PROVIDED IN HTML5?
+    <article>       Represents an independent piece of content of a document, such as a blog entry or newspaper article
+    <aside >        Represents a piece of content that is only slightly related to the rest of the page.
+    <audio>         Defines an audio file.
+    <canvas>        This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.
+    <command>       Represents a command the user can invoke.
+    <datalist>      Together with the a new list attribute for input can be used to make comboboxes
+    <details>       Represents additional information or controls which the user can obtain on demand
+    <embed>         Defines external interactive content or plugin.
+    <figure>        Represents a piece of self-contained flow content, typically referenced as a single unit from the main flow of the document.
+    <footer>        Represents a footer for a section and can contain information about the author, copyright information, et cetera.
+    <header>        Represents a group of introductory or navigational aids.
+    <hgroup>        Represents the header of a section.
+    <keygen>        Represents control for key pair generation.
+    <mark>          Represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.
+    <meter>         Represents a measurement, such as disk usage.
+    <nav>           Represents a section of the document intended for navigation.
+    <output>        Represents some type of output, such as from a calculation done through scripting.
+    <progress>      Represents a completion of a task, such as downloading or when performing a series of expensive operations.
+    <ruby>          Together with <rt> and <rp> allow for marking up ruby annotations.
+    <section>       Represents a generic document or application section
+    <time>          Represents a date and/or time.
+    <video>         Defines a video file.
+    <wbr>           Represents a line break opportunity.
+
+WHAT ARE THE ADDITONAL ATTRIBUTES IN HTML5 FOUND IN THE INPUT ELEMENT?
+    color           Color selector, which could be represented by a wheel or swatch picker
+    date            Selector for calendar date
+    datetime-local  Date and time display, with no setting or indication for time zones
+    datetime        Full date and time display, including a time zone.
+    email           Input type should be an email.
+    month           Selector for a month within a given year
+    number          A field containing a numeric value only
+    range           Numeric selector within a range of values, typically visualized as a slider
+    search          Term to supply to a search engine. For example, the search bar atop a browser.
+    tel             Input type should be telephone number.
+    time            Time indicator and selector, with no time zone information
+    url             Input type should be URL type.
+    week            Selector for a week within a given year
+    text    
+    password    
+    submit  
+    reset   
+    file    
+    hidden  
+    checkbox    
+    radio   
+    image   
+
+EXAMPLE OF <audio> AND <video> ELEMENT
+
+    <video controls width="250">
+        <source src="H:\PuzzlePic\Good-Morning\02.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="myVideo.webm" type="video/webm">
+        <source src="myVideo.mp4" type="video/mp4">
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="myVideo.mp4">link to the video</a> instead.</p>
+    </video>
+
+    <audio controls>
+        <source src="H:\Milan\SpritNews.mp3" type="audio/mpeg">
+        <source src="horse.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+WHAT IS CSS?
+    CSS stands for Cascading Style Sheet. The CSS provides us to beautify the page.
+
+HOW MANY TYPES CSS ARE THERE?
+    There are 3 types of CSS:
+    1.  Inline
+        =   The common attribute STYLE is used to give inline CSS.
+        =   The STYLE attribute is applied to all elements.
+        =   A set of properties are pre-defined, that is given in the value of the STYLE attribute.
+        =   Each property=value pair is separated by a semi-colon (;)
+        Example:
+            <h1 style="font-family:Arial;color:blue;background-color:yellow;text-align:center;border:solid;">
+                This is a inline styling
+            </h1>
+    2.  Internal
+        =   The internal styling is given in the top of the HTML script within the <head></head> element.
+        =   The STYLE element defines the styling properties of the element within a pair of curly braces preceeding
+            the element name.
+        =   In case of the element name, you can also provide the class name. The class name is superceeded by a
+            dot (.) operator.
+        =   Each property=value pair is separated by a semi-colon (;)
+
+        Example:
+            <html>
+                <head>
+                    <style>
+                        h1 {font-family:Arial;
+                            color:blue;
+                            background-color:yellow;
+                            text-align:center;
+                            border:solid;
+                        }
+
+                        h1.h1class {
+                            font-family:Arial;
+                            color:blue;
+                            background-color:yellow;
+                            text-align:center;
+                            border:solid;
+                        }
+
+                        .mystyle {
+                            font-family:Script;
+                            color:magenta;
+                            background-color:pink;
+                            text-align:center;
+                            border:solid;
+                        }
+                    </style>
+                </head>
+                <body>
+                        <h1>Quick Brown Fox Jumps Over The Lazy Dog</h1>
+                        <h1 class="mystyle">Quick Brown Fox Jumps Over The Lazy Dog</h1>
+                </body>
+            </html>
+    3.  External
+        When the styling is defined in a separate file. The styling file is linked with the help of <link> element,
+        it is known as external styling. The styling file must have a .css extension.
+
+        style.css
+            .mystyle {
+                font-family:Script;
+                color:magenta;
+                background-color:pink;
+                text-align:center;
+                border:solid;
+            }
+
+            .other {
+                font-family:Arial;
+                color:blue;
+                background-color:yellow;
+                text-align:center;
+                border:solid;
+            }
+
+        The above file is linked with the help of <link> element.
+            <link rel="Stylesheet" href="style.css" />
+
+        In the HTML file:
+            <h1 class="other">This is a sample text</h1>
+
+WHAT IS BOOTSTRAP?
+    Bootstrap is a CSS framework. It provides many many CSS classes. You can use the bootstrap classes by linking
+    the bootstrap css file using its URL. You will find the CSS file URL from the bootstrap website.
+
+    <link rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">
+
+    <img class="rounded-circle" src="sonia_gandhi.jpg" width="300" height="300"/>
+
+WHERE TO FIND THE COMPLETE LIST OF BOOTSTRAP CLASSES?
+    https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp
+
+RESPONSIVE PAGES IN W3SCHOOL
+    https://www.w3schools.com/whatis/whatis_bootstrap.asp
+
+CLASS WORK:
+    Surround the form with a border in UIForm3.html
+
+ASSIGNMENT-12 (13-04-2022)
+    1.  Create a HTML table for 20 country names, population, area in acre and serial-number.
+        Add CSS to beautify the table.
+    2.  Display your photo within a rounded circle.
+    3.  Use bootstrap classes to design a table.
+
+
++------------+
+| 14-04-2022 |
++------------+
+WHAT ARE THE 10 POPULAR CSS FRAMEWORKS?
+    1.  Bootstrap
+    2.  Tailwind CSS
+    3.  Foundation
+    4.  Bulma
+    5.  Skeleton
+    6.  Ulkit
+    7.  Semantic UI
+    8.  Susy
+    9.  Materialize
+   10.  Pure
+
+WHY THE FRAMEWORKS ARE POPULAR?
+    They provide responsive pages. Responsive means, the webpage is plesantly presented in all devices. Be it
+    a mobile device or a laptop screen.
+
+WHAT IS JAVASCRIPT?
+    JavaScript is a programming language. JavaScript programs run within a internet browser. JavaScript is
+    created with the following objective:
+    1.  Client-side validation
+    2.  Manipulating HTML pages
+    3.  User Notification
+    4.  Back-end Data Loading
+    5.  Presentations
+    6.  Sever Applications
+
+    The JavaScript was basically created to make the web-page interactive.
+
+WHICH COMPANY CREATED JAVASCRIPT?
+    Netscape Inc. that created JavaScript. The name of the browser is Netscape Navigator.
+
+Alpha-Sort      Number-Sort
+---------------+----------------
+1               1
+10              2
+100             10
+1000            20
+2               100
+20              200
+200             1000
+2000            2000
+
+Ryan Dahi create a compiler to test JavaScript programs. The compiler name is NodeJs.
+
+
+ASSIGNMENT-13 (14-04-2022)
+    1.  Write a JavaScript program to take 2 numbers from the html form and print
+        the multiplication tables for all numbers that fall between the 2 numbers?
+    2.  Write a JavaScript program to print all perfect numbers between 2 given number?
+    3.  Write a JavaScript program to count the number of vowels in a given string?
+
+
+
++------------+
+| 16-04-2022 |
++------------+
+WHAT ARE THE CLASSES DISCUSSED IN JAVASCRIPT?
+    1.  Document
+    2.  Window
+    3.  Math
+    4.  Date
+
+WHAT ARE THE DIRECT-METHODS THAT ARE DISCUSSED?
+    1.  alert()
+    2.  parseInt()
+    3.  prompt()
+    4.  confirm()
+
+1.  Write a JavaScript program to take 2 numbers from the html form and print the multiplication tables
+    for all numbers that fall between the 2 numbers?
+        Day-15: MultiplicationTables.html
+
+2.  Write a program to display all color names and one selecting any particular color the background of the
+    body changes to that color?
+        Day-15: ColorChooser.html
+
+3.  Write a program to find the number of days until the next Christmas?
+
+
+WHAT IS DOM?
+    DOM is abbreviated for Document Object Module.
+    DOM provides a set of objects for HTML elements.
+    Table is a HTML element
+    Body is a HTML element
+
+
+ASSIGNMENT-15 (16-04-2022)
+    1.  Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+        [Formula : c/5 = (f-32)/9 [where c = temperature in Celsius and f = temperature in Fahrenheit]
+        Expected Output :
+            60°C is 140°F
+            45°F is 7.222222222222222°C
+
+    2.  Write a program to display a HTML table with at least 10 rows.
+        Give a button at the bottom to reserve the rows and the columns.
+
+
++------------+
+| 18-04-2022 |
++------------+
+JAVASCRIPT RESERVE WORDS
+    1.  break
+    2.  do
+    3.  instanceof
+    4.  typeof
+    5.  case
+    6.  else
+    7.  new
+    8.  var
+    9.  catch
+   10.  finally
+   11.  return
+   12.  void
+   13.  continue
+   14.  for
+   15.  switch
+   16.  while
+   17.  debugger
+   18.  function
+   19.  this
+   20.  with
+   21.  default
+   22.  if
+   23.  throw
+   24.  delete
+   25.  in
+   26.  try
+   27.  class
+   28.  enum
+   29.  extends
+   30.  super
+   31.  const
+   32.  export
+   33.  import
+   34.  implements
+   35.  let
+   36.  private
+   37.  public
+   38.  interface
+   39.  package
+   40.  protected
+   41.  static
+   42.  yield
+
+CLASS WORK (30 MINUTES)
+1.  Write a JavaScript program to get the website URL (loading page).
+2.  Write a JavaScript exercise to get the extension of a filename.
+3.  Write a JavaScript program to find the largest of three given integers.
+
+ASSIGNMENT-16 (18-04-2022)
+CREATE A Student Information Systems WITH THE FOLLOWING FIELDS:
+    1.  Student ID / Roll Number                textbox
+    2.  Name of the Student                     textbox
+    3.  Date of Birth                           datebox
+    4.  Current Class                           dropdown
+    5.  Gender                                  radio button
+    6.  Father's Name                           textbox
+    7.  Father's Mobile Number                  numberbox
+    8.  Father's Occupation                     dropdown
+    9.  Father's Annual Income                  dropdown          (3-5 lakhs), (6-8 lakhs), (9-12 lakhs), above
+   10.  Mother's Name                           textbox
+   11.  Mother's Mobile Number                  numberbox
+   12.  Mother's Occupation                     dropdown
+   13.  Mother's Annual Income                  dropdown          (3-5 lakhs), (6-8 lakhs), (9-12 lakhs), above
+   14.  Any Sibling in the School               radio button
+   15.  Innoculation                            checkbox
+   16.  Photograph of the candidate             file
+   17.  Photograph with parents                 file
+   18.  Present Address                         textarea
+   19   Permanent Address                       textarea
+   20.  Remark                                  textbox
+
+    List of Vaccines:
+    1.  Diphtheria+
+    2.  Pertussis+
+    3.  Tetanus+
+    4.  Haemophilus Influenzae Type b (Hib) +
+    5.  Hepatitis B
+    6.  Covit-91 Dose-1
+    7.  Covit-91 Dose-2
+
+2.  Show month of the current date in words?
+3.  Show week-day of the current date in words?
+4.  Write a JavaScript program to change all digits of a phone number to words?
+5.  Write a program to suffle the numbers within a two dimensional array?
+
+        [ [1, 2, 3],                [ [7, 4, 1],
+          [4, 5, 6],        ->        [8, 5, 2],
+          [7, 8, 9] ]                 [9, 6, 3] ]
+
+
++------------+
+| 19-04-2022 |
++------------+
+What is internal and external script?
+	A JavaScript program that is written within <script> element that is placed in the <head> element or the 
+	<body> element is known as internal script.
+	
+	When the JavaScript program is written in a separate file with an extension .js. The file is linked to the
+	HTML script in the <script src="xxx.js"> element using the src attribute it is known as external.
+
+How is <noscript> element used, give examples?
+	<noscript> is an element in HTML. The <noscript> element is used to disable the JavaScript functionality 
+	in the internet browser.
+
+	The <noscript> tag defines an alternate content to be displayed to users that have disabled scripts in 
+	their browser or have a browser that doesn't support script.
+
+	The <noscript> element can be used in both <head> and <body>. When used inside <head>, the <noscript> 
+	element could only contain <link>, <style>, and <meta> elements.
+
+What is the difference between let and var?
+    var x = 1;
+    let y = 1;
+
+    if (true) {
+      var x = 2;
+      let y = 2;
+    }
+
+    console.log(x);         // expected output: 2
+    console.log(y);         // expected output: 1
+
+What are the primitive data type in Jvascript?
+    ----PRIMITIVE-TYPE--------------WRAPPER-OBJECTS
+    1.  string                      String
+    2.  number                      Number
+    3.  bigint                      BigInt
+    4.  boolean                     Boolean
+    5.  undefined                   
+    6.  symbol                      Symbol
+    7.  null
+
+What is Lexical Structrue?
+    1.  Uses Unicode
+		ASCII (American Standard Code for Information Interchange)
+		1 byte is equal to 8 bit: 0000001, 0000010, ....  11111111 (how many combinations)
+		ASCII: 2^8 number of combinations, i.e. 256 combinations (2 x 2 x 2 x 2 x 2 x 2 x 2 x 2)
+		The byte size was increased to 16 bits
+
+		UNICODE: 2^16 combinationa can be stored now. 144356 combinations may be stored.
+		
+    2.  Optional Semicolon
+    3.  Whitespaces and Line Breaks
+    4.  Case Sensitive
+		<HRML></HTML> or <html></html> here html is not case sensitive.
+		But, JavaScript is case sensitive.
+    5.  Comments
+		//  single line
+		/*
+			block of lines
+		*/
+    6.  Literals and Identifiers
+		=	reserve words
+		=	&nbsp, &gt, &lt, ....
+		=	document, window, navigator, 
+    7.  Reserved words
+		Refer to Day-16 for the list of the reserve words.
+
+
+What are the JavaScript Operators?
+        Operator    Description
+    1.  +           Addition
+    2.  -           Subtraction
+    3.  *           Multiplication
+    4.  **          Exponentiation (ES2016)
+    5.  /           Division
+    6.  %           Modulus (Division Remainder)
+    7.  ++          Increment
+    8.  --          Decrement
+
+    Operator 	Example 	Same As
+    1.  = 	    x = y       x = y
+    2.  += 	    x += y      x = x + y
+    3.  -= 	    x -= y      x = x - y
+    4.  *= 	    x *= y      x = x * y
+    5.  /= 	    x /= y      x = x / y
+    6.  %= 	    x %= y      x = x % y
+    7.  **= 	x **= y 	x = x ** y
+
+Type Conversion function in JavaScript
+    1.  Number() 	    Returns a number, converted from its argument
+    2.  parseFloat() 	Parses a string and returns a floating point number
+    3.  parseInt() 	    Parses a string and returns an integer
+
+What is Compound Statement?
+	More than one statement written within a block or a pair of curly braces is known as compound statement.
+	
+	let n = 256;
+	
+	{
+		var x = 32;
+		var y = 13;
+		var x = 11;
+	}
+
+What is a named block or a labeled block?
+	start: {
+		// write some statements
+	}
+
+	loop1:
+	for(var i=1000; i<=2000; i++) {
+		loop2:
+		for(var j=2; j<i; j++) {
+			if(i%j==0) {
+				continue loop1;
+			} else {
+				document.write(i+" ");
+				continue loop2;
+			}
+		}
+	}
+
+ASSIGNMENT-16 (19-04-2022)
+	1.  Add other required fields in StudentInfo_js.html
+		a.  Student ID / Roll Number                textbox
+		b.  Name of the Student                     textbox
+		c.  Date of Birth                           datebox
+		d.  Current Class                           dropdown
+		e.  Gender                                  radio button
+		f.  Father's Name                           textbox
+		g.  Father's Mobile Number                  numberbox
+		h.  Father's Occupation                     dropdown
+		i.  Father's Annual Income                  dropdown          (3-5 lakhs), (6-8 lakhs), (9-12 lakhs), above
+	    j.  Mother's Name                           textbox
+	    k.  Mother's Mobile Number                  numberbox
+	    l.  Mother's Occupation                     dropdown
+	    m.  Mother's Annual Income                  dropdown          (3-5 lakhs), (6-8 lakhs), (9-12 lakhs), above
+	    n.  Any Sibling in the School               radio button
+	    o.  Innoculation                            checkbox
+	    p.  Photograph of the candidate             file
+	    q.  Photograph with parents                 file
+	    r.  Present Address                         textarea
+	    s   Permanent Address                       textarea
+	    t.  Remark                                  textbox
+
+	2.	Complete the validation of StudentInfo_js.html
+		=	Date field must not be empty
+		=	Drop down fields must be selected values
+		=	Radio button fields must be selected
+		=	
+
