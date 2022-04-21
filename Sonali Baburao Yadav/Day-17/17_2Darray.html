@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            var arr = [ [1,2,3], [4,5,6], [7,8,9] ];
+            function doScuffle() {
+            }
+
+            function genRandomNumber(min, max) {
+                let num = Math.floor(Math.random() * (max-min+1) + min);
+                return num;
+            }
+        </script>
+    </head>
+
+    <body>
+        <script>
+            document.writeln("<table border='1'>");
+            for(var i=0; i<arr.length; i++) {
+                document.writeln("<tr>");
+                for(var j=0; j<arr[i].length; j++) {
+                    document.write("<td width='20px' align='center'>"+arr[i][j]+"</td>");
+                }
+                document.writeln("</tr>");
+            }
+            document.writeln("</table>");
+            document.writeln("<br><br>");
+            document.writeln("<button onclick='doScuffle();'>Go</button>");
+            document.writeln("<br><br>");
+        </script>
+    </body>
+</html>
