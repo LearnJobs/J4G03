@@ -1,0 +1,170 @@
+<html>
+	<head>
+		<title> New Document </title>
+		<meta name="Generator" content="EditPlus">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+	</head>
+
+	<body>
+		<script language="javascript" type="text/javascript">
+			<!-- Begin
+			colors = new Array('#330099','#00ff00','#ff00ff'); //Clock face colors.
+			sCol = '#ff00ff'; //seconds colour.
+			mCol = '#00ff00'; //minutes colour.
+			hCol = '#330099'; //hours colour.
+			//Alter nothing below!
+			H = 'Hours..';
+			H = H.split('');
+			H = H.reverse();
+			M = 'Minutes..';
+			M = M.split('');
+			M = M.reverse();
+			S = 'Seconds..';
+			S = S.split('');
+			S = S.reverse();
+			dots = 12;
+			var Ypos = 0,Xpos = 0,Ybase = 0,Xbase = 0;
+			var ay = 0, ax = 0, Ay = 0, Ax = 0, by = 0, bx = 0, By = 0, Bx = 0, cy = 0, cx = 0, Cy = 0, Cx = 0, dy = 0, dx = 0, Dy = 0, Dx = 0;
+			count = 0;
+			count_a = 0;
+			move = 1;
+			ns = (!document.all);
+			viz = 'hidden';
+			document.write('<div id="W" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+			for (i = 0; i < dots; i++) {
+				document.write('<div id="face'+i+'" style="position:absolute;top:0px;left:0px;width:3px;height:3px;font-size:3px;background:#ffffff"></div>');
+			}
+			document.write('</div></div>');
+			document.write('<div id="X" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+			for (i = 0; i < S.length; i++) {
+				document.write('<div id="x'+i+'" style="position:absolute;width:36px;height:36px;font-family:Verdana;font-size:12px;color:'+sCol+';text-align:center;padding-top:10px">'+S[i]+'</div>');
+			}
+			document.write('</div></div>')
+			document.write('<div id="Y" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+			for (i = 0; i < M.length; i++) {
+				document.write('<div id="y'+i+'" style="position:absolute;width:36px;height:36px;font-family:Verdana;font-size:12px;color:'+mCol+';text-align:center;padding-top:10px">'+M[i]+'</div>');
+			}
+			document.write('</div></div>')
+			document.write('<div id="Z" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+			for (i = 0; i < H.length; i++) {
+				document.write('<div id="z'+i+'" style="position:absolute;width:36px;height:36px;font-family:Verdana;font-size:12px;color:'+hCol+';text-align:center;padding-top:10px">'+H[i]+'</div>');
+			}
+			document.write('</div></div>');
+			//}
+			if (ns) {
+				window.captureEvents(Event.MOUSEMOVE);
+				function nsMouse(evnt) {
+					Ypos = evnt.pageY + 100;
+					Xpos = evnt.pageX + 100;
+				}
+				window.onmousemove = nsMouse;
+			} else {
+				function ieMouse() {
+					Ypos = event.y + 100;
+					Xpos = event.x + 100;
+				}
+				document.onmousemove = ieMouse;
+			}
+			function clock() {
+				time = new Date ();
+				secs = time.getSeconds();
+				sec = -1.57 + Math.PI * secs / 30;
+				mins = time.getMinutes();
+				min = -1.57 + Math.PI * mins / 30;
+				hr = time.getHours();
+				hrs = -1.575 + Math.PI * hr / 6 + Math.PI * parseInt(time.getMinutes()) / 360;
+				Ybase = 15;
+				Xbase = 15;
+				if (ns) {
+					var scrll=window.scrollY;
+
+					document.getElementById('W').style.top = scrll;
+					document.getElementById('X').style.top = scrll;
+					document.getElementById('Y').style.top = scrll;
+					document.getElementById('Z').style.top = scrll;
+					document.getElementById('x0').style.visibility=viz;
+					document.getElementById('y0').style.visibility = viz;
+					document.getElementById('z0').style.visibility = viz;
+					for (i = 0; i < S.length; i++) {
+						Id='x'+i;
+						document.getElementById(Id).style.top = ay - 12 + (i * Ybase) * Math.sin(sec);
+						document.getElementById(Id).style.left = ax - 12 + (i * Xbase) * Math.cos(sec);
+					}
+					for (i = 0; i < M.length; i++) {
+						Id='y'+i;
+						document.getElementById(Id).style.top = by - 12 + (i * Ybase) * Math.sin(min);
+						document.getElementById(Id).style.left = bx - 12 + (i * Xbase) * Math.cos(min);
+					}
+					for (i = 0; i < H.length; i++) {
+						Id='z'+i;
+						document.getElementById(Id).style.top = cy - 12 + (i * Ybase) * Math.sin(hrs);
+						document.getElementById(Id).style.left = cx - 12 + (i * Xbase) * Math.cos(hrs);
+					}
+					for (i = 0; i < dots; ++i) {
+						Id='face'+i;
+						document.getElementById(Id).style.top = dy + 6 + (70 * Math.sin(-0.49 + dots + i / 1.9));
+						document.getElementById(Id).style.left = dx + 4 + (70 * Math.cos(-0.49 + dots + i / 1.9));
+					}
+				} else {
+					var scrll= document.body.scrollTop;
+					//document.getElementById(Id)
+					document.getElementById('W').style.pixelTop = scrll;
+					document.getElementById('X').style.pixelTop = scrll;
+					document.getElementById('Y').style.pixelTop = scrll;
+					document.getElementById('Z').style.pixelTop = scrll;
+					document.getElementById('x0').style.visibility=viz;
+					document.getElementById('y0').style.visibility = viz;
+					document.getElementById('z0').style.visibility = viz;
+					for (i = 0; i < S.length; i++) {
+						Id='x'+i;
+						document.getElementById(Id).style.pixelTop = ay - 12 + (i * Ybase) * Math.sin(sec);
+						document.getElementById(Id).style.pixelLeft = ax - 12 + (i * Xbase) * Math.cos(sec);
+					}
+					for (i = 0; i < M.length; i++) {
+						Id='y'+i;
+						document.getElementById(Id).style.pixelTop = by - 12 + (i * Ybase) * Math.sin(min);
+						document.getElementById(Id).style.pixelLeft = bx - 12 + (i * Xbase) * Math.cos(min);
+					}
+					for (i = 0; i < H.length; i++) {
+						Id='z'+i;
+						document.getElementById(Id).style.pixelTop = cy - 12 + (i * Ybase) * Math.sin(hrs);
+						document.getElementById(Id).style.pixelLeft = cx - 12 + (i * Xbase) * Math.cos(hrs);
+					}
+					for (i = 0; i < dots; ++i) {
+						Id='face'+i;
+						document.getElementById(Id).style.pixelTop = dy + 6 + (70 * Math.sin(-0.49 + dots + i / 1.9));
+						document.getElementById(Id).style.pixelLeft = dx + 4 + (70 * Math.cos(-0.49 + dots + i / 1.9));
+					}
+				}
+			}
+			function MouseFollow() {
+				ay = Math.round(Ay += ((Ypos) - Ay) * 4 / 15);
+				ax = Math.round(Ax += ((Xpos) - Ax) * 4 / 15);
+				by = Math.round(By += (ay - By) * 4 / 15);
+				bx = Math.round(Bx += (ax - Bx) * 4 / 15);
+				cy = Math.round(Cy += (by - Cy) * 4 / 15);
+				cx = Math.round(Cx += (bx - Cx) * 4 / 15);
+				dy = Math.round(Dy += (cy - Dy) * 4 / 15);
+				dx = Math.round(Dx += (cx - Dx) * 4 / 15);
+				clock();
+				setTimeout('MouseFollow()',10);
+			}
+			function colorstep() {
+				count +=move;
+				if (count >= dots) {count=0;count_a += move}
+				if (count_a == colors.length) count_a = 0;
+				Id='face'+count;
+				document.getElementById(Id).style.background = colors[count_a];
+				setTimeout('colorstep()',100)
+			}
+			function StartAll() {
+				MouseFollow();
+				colorstep();
+			}
+			window.onload = StartAll;
+			// End -->
+		</script>
+	</body>
+</html>
