@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Reverse a Table using JavaScript</title>
+        <script>
+            function reverseTable() {
+                var tableObj = document.getElementById("table");
+
+                document.writeln("<html><body><table><tr>");
+
+                // Reverse the Header
+                for(var i=tableObj.rows[0].cells.length-1; i>=0; i--) {
+                    document.write("<td>");
+                    document.write(tableObj.rows[0].cells[i].innerHTML);
+                    document.write("</td>");
+                }
+                document.writeln("</tr>");
+
+                // Reverse Data Rows & cols
+                for(var i=tableObj.rows.length-1; i>=1; i--) {
+                    document.write("<tr>");
+                    for(var j=tableObj.rows[i].cells.length-1; j>=0; j--) {
+                        document.write("<td>");
+                        document.write(tableObj.rows[i].cells[j].innerHTML);
+                        document.write("</td>");
+                    }
+                    document.write("</tr>");
+                }
+
+                document.writeln("</table></body></html>");
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Table Object</h1>
+        <hr><br>
+        <table border="1" id="table">
+            <tr>
+                <th>SLNO</th>
+                <th>PARTICIPANT'S NAME</th>
+                <th>DATE_OF_BIRTH</th>
+                <th>GENDER</th>
+                <th>OCCUPATION</th>
+                <th >ACTION1</th>
+                <th >ACTION2</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Narendra Modi</td>
+                <td>25-11-1966</td>
+                <td>Male</td>
+                <td>Instructor</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Indira Gandhi</td>
+                <td>25-11-1953</td>
+                <td>Female</td>
+                <td>Prime Minister</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Atal Bihari Bajpai</td>
+                <td>25-11-1966</td>
+                <td>Male</td>
+                <td>Instructor</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sonia Gandhi</td>
+                <td>25-11-1953</td>
+                <td>Female</td>
+                <td>Prime Minister</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Rabindranath Tagore</td>
+                <td>25-11-1966</td>
+                <td>Male</td>
+                <td>Instructor</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Indira Gandhi</td>
+                <td>25-11-1953</td>
+                <td>Female</td>
+                <td>Prime Minister</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Milan Das</td>
+                <td>25-11-1966</td>
+                <td>Male</td>
+                <td>Instructor</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Indira Gandhi</td>
+                <td>25-11-1953</td>
+                <td>Female</td>
+                <td>Prime Minister</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Milan Das</td>
+                <td>25-11-1966</td>
+                <td>Male</td>
+                <td>Instructor</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Indira Gandhi</td>
+                <td>25-11-1953</td>
+                <td>Female</td>
+                <td>Prime Minister</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+        </table>
+        <br><br>
+        <button onclick="reverseTable();">Reverse Table</button>
+    </body>
+</html>
