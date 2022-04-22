@@ -1,0 +1,10 @@
+ASSIGNMENT-17 (22-04-2022)
+    1.  Question-1
+        a.  Download all files from GitHub, Day-19.
+        b.  Add the downloaded files in your eclipse and run the servlet programs
+        c.  The file location are given in eclipse-servlet.jpg
+
+    2.  Write a servlet program to generate the fibonacci series.
+    3.  Write a HTML script to enter a form. Call a servlet program to display the values of 
+        the form in tabular format.
+
