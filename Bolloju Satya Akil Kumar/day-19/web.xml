@@ -18,4 +18,14 @@
   	<servlet-name>mtable</servlet-name>
   	<url-pattern>/mul-table</url-pattern>
   </servlet-mapping>
-</web-app>
+  
+  <servlet>
+  	<servlet-name>VowelCount</servlet-name>
+  	<servlet-class>com.lij.VowelCount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>VowelCount</servlet-name>
+  	<url-pattern>/VowelCount</url-pattern>
+  </servlet-mapping>
+  </web-app>
+  
