@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>HelloWorldProject</display-name>
+  <servlet>
+  	<servlet-name>pno</servlet-name>
+  	<servlet-class>com.lij.PrimeNo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>pno</servlet-name>
+  	<url-pattern>/primeno</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>mtable</servlet-name>
+  	<servlet-class>com.lij.MultiplicationTable</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>mtable</servlet-name>
+  	<url-pattern>/mul-table</url-pattern>
+  </servlet-mapping>
+</web-app>
