@@ -1,6 +1,5 @@
 package com.akhil;
 
-
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -8,10 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-
 public class MultiplicationTable extends HttpServlet {
-	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException {
+	
+
+	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException{
 		int start = Integer.parseInt(req.getParameter("start"));
 		int end = Integer.parseInt(req.getParameter("end"));
 		int count = 0;
@@ -54,4 +53,6 @@ public class MultiplicationTable extends HttpServlet {
 			System.err.println(e);
 		}
 	}
+
 }
+

@@ -23,16 +23,20 @@ text-align: center;
  <body class="container-fluid">
  <div class="card" style="width:600px;margin:auto;margin-top:50px">
  <h2 class="bg-danger text-light card-header">LoginForm</h2>
-<form name="loginform" method="Post" action="LoginServlet">
+<form name="loginform" method="Post" action="LoginForm">
  <table class="table table-hover table-striped">
  <tr>
- <td>Username:</td>
- <td><input type="text" name="username"/> </td>
+<td>Username:</td>
+<td><input type="text" placeholder="Enter Username" name="uname" required></td>
 </tr>
 <tr>
-    <td>Password:</td>
-  <td><input type="password" name="password"/></td>
+ <td>Password:</td>
+ <td> <input type="password" id="pwd" name="pwd" pattern=".{8,}" title="Eight or more characters"> </td>
  </tr>   
+ <tr>
+  <td>DOB:</td>
+<td><input type="date" name="dob"></td>
+ </tr>
  <tr>
  <td>Gender:</td>
  <td>
@@ -41,29 +45,46 @@ text-align: center;
  </td>
  </tr>
  <tr>
- <td>DOB:</td>
-<td><input type="date" name="dob"></td>
- </tr>
- 
- <tr>
- <td>Speaking language:</td>
-<td><input type="checkbox" name="language" value="english" />English
-<input type="checkbox" name="language" value="french" />French
-<input type="checkbox" name="language" value="hindi" />Hindi
+ <td>Languages:</td>
+<td><input type="checkbox" name="lang" value="english" />English
+<input type="checkbox" name="lang" value="french" />French
+<input type="checkbox" name="lang" value="hindi" />Hindi
 </td>
  </tr>
-    <tr>
-                <td>Phone Number:</td>
-                <td><input type="text" name="phone" /></td>
-            </tr>
- 
+ <tr>
+ <td>Job Category:</td>
+ <td>
+ <select name="jobCat">
+ <option value="" selected="selected">select</option>
+ <option value="tech">Technology</option>
+  <option value="admin">Administration</option>
+   <option value="biology">Biology</option>
+   <option value="science">Science</option>
+ </select>
+ </td>
+ </tr>
+ <tr>
+ <td>MobileNumber:</td>
+<td>
+ <input type="tel" id="phone" name="phone" placeholder="1234-56-78910" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}" required>
+</td>
+ </tr>
+  <tr>
+ <td>Email:</td>
+<td>
+ <input type="email" id="email" name="email"
+  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+</td>
+ </tr>
+ <tr>
+ <td>Feedback:</td>
+ <td><textarea rows="3" cols="30" name="feedback"></textarea></td>
+ </tr>
 <tr>
 <td><button type = "submit" class="btn btn-outline-success">Submit</button></td>
 <td><button type = "reset" class="btn btn-outline-danger">Reset</button></td>
 </tr>
-    
 </table>
-
 </form>
 </div>
 </body>
