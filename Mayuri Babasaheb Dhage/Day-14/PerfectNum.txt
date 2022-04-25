@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+         <style>
+             body{
+                 background: #4d5df9;
+  
+             }
+             #container{
+                 background-color: #e8f0f7;
+                 width: 350px;
+                 height: 270px;
+                 flex-direction: column;
+                 border-radius: 3px;
+                 box-shadow: 0 0 15px rgba(0,0,0,0.3);
+                 position: relative;
+                 left: 480px;
+                 top:80px;
+
+             }
+             #container, #message{
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+             button{
+                 background: white;
+                 border: 1px solid white;
+                 margin-top: 50px;
+                 background-color: #333;
+                 color: white;
+                 font-family: sans-serif;
+                 font-size: 1.1rem;
+                 border-radius: 2px;
+                 padding: 5px 5px;
+                }
+                input{
+                    background: white;
+                    border: 1px solid white;
+                    transform: scale(1.4);
+                    outline: none;
+                    cursor: pointer;
+                    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+                    margin-top: 90px;
+                }
+                #message{
+                   font-family: sans-serif;
+                   margin-top: 40px;
+                   width: 100.5%;
+                   background:#333;
+                   color: white;
+                   height: 30px;
+                   position: relative;
+                   top: 30px;
+                   border-radius: 0 0 3px 3px;
+                }
+                h1{
+                    font-family: sans-serif;
+                    position: absolute;
+                    top: 5%;
+                    color: #333;
+                }
+         </style>
+    </head>
+    <body>
+        <div id='container'>
+         <h1>Vowel Counter</h1>
+         <input type="text" id="input">
+         <button id="button">Calculate</button>
+         <div id='message'></div>
+        </div>
+
+        <script>
+            var displayMessage = document.getElementById('message');
+            var button = document.getElementById('button');
+            var counter = 0
+            var Input = document.getElementById('input')
+
+            function removeAfterSetTime() 
+            {
+                 location.reload()
+            }
+
+            button.addEventListener('click', () => 
+            {
+               var input = document.getElementById('input').value.toLowerCase();
+               var split = input.split('')
+               Input.value = ""
+            
+               for(var i = 0; i<split.length; i++)
+            {
+                      if(split[i] =='a' || split[i] =='e' || split[i] =='i' || split[i] =='o' || split[i] =='u')
+                      {
+                         counter++
+                      }
+                      if(counter > 1) 
+                      {
+                          displayMessage.innerHTML = `'${input}' has ${counter} vowels`
+                      }
+                     else
+                     {
+                         displayMessage.innerHTML = `'${input}' has ${counter} vowel`
+                     }
+                     var timeout = setTimeout(removeAfterSetTime, 2500)
+              }     
+           })
+        </script>
+    </body>
+</html>
