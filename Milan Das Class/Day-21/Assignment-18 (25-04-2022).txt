@@ -1,0 +1,6 @@
+ASSIGNMENT-18 (25-04-2022)
+    1.  Write a program to display the HEADER information (header variables respective values) of a request object?
+        Use: getHeaderNames() and getHeaders() methods
+
+    2.  Write a Servlet program to connection to the MySQL database and show the data in reverse order. The last row
+        will appear first and the first row will appear in the last.
