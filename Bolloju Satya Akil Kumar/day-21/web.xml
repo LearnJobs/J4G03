@@ -8,6 +8,7 @@
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
+    <welcome-file>index1.html</welcome-file>
     
   </welcome-file-list>
   
@@ -55,4 +56,22 @@
   		<servlet-name>db</servlet-name>
   		<url-pattern>/dbservlet</url-pattern>
   </servlet-mapping>
+  
+  
+<servlet>
+
+<servlet-name>readAllHeaders</servlet-name>
+
+<servlet-class>com.akhil.DisplayHeadersServlet</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>readAllHeaders</servlet-name>
+
+<url-pattern>/readAllHeaders</url-pattern>
+
+</servlet-mapping>
 </web-app>
