@@ -6,3 +6,5 @@ ASSIGNMENT-19 (26-04-2022)
     2.  Write a JSP program to take 2 numbers from the user and print all Prime Numbers that exist between
         the given numbers in a tabular format.
 
+    3.  In DBView.jsp, when the database name is selected, fill the table field with the list of the
+        table names from the selected database.
