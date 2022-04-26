@@ -59,19 +59,20 @@
   
   
 <servlet>
-
 <servlet-name>readAllHeaders</servlet-name>
-
 <servlet-class>com.akhil.DisplayHeadersServlet</servlet-class>
-
 </servlet>
-
-
 <servlet-mapping>
-
 <servlet-name>readAllHeaders</servlet-name>
-
 <url-pattern>/readAllHeaders</url-pattern>
-
 </servlet-mapping>
-</web-app>
+
+<servlet>
+  		<servlet-name>db1</servlet-name>
+  		<servlet-class>com.akhil.DBServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>db1</servlet-name>
+  		<url-pattern>/dbservlet1</url-pattern>
+  </servlet-mapping>
+  </web-app>
