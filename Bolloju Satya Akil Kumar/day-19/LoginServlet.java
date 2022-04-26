@@ -2,73 +2,79 @@ package com.akhil;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-
-import java.util.Date;
-
+import java.util.Arrays;
+import java.util.List;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
  
 
+@WebServlet("/LoginServlet")
+
 public class LoginServlet extends HttpServlet {
- 
+ @Override
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
-         
-        // read form fields
+        // get response writer
+        PrintWriter out = response.getWriter();
+        //set response type
+        response.setContentType("text/html");
+    	// read the data from fields
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-         
-        System.out.println("username: " + username);
-        System.out.println("password: " + password);
- 
+        String dob =request.getParameter("dob");
+          //gender
         String gender = request.getParameter("gender");
-        System.out.println("Gender is: " + gender);
+    //speaking languages
+        String[] languages = request.getParameterValues("language");
+        List  a1 = Arrays.asList(languages);  
         
-        String date=request.getParameter("dob");
-        System.out.println("dateString:"+date);
-        Date utilDate = null;
-		try {
-			utilDate = new SimpleDateFormat("yyyy-mm-dd").parse(date);
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
-        System.out.println("date:"+utilDate);
-        
-        String languages[] = request.getParameterValues("language");
-        String langSelect = "";
-        if (languages != null) {
-        for (int i=0;i<languages.length;i++) {
-        	langSelect= langSelect + languages[i]+ " , ";
-            }
-        }
-        
-        String phNum = request.getParameter("phone");
-        // do some processing here...
-         
-        // get response writer
-        PrintWriter writer = response.getWriter();
-         
-        // build HTML code
-        String htmlRespone = "<html>";
-        htmlRespone += "<h2>Your username is: " + username + "<br/>";      
-        htmlRespone += "Your password is: " + password + "</h2>";    
-        htmlRespone += "<h2>Gender is:" + gender +"</h2>";
-        htmlRespone += "<h2>DOB is: " + date +"</h2>";
-        htmlRespone += "<h2>Speaking language is : " + langSelect +"</h2>";
-        htmlRespone += "Phone Number: "+ phNum +"</h2>";
-        htmlRespone += "</html>";
-         
-    
-        
-        // return response
-        writer.println(htmlRespone);
-         
+        //add bootstrap
+        out.println("<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css\">\r\n"
+        		+ "\r\n"
+        		+ "<!-- jQuery library -->\r\n"
+        		+ "<script src=\"https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js\"></script>\r\n"
+        		+ "\r\n"
+        		+ "<!-- Popper JS -->\r\n"
+        		+ "<script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\"></script>\r\n"
+        		+ "\r\n"
+        		+ "<!-- Latest compiled JavaScript -->\r\n"
+        		+ "<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js\"></script>\r\n"+ "");
+        //print data
+       out.println("<div style='width:600px;margin:auto;margin-top:50px;'>");
+       out.println("<table class='table table-hover table-striped'>");
+       out.println("<tr>");
+       out.println("<td>username</td>");
+       out.println("<td>"+username+"</td>");
+       out.println("</tr>");
+        out.println("<tr>");
+       out.println("<td>password</td>");
+       out.println("<td>"+password+"</td>");
+       out.println("</tr>");
+       out.println("<tr>");
+       out.println("<td>DOB</td>");
+       out.println("<td>"+dob+"</td>");
+       out.println("</tr>");
+       out.println("<tr>");
+       out.println("<td>Gender</td>");
+       out.println("<td>"+gender+"</td>");
+       out.println("</tr>");
+       out.println("<tr>");
+       out.println("<td>Languages</td>");
+       out.println("<td>"+languages+"</td>");
+       out.println("</tr>");
+       out.println("</table");
+       out.println("</div>");
+       //close the stream
+       out.close();        
     }
- 
-}
+    @Override
+    protected void doGet(HttpServletRequest request,
+            HttpServletResponse response) throws ServletException, IOException{
+    	doPost(request,response);
+    }
+         
+ }
