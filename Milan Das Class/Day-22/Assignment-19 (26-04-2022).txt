@@ -1,0 +1,8 @@
+ASSIGNMENT-19 (26-04-2022)
+    1.  Print the current date in the following formats:
+        dd/mm/yyyy
+        dd-MMM-yyyy
+
+    2.  Write a JSP program to take 2 numbers from the user and print all Prime Numbers that exist between
+        the given numbers in a tabular format.
+
