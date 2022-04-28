@@ -1,0 +1,38 @@
+PROJECT (28-04-2022)
+    Display a table on your page, the table data is retrived from a database table, for example:
+
+                                                                                          + Add New Row
+    +------------+----------------+------------------+-------------+--------+---------------+------------+
+    | STUDENT_ID | STUDENT_NAME   | FATHER_NAME      | MOTHER_NAME | GENDER | DATE_OF_BIRTH |   ACTION   |
+    +------------+----------------+------------------+-------------+--------+---------------+-----+------+
+    |          1 | Rahul Gandhi   | Rajeev Gandhi    |             | M      | 1973-03-23    | Del | Edit |
+    |          2 | Indira Gandhi  | Jawaharlal Nehru |             | F      | 1958-02-11    | Del | Edit |
+    |          3 | Naveen Patnaik | Biju Patnaik     |             | M      | 1959-05-13    | Del | Edit |
+    |          4 | Bomkin Chandra | Subash Chandra   |             | M      | 1959-11-03    | Del | Edit |
+    |          5 | Sivaji Rao     | Chatrapati Rao   |             | M      | 1959-11-03    | Del | Edit |
+    |          6 | Navjoot Sidhu  | Karim Sidhu      |             | M      | 1959-11-03    | Del | Edit |
+    |          7 | Nazeem Shaik   | Karim Shaik      |             | M      | 1959-11-03    | Del | Edit |
+    |          8 | Milan Das      | B K Das          | J Das       | M      | 1960-11-25    | Del | Edit |
+    +------------+----------------+------------------+-------------+--------+---------------+-----+------+
+
+    =   In the top of the table give a button "+ Add New Row". On clicking this button, it provides facility to 
+        add a new row into the html table as well as the database table.
+    =   The last 2 columns under the ACTION are buttons. The Del button and Edit button.
+    =   On clicking the Del button, the entire row is deleted from the html table as well as the database table.
+    =   On clicking the Edit button, the row data is displayed on a form for making changes. On making changes
+        and clicking on the Save button at the buttom, the entire data is saved in the html table and the database
+        table.
+
+        STUDENT INFORMATION FORM
+
+        STUDENT_ID      ____________ Auto
+        STUDENT_NAME    ________________________
+        FATHER_NAME     ________________________
+        MOTHER_NAME     ________________________
+        GENDER          ___ Male      ___ Female
+        DATE_OF_BIRTH   dd/mm/yyyy
+
+        +------+        +--------+
+        | Save |        | Cancel |
+        +------+        +--------+
+
