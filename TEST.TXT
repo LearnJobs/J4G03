@@ -1,0 +1,230 @@
+class Begin {
+	public static void main() {
+	}
+
+	public static void main(String arg) {
+	}
+
+	public static void main(int n) {
+	}
+
+	public static void main(String[] args) {
+	}
+}
+
+
+
+1.  What will be the output of the following program?
+
+	public class Temp {
+		public static void main(String[] args) {
+			Temp obj = new Temp(n);
+		}
+
+		static int a = 10;
+		static int n;
+		int b = 5;
+		int c;
+
+		public Temp(int m) {
+			System.out.println(a + ", " + b + ", " + c + ", " + n + ", " + m);
+		}
+
+		// Instance Block
+		{
+			b = 30;
+			n = 20;
+		}
+
+		// Static Block
+		static {
+			a = 60;
+		}
+	}
+
+	a)	10, 5, 0, 20, 0
+    b)  10, 30, 20
+    c)  60, 5, 0, 20
+    d)  60, 30, 0, 20, 0
+
+2.  The \u0021 article referred to as a
+
+    a)	Unicode escape sequence
+    b)	Octal escape
+    c)	Hexadecimal
+    d)	Line feed
+
+3.  _____ is used to find and fix bugs in the Java programs.
+
+    a)  JVM
+    b)  JRE
+    c)  JDK
+    d)  JDB
+
+4.  What is the return type of the hashCode() method in the Object class?
+
+    a)  Object
+    b)  int
+    c)  long
+    d)  void
+
+5.  Which of the following is a valid long literal?
+
+    a)  ABH8097
+    b)  L990023
+    c)  904423
+    d)  0xnf029L
+
+6.  What does the expression float a = 35 / 0 return?
+
+    a)  0
+    b)  Not a Number
+    c)  Infinity
+    d)  Run time exception
+
+7.  Evaluate the following Java expression, if x=3, y=5, and z=10:
+	++z + y - y + z + x++
+
+    a)  24
+    b)  23
+    c)  20
+    d)  25
+
+8.  What will be the output of the following program?
+    public class Test {
+		public static void main(String[] args) {
+			int count = 1;
+			while (count <= 15) {
+				System.out.println(count % 2 == 1 ? "***" : "+++++");
+				++count;
+			}      // end while
+        }       // end main
+    }
+
+    a)  15 times ***
+    b)  15 times +++++
+    c)  8 times *** and 7 times +++++
+    d)  Both will print only once
+
+9.  Which of the following tool is used to generate API documentation in HTML format from doc comments in source code?
+
+    a)  javap tool
+    b)  javaw command
+    c)  Javadoc tool
+    d)  javah command
+
+10. Which of the following for loop declaration is not valid?
+
+    a)  for ( int i = 99; i >= 0; i / 9 )
+    b)  for ( int i = 7; i <= 77; i += 7 )
+    c)  for ( int i = 20; i >= 2; - -i )
+    d)  for ( int i = 2; i <= 20; i = 2* i )
+
+
+a)
+b)
+c)
+d)
+
+a)
+b)
+c)
+d)
+
+
+Java NIO Concepts
+
+There are several new concepts to learn in Java NIO compared to the old Java IO model. These concepts are listed below:
+
+    Channels
+    Buffers
+    Scatter - Gather
+    Channel to Channel Transfers
+    Selectors
+    FileChannel
+    SocketChannel
+    ServerSocketChannel
+    Non-blocking Server Design
+    DatagramChannel
+    Pipe
+    NIO vs. IO
+    Path
+    Files
+    AsynchronousFileChannel
+
+WHAT ARE CHANNELS?
+    Java NIO Channels are similar to streams with a few differences:
+        You can both read and write to a Channels. Streams are typically one-way (read or write).
+        Channels can be read and written asynchronously.
+        Channels always read to, or write from, a Buffer.
+
+As mentioned above, you read data from a channel into a buffer, and write data from a buffer into a channel.
+Here is an illustration of that: 
+
+Channel Implementations
+
+Here are the most important Channel implementations in Java NIO:
+
+    FileChannel
+    DatagramChannel
+    SocketChannel
+    ServerSocketChannel
+
+The FileChannel reads data from and to files.
+
+The DatagramChannel can read and write data over the network via UDP.
+
+The SocketChannel can read and write data over the network via TCP.
+
+The ServerSocketChannel allows you to listen for incoming TCP connections, like a web server does. 
+For each incoming connection a SocketChannel is created.
+
+Basic Channel Example
+Here is a basic example that uses a FileChannel to read some data into a Buffer:
+
+
+package j4g03.day08;
+
+import java.io.RandomAccessFile;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+
+public class TestNIO {
+	public TestNIO() {
+		try {
+			RandomAccessFile aFile = new RandomAccessFile("textfile.txt", "rw");
+			FileChannel inChannel = aFile.getChannel();
+
+			ByteBuffer buf = ByteBuffer.allocate(48);
+
+			int bytesRead = inChannel.read(buf);
+			while (bytesRead != -1) {
+
+			    System.out.println("Read " + bytesRead);
+			    buf.flip();
+
+			    while(buf.hasRemaining()) {
+			        System.out.print((char) buf.get());
+			    }
+
+			    buf.clear();
+			    bytesRead = inChannel.read(buf);
+			}
+			aFile.close();
+		} catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+
+	public static void main(String[] args) {
+		new TestNIO();
+	}
+}
+
+
+
+Notice the buf.flip() call. First you read into a Buffer. Then you flip it. 
+Then you read out of it. I'll get into more detail about that in the next 
+text about Buffer's. 
+
+Quick brown fox jumps over the lazy dog. Hello friends. We are all java developers.
