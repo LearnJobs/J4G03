@@ -1,0 +1,8 @@
+# ASSIGNMENT-22 (03-05-2022)
+    1.  Add a component to the Angular RootModule (AppModule) that will print all Prime Numbers
+        between 2 given numbers.
+    2.  Render the text in the following way using the appropriate pipe:
+        Original:   We Are Students Of Angular FrameWork
+        Convert1:   WE ARE STUDENTS of angular framework
+        Convert2:   we are students OF ANGULAR FRAMEWORK
+        Convert3:   WE are STUDENTS of ANGULAR framework
