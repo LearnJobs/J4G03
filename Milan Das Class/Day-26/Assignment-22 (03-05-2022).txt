@@ -1,4 +1,4 @@
-# ASSIGNMENT-22 (03-05-2022)
+ASSIGNMENT-22 (03-05-2022)
     1.  Add a component to the Angular RootModule (AppModule) that will print all Prime Numbers
         between 2 given numbers.
     2.  Render the text in the following way using the appropriate pipe:
