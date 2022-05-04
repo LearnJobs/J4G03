@@ -9,7 +9,7 @@ export class AppComponent {
   
   co:number=0;
   prime:string='|';
-
+   num=[0,2,4];
  primefun() {
      for(let i=10;i<100;i++){
        this.co=0;
