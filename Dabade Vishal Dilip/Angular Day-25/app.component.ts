@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   co:number=0;
-  prime:string='|';
+  prime:string='';
    num=[0,2,4];
  primefun() {
      for(let i=10;i<100;i++){
@@ -26,5 +26,5 @@ export class AppComponent {
   return this.prime;
 }
 line:string="We Are Student Of Angular FreameWork";
-
+data=this.line.split(' ');
 }
