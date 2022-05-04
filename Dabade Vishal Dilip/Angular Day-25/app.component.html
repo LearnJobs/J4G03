@@ -6,3 +6,6 @@
 <h1>-------------------------------------------------------</h1>
 <h3>{{line|slice:0:15|uppercase}}{{line|slice:15:36|lowercase}}</h3>
 <h3>{{line|slice:0:15|lowercase}}{{line|slice:15:36|uppercase}}</h3> 
+<h3 *ngFor="let i of num" style="display: inline-block;">
+            <span>{{data[i]|uppercase}}&nbsp;</span> <span>{{data[i+1]|lowercase}}&nbsp;</span>
+</h3>
