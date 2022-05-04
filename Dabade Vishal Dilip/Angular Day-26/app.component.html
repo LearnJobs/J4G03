@@ -1,6 +1,25 @@
 <div *ngFor="let item of color">
-  {{item}}
-  <hr>
+  
+  <div [ngSwitch]="item">
+    <div *ngSwitchCase="'red'" style="background-color: red;">
+      {{item}}
+    </div>
+    <div *ngSwitchCase="'black'" style="background-color: black;">
+      {{item}}
+    </div>
+    <div *ngSwitchCase="'yellow'" style="background-color: yellow;">
+      {{item}}
+    </div>
+    <div *ngSwitchCase="'green'" style="background-color: green;">
+      {{item}}
+    </div>
+    <div *ngSwitchCase="'pink'" style="background-color: pink;">
+      {{item}}
+    </div>
+    <div *ngSwitchCase="'blue'" style="background-color: blue;">
+      {{item}}
+    </div>
+  </div>
 </div>
 <br><br><br><br><br>
 <div *ngIf="DataHideSystem;">
