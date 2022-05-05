@@ -1,0 +1,15 @@
+ASSIGNMENT-24 (05-05-2022)
+    1.  Create a form for applying for a job with the following fields:
+        a)  First name
+        b)  Last name
+        c)  Father's name
+        d)  Gender
+        e)  Date of birth
+        f)  Highest qualification
+        g)  Email id
+        h)  Mobile phone number
+        i)  Post applied for
+        j)  Correspondence address
+
+        =   Make the form using Bootstrap classes.
+        =   Program to make it two way bind between the component class and the template.
