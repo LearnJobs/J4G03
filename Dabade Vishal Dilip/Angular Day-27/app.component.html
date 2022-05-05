@@ -1,0 +1,64 @@
+<form #MyForm="ngForm">
+        {{MyForm.value|json}}
+        <hr>
+    
+         {{DataMode|json}}
+
+         <!--  -->
+
+       <table border="3">
+           <tr>
+              <td>First Name</td>
+              <td><input type="text" name="fname"  [(ngModel)]="DataMode.f_name" class="inpu"></td>
+          </tr>
+            <tr>
+              <td>Last Name</td>
+              <td><input type="text" name="lname" [(ngModel)]="DataMode.f_last" class="inpu"></td>          </tr>
+          <tr>
+              <td>Father Name</td>
+              <td><input type="text" name="Father_name"  [(ngModel)]="DataMode.f_father" class="inpu"></td>          </tr>
+          <tr>
+              <td>Select Gender</td>
+              <td>
+                <input type="radio" name="gender" [(ngModel)]="DataMode.f_gen" >  Male
+                <input type="radio" name="gender" [(ngModel)]="DataMode.f_gen" > Female
+                <input type="radio" name="gender" [(ngModel)]="DataMode.f_gen" > Other
+              </td>
+        </tr>
+          <tr>
+                <td> Date Of Birth</td>
+                <td><input type="date" name="Date" [(ngModel)]="DataMode.f_dataofbirth" class="inpu"></td>
+          </tr>
+            <tr>
+               <td>Hights Education</td>
+                <td>
+                  <select name="education" [(ngModel)]="DataMode.f_qali"  >
+                    <option [value]="educat" *ngFor="let educat of qalification">{{educat}}</option>
+                  </select>
+
+                </td>
+            </tr>
+            <tr>
+              <td>Email ID</td>
+              <td><input type="email" name="Email" [(ngModel)]="DataMode.f_elmail" class="inpu"></td>
+            </tr>
+            <tr>
+              <td>Phone NO</td>
+              <td><input type="tel" name="Phone_NO" [(ngModel)]="DataMode.f_phone" class="inpu"></td>
+            </tr>
+            <tr>
+              <td>Post Applied For</td>
+              <td>
+
+                <select name="Apply For" [(ngModel)]="DataMode.f_Apply"  >
+                  <option [value]="appy" *ngFor="let appy of Apply">{{appy}}</option>
+                </select>
+
+              </td>
+            </tr>
+            <tr>
+              <td>Address</td>
+              <td><textarea name="Address" id=""  cols="30"  [(ngModel)]="DataMode.f_addrass" rows="5"></textarea></td>
+            </tr>
+       </table>
+</form>
