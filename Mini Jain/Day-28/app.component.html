@@ -1,0 +1,89 @@
+<!-- button class="btn btn-primary">Submit</button -->
+<div class="container-fluid mb-5">
+    <h1 style="text-align: center;">Job Applying Form</h1>
+    <form #userForm="ngForm">
+
+        {{ userForm.value | json }}
+        <hr>
+        {{ userModel | json }}
+        <br>
+        
+        <div class="form-group">
+            <label>Firstname: </label>
+            <input class="form-control" type="text" name="firstname" [(ngModel)]="userModel.firstname">
+          </div>
+          <br>
+
+          <div class="form-group">
+            <label>Lastname: </label>
+            <input class="form-control" type="text" name="lastname" [(ngModel)]="userModel.lastname">
+          </div>
+          <br>  
+
+           <div class="form-group">
+            <label>Father'sname: </label>
+            <input class="form-control" type="text" name="fathername" [(ngModel)]="userModel.fathername">
+          </div>
+          <br>  
+
+          <div class="form-group">
+             <label>Gender:</label>
+             <div class="form-check">
+             <input  class="form-check-input" type="radio" name="gender" id="male" value="male" [(ngModel)]="userModel.gender">
+             <label class="form-check-label">male</label>
+             </div>
+             <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female" [(ngModel)]="userModel.gender">
+             <label class="form-check-label">female</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="other" value="other" [(ngModel)]="userModel.gender">
+               <label class="form-check-label">other</label>
+              </div>
+          </div>
+          <br>
+
+         <div class="form-group">
+          <label>Date of birth:</label>
+          <input class="form-control" type="date" name="dob" id="dob" [(ngModel)]="userModel.dob">
+         </div> 
+         <br>
+         
+         <div class="form-group">
+        <label>Higest Qualifications: </label>
+        <select class="custom-select" name="Qualification" [(ngModel)]="userModel.Qualification">
+          <option selected="selected">Select the Qualification</option>
+          <option *ngFor="let Qualification of Qualification">{{Qualification}}</option>
+        </select>
+         </div>
+         <br> 
+         
+        <div class="form-group">
+        <label>Email-id:</label>
+        <input class="form-control" type="email" name="email" [(ngModel)]="userModel.email">
+        </div>
+        <br>
+
+        <div class="form-group">
+          <label>Mobile phone number: </label>
+          <input class="form-control" type="tel" name="phone" [(ngModel)]="userModel.phone">
+        </div>
+        <br>
+
+        <div class="form-group">
+          <label>Post applied For: </label>
+          <select name="Apply For" [(ngModel)]="userModel.Apply"  >
+            <option [value]="appy" *ngFor="let appy of Apply">{{appy}}</option>
+          </select>
+        </div>
+        <br>
+
+        <div class="form-group">
+          <label>Correspondence address: </label>
+          <input class="form-control" type="address" id=""  name="address" cols="30"  [(ngModel)]="userModel.address" rows="5">
+        </div>
+        <br>
+
+      <button class="btn btn-primary">Submit Form</button>
+     </form>     
+</div>
