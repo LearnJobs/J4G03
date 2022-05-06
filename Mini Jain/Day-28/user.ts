@@ -1,14 +1,7 @@
 export class User {
     constructor(
-        public firstname: string,
-        public lastname: string,
-        public fathername: string,
-        public gender: string,
-        public dob: string,
-        public Qualification: string,
-        public email: string,
-        public phone: string,
-        public Apply: string,
-        public address: string
-    ) {}
+        public name: string,
+        public pass: string,
+        public rempsw: string
+  ){}
 }
