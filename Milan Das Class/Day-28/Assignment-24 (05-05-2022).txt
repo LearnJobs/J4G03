@@ -16,3 +16,19 @@ ASSIGNMENT-24 (05-05-2022)
 
     2.  Create a Template Driven Form for login. 
         The form must have "forget password" and "remember password" buttons.
+        
+        +-------------------------------------------------------------+
+        |                                                             |
+        |                       LOGIN FORM                            |
+        |                                                             |
+        |       User name: |||||||||||||||||||||||||||||||||          |
+        |       Password:  |||||||||||||||||||||||||||||||||          |
+        |                                                             |
+        |       X Remember Password                                   |
+        |                                                             |
+        |       Forget-Password       Login                           |
+        |                                                             |
+        |                                                             |
+        |                                                             |
+        +-------------------------------------------------------------+
+
