@@ -1,0 +1,84 @@
+<div class="container-fluid mb-5">
+  <h1>bootcamp enrollment form</h1>
+  <h1>Form for applying job</h1>
+  <form #userForm="ngForm">
+
+    {{userForm.value | json}}
+    <hr>
+    {{userModel | json}}
+
+
+    <div class="form-group">
+      <label for="">Enter Name</label>
+      <input class="form-control" name="name" [(ngModel)]="userModel.name">
+    </div>
+
+    <div class="form-group">
+      <label for="">Last Name</label>
+      <input class="form-control" name="lastname" [(ngModel)]="userModel.lastname">
+    </div>
+
+
+    <div class="form-group">
+      <label for="">Father's Name</label>
+      <input class="form-control" name="fathername" [(ngModel)]="userModel.fathername">
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="">Gander</label>
+      <select class="form-group" name="gender" [(ngModel)]="userModel.gender">
+        <option value="male">Male</option>
+        <option value="female">female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="">Date Of Birth</label>
+      <input class="form-control" name="dob" [(ngModel)]="userModel.dob">
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label>Highest Qualification</label>
+      <select class="form-group" name="qualification" [(ngModel)]="userModel.qualification">
+        <option value="male">10th</option>
+        <option value="female">12th</option>
+        <option value="other">Graduate</option>
+        <option value="pg">Post Graduate</option>
+      </select>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="">Enter Mail Id</label>
+      <input class="form-control" name="mail" [(ngModel)]="userModel.mail">
+    </div>
+
+
+
+    <div class="form-group">
+      <label for="">Enter Phone Number</label>
+      <input class="form-control" name="number" [(ngModel)]="userModel.number">
+    </div>
+
+
+    <div class="form-group">
+      <label for="">Post Apply For:</label>
+      <select class="custom-select" name="post" [(ngModel)]="userModel.post">
+        <option selected="selected">select the cource</option>
+        <option *ngFor="let cource of cources">{{cources}}</option>
+      </select>
+    </div>
+    <br>
+    <div class="form-group">
+      <label row="8">Enter Address</label>
+      <input class="form-control" name="address" [(ngModel)]="userModel.address">
+    </div>
+
+    <br>
+
+    <button class="btn btn-primary">submit form</button>
+  </form>
+</div>
