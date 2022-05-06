@@ -13,3 +13,6 @@ ASSIGNMENT-24 (05-05-2022)
 
         =   Make the form using Bootstrap classes.
         =   Program to make it two way bind between the component class and the template.
+
+    2.  Create a Template Driven Form for login. 
+        The form must have "forget password" and "remember password" buttons.
