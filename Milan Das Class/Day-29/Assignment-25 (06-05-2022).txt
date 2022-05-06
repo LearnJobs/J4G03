@@ -1,0 +1,21 @@
+LOCATION OF THE SPRING GITHUB REPOSITORY:
+    https://repo.spring.io/ui/native/release/org/springframework/spring/
+
+    The Spring version that is most suitable for Java 8:
+        Release 4.x.x. 4.0.9.
+
+ASSIGNMENT-25 (06-05-2022)
+    1.  Develop a software for the Pharmaceutical companies. The program will display the number of
+        products manufactured and the number of sales personnel working in the field.
+
+        =   There will be two methods defined in the interface that will return the number of products
+            and the number of sales personnel.
+
+        =   Customer list:
+            a)  Sun Pharma      200               10,000
+            b)  Cipla           180                5,000
+            c)  Mankind          93                3,000
+            d)  Dr Reddy        170               12,000
+
+        =   Remove the dependencies and make your program completely configurable to run for the company
+            required.
