@@ -1,0 +1,15 @@
+ASSIGNMENT-26 (07-05-2022)
+    1.  Create a SolarSystem class with 2 dependencies. The first one is the Earth and the second one is the
+        Jupiter dependency. Both the dependency classes contain the diameter() method and the sufaceArea() method.
+        The diameter method and sufaceArea() method prints the diameter and the surface area of there respective planet.
+
+        Use beans.xml file to create the objects. Write a Sun class where the main() method is defined. Call
+        the main method to execute the program.
+
+        Create the autowiring by defining the autowire attribute in the corresponding bean.
+
+    2.  There are 3 dependencies in the name America, Asia & Europe defined within the World class.
+        Write method noOfCountries() with the dependency classes. Call the methods from a LivingPlanet class
+        main() method.
+
+        Use annotations instead beans.xml.
