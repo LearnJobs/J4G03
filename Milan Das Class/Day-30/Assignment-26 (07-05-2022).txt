@@ -8,6 +8,10 @@ ASSIGNMENT-26 (07-05-2022)
 
         Create the autowiring by defining the autowire attribute in the corresponding bean.
 
+                    Diameter                Surface-Area
+        Earth       12,742 km               510.1 million km²
+        Jupiter     139,820 km              61.42 billion km²
+
     2.  There are 3 dependencies in the name America, Asia & Europe defined within the World class.
         Write method noOfCountries() with the dependency classes. Call the methods from a LivingPlanet class
         main() method.
