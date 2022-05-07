@@ -5,4 +5,8 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="sim" class="com.tcn.ioc.Airtel"></bean>
+	    <bean id="pc" class="com.pharma.ioc.SunPharma"></bean>
+	      <bean id="cs" class="com.pharma.ioc.Cipla"></bean>
+	          <bean id="ab" class="com.pharma.ioc.Mankind"></bean>
+	          <bean id="cd" class="com.pharma.ioc.DrReddy"></bean>
 </beans>
