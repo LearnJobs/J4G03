@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+    <context:annotation-config />
+
+	<bean id="humanHeart" class="com.tcn.autowire.Heart">
+		<property name="nameOfAnimal" value="Human" />
+		<property name="noOfHeart" value="1" />
+	</bean>
+
+	<bean id="octopusHeart" class="com.tcn.autowire.Heart">
+		<property name="nameOfAnimal" value="Octopus" />
+		<property name="noOfHeart" value="3" />
+	</bean>
+
+	<bean id="dinoHeart" class="com.tcn.autowire.Heart">
+		<property name="nameOfAnimal" value="Dinosour" />
+		<property name="noOfHeart" value="1" />
+	</bean>
+
+	<bean id="leverObj1" class="com.tcn.autowire.Lever" />
+	<bean id="leverObj2" class="com.tcn.autowire.Lever" />
+
+	<bean id="human" class="com.tcn.autowire.Human" />
+</beans>
