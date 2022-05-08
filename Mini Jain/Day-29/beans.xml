@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="sim" class="com.tcn.ioc.Airtel"></bean>
+	    <bean id="pc" class="com.pharma.ioc.SunPharma"></bean>
+	      <bean id="cs" class="com.pharma.ioc.Cipla"></bean>
+	          <bean id="ab" class="com.pharma.ioc.Mankind"></bean>
+	          <bean id="cd" class="com.pharma.ioc.DrReddy"></bean>
+</beans>
