@@ -1,0 +1,15 @@
+CLASS-TEST (09-05-2022)                                                             Full-mark: 25
+    1.  Create a project to find the largest number within an array of numbers.
+        =   Use Spring frame work to develop the project
+        =   The program must be loosely coupled
+        =   There must be a SortAlgorithm dependency object
+        =   The sort algorithm may be of different types like:
+            >   Bubble Sort.
+            >   Recursive Bubble Sort
+            >   Insertion Sort
+            >   Recursive Insertion Sort
+            >   Merge Sort
+            >   Iterative Merge Sort
+            >   Quick Sort
+        =   You don't need to develop the programs for the above sort algorithm.
+            Only create the structure of the program.
