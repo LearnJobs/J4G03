@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="earth" class="com.solarsystem.autowire.Earth">
+		<property name="diameter" value="12,742 km" />
+		<property name="surfaceArea" value="510.1 million km²" />
+	</bean>
+	
+	<bean id="jupiter" class="com.solarsystem.autowire.Jupiter">
+		<property name="diameter" value="143,000 km" />
+		<property name="surfaceArea" value="61.42 billion km²" />
+	</bean>
+
+
+
+	<bean id="solarsystem" class="com.solarsystem.autowire.SolarSystem" autowire="byType" />
+</beans>
