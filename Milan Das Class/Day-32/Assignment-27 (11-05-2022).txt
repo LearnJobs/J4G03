@@ -1,0 +1,4 @@
+ASSIGNMENT-27 (11-05-2022)
+    1.  Write a program in HTML to display a paragraph of text.
+        The color of the text will be green if the isError property defined in the class is true.
+        The color of the text will be red if the isError property defined in the class is false.
