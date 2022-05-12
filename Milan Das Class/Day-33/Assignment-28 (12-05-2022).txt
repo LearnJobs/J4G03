@@ -1,0 +1,6 @@
+ASSIGNMENT-28 (12-05-2022)
+    Angular:
+    1.  Write a program to print all PRIME NUMBERS between 2500 and 3000.
+    2.  Write a program to show a text, say "The Coders Nation" if the condition is true or print "LearnJobs" if
+        the condition is false.
+    3.  Write a program to print all multiplication tables from 25 through 50.
