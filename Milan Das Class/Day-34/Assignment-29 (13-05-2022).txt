@@ -1,0 +1,13 @@
+ASSIGNMENT-29 (13-05-2022)
+    1.  Write a program to display the Root-Component and 3 Child-Components on the page.
+    2.  Write a program to send data from the Root-Component to the 2nd Child-Component and display.
+    3.  Transform a employee object to JSON format.
+        a)  emp_id
+        b)  emp_name
+        c)  emp_father
+        d)  emp_department
+        e)  emp_designation
+        f)  emp_dob
+        g)  emp_doj
+        h)  emp-dor
+    4.  Slice a text to display "Alexandar", the original text is "Alexandar is a Great King".
