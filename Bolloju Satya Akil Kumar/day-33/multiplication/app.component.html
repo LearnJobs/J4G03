@@ -1,0 +1,72 @@
+<html>
+  <head>
+  	  <title>Multiplication Table Creator in AngularJS</title>
+  	 <script type="text/javascript" src="angular.min.js"></script>
+  	  <script>
+  	  	var myApp=angular.module("myModule",[]);
+  	  	myApp.controller("Create_Table",function($scope) {
+  	  		$scope.MultiplicationTable=function()
+  	  		{
+    
+      var x=1;
+      var output = "<table border='1' align='center' width='500' cellspacing='0'cellpadding='5'>";
+      for(y=1;y<=$scope.rows;y++)
+      {
+      output = output + "<tr>";
+        while(x<=$scope.column)
+        {
+       output = output + "<td align='center'>" + y*x + "</td>";
+        x = x+1;
+      }
+       output = output + "</tr>";
+       x = 1;
+    }
+    output = output + "</table>";
+    document.write("<style> body { font-family: arial; font-size: 16px;  font-weight: bold; }; </style>");
+    document.write("<br><h3 align='center'>Multiplication Table in AngularJS</h3>");
+    document.write(output);
+    }
+    	 });
+     </script>
+ </head>
+ <style>
+body {
+	font-family: arial;
+	font-size: 25px;
+	font-weight: bold;
+}
+</style>
+ <body ng-app="myModule" ng-controller="Create_Table">
+ 	 <h3>Multiplication Table Creator in AngularJS</h3>
+ <div>
+ 	<table border="0">
+ 		 <tr>
+ 		 	<td>
+ 		 	Enter Your Row Value  </td>
+ 	     <td>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+ 	       <input type="number" ng-model="rows"/>
+ 	     </td>
+ 	    <tr>
+ 		 	<td>
+ 		 	Enter Your Column Value  </td>
+ 	     <td>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+ 	       <input type="number" ng-model="column"/>
+ 	     </td>   
+       </tr>
+       <tr>
+         <td>&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+      <tr>
+      	 <td colspan="5">
+      	 	 <input type="button" ng-click="MultiplicationTable()"
+          title="Click here to generate a multiplication table."
+      	 	 value="Create Multiplication Table"/>
+      	 </td>
+      </tr>
+      </table>
+     </div><br>
+      
+  </body>
+</html>
