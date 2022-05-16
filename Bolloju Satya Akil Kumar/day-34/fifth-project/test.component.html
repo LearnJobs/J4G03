@@ -1,0 +1,27 @@
+<h2>This is the test component!</h2>
+<h2>The 2nd component!</h2>
+<h2>{{"Hello " + ms_ceo}}</h2>
+<button (click)="fireEvent()">Send Event</button>
+<br><hr><br>
+<h2>{{company | lowercase}}</h2>
+<h2>{{company | uppercase}}</h2>
+<h2>{{company | titlecase}}</h2>
+<h2>{{company | slice:4 | uppercase}}</h2>
+<h2>{{company | slice:4:10 | lowercase}}</h2>
+
+{{employee | json}}<br>
+
+<h2>{{3.141 | number:'3.5'}}</h2>
+<h2>{{3.141675 | number:'3.2-3'}}</h2>
+
+<h2>{{0.25 | percent}}</h2>
+<h2>{{0.75 | percent}}</h2>
+
+<h2>{{25000.25 | currency}}</h2>
+<h2>{{25000.25 | currency:'GBP'}}</h2>
+<h2>{{25000.25 | currency:'INR'}}</h2>
+
+<h2>{{today | date}}</h2>
+<h2>{{today | date:'short'}}</h2>
+<h2>{{today | date:'shortDate'}}</h2>
+<h2>{{today | date:'shortTime'}}</h2>
