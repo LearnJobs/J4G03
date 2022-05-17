@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+	h1 {
+		color: blue;
+	}
+	
+	h2 {
+		font-family: Impact;
+	}
+	
+	body {
+		text-align: center;
+	}
+	</style>
+</head>
+
+<body>
+	<h1>welcome website URL</h1>
+	<p>
+		<b>
+			Click on Below Button
+			To Get Current URL
+		</b>
+	</p>
+
+	<button onclick="GetURL()"> Get URL </button>
+	<p id="url"></p>
+
+	
+	<script>
+	function GetURL() {
+		var gfg = document.URL;
+		document.getElementById("url").innerHTML = gfg;
+	}
+	</script>
+</body>
+
+</html>
