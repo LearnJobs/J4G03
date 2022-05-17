@@ -1,0 +1,69 @@
+<!-- <button class="btn btn-primary">Submit</button> -->
+<h1>{{title}}</h1>
+<form class="container-fluid" #userForm="ngForm">
+  {{userForm.value | json}}<br>
+  {{userModel | json}}
+
+
+  <div class="form-group">
+    <label>Enter name: </label>
+    <input class="form-control" type="text" name="name" [(ngModel)]="userModel.name" />
+  </div>
+  <br>
+
+  <div class="form-group">
+    <label>Father'sname: </label>
+    <input class="form-control" type="text" name="fathername" [(ngModel)]="userModel.fathername">
+  </div>
+  <br>  
+
+  <div class="form-group">
+    <label>Gender: </label>
+    <div class="form-check">
+    <input  class="form-check-input" type="radio" name="gender" id="male" value="male" [(ngModel)]="userModel.gender">
+    <label class="form-check-label">male</label>
+    </div>
+    <div class="form-check">
+   <input class="form-check-input" type="radio" name="gender" id="female" value="female" [(ngModel)]="userModel.gender">
+    <label class="form-check-label">female</label>
+   </div>
+   <div class="form-check">
+     <input class="form-check-input" type="radio" name="gender" id="other" value="other" [(ngModel)]="userModel.gender">
+      <label class="form-check-label">other</label>
+     </div>
+ </div>
+ <br>
+
+ <div class="form-group">
+  <label>Date of birth: </label>
+  <input class="form-control" type="date" name="dob" id="dob" [(ngModel)]="userModel.dob">
+ </div> 
+ <br>
+
+ <div class="form-control">
+  <label>Stream: </label>
+  <select class="custom-select" name="Stream" [(ngModel)]="userModel.Stream">
+    <option>Select the Stream</option>
+    <option *ngFor="let Stream of Stream">{{Stream}}</option>
+  </select>
+</div>
+<br>
+
+<div class="form-group">
+  <label>  Previous qualification : </label>
+  <select class="custom-select" name="qualification " [(ngModel)]="userModel.qualification">
+    <option selected="selected">Select the qualification </option>
+    <option *ngFor="let qualification  of qualification ">{{qualification }}</option>
+  </select>
+   </div>
+   <br> 
+
+   <div class="form-group">
+    <label>Mark obtained: </label>
+    <input class="form-control" type="text" name="Mark" [(ngModel)]="userModel.Mark" />
+  </div>
+  <br>
+
+  <button class="btn btn-primary">Submit Form</button>
+  <br>
+</form>
