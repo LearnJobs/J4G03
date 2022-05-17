@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Reverse table</title>
+        <script>
+            function reserveTable(){
+                var tableObj = document.getElementById("table");
+
+                document.writeln("<table><body><table><tr>");
+
+                for(var i = tableObj.rows[0].cells.length-1; i>0; i--) {
+                    
+                }    
+            }
+        
+    </script>
+    </head>
+    <body>
+        <h1>Reverse table</h1>
+        <table id="table" border="1">
+            <tr>
+                    <th>sl.no</th>
+                    <th>name</th>
+                     <th>gender</th>
+                     <th>country</th>
+                     <th cols="2">ACTION</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>akhil</td>
+                <td>M</td>
+                <td>usa</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr >
+                <td>2</td>
+                <td>kala</td>
+                <td>F</td>
+                <td>india</td> 
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>divya</td>
+                <td>F</td>
+                <td>australia</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>nikila</td>
+                <td>F</td>
+                <td>dubai</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>rakul</td>
+                <td>F</td>
+                <td>egypt</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>kajal</td>
+                <td>F</td>
+                <td>Finland</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>ntr</td>
+                <td>M</td>
+                <td>china</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>yash</td>
+                <td>M</td>
+                <td>belgium</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>nani</td>
+                <td>M</td>
+                <td>australia</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>maheshbabu</td>
+                <td>M</td>
+                <td>albania</td>
+                <td><button onclick="deleteRow(this);">Del</button></td>
+                <td><button onclick="insertRow(this);">Ins</button></td>
+            </tr>
+        </table>
+        <br><br>
+        <button onclick="reserveTable();">Reverse Table</button>
+    </body>
+</html>
+
+ 
