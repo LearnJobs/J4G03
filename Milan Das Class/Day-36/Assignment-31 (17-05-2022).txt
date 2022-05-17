@@ -1,0 +1,11 @@
+ASSIGNMENT-31 (17-05-2022)
+    1.  Create a form for submitting data for enrollment in the college with the following controls?
+        a)  Name of the candidate           text
+        b)  Father's name                   text
+        c)  Gender                          radio
+        d)  Date-of-birth                   date
+        e)  Stream                          select
+        f)  Previous qualification          select
+        g)  Mark obtained                   text
+
+        Bind the form data to a class and display the same in the form data.
