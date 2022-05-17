@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+   <head>
+      <title>Document</title>
+    </head>
+    <body>
+     <input type="number" id="number"/>
+     <button onclick="demo()">click</button>
+        <script>
+
+        function demo(){
+            var num = document.getElementById("number").value;
+            var sum;
+            document.write("All Perfect numbers between 1 To "+num+" : ");
+            
+            for(var i = 1; i < num; i++) {
+               sum = 0;
+            for(var j = 1;  j < i; j++) {
+                  if(i%j==0){
+                     sum+=j;
+                  }
+               }
+
+               document.write(sum+",");
+            }
+        }
+        </script>
+    </body>
+</html>
