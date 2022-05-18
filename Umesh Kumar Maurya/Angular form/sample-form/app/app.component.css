@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+h1 {
+    border: 3px;
+    background-color: aqua;
+    text-align: center ;
+    color:red;
+    background-color: black;
+}
+form{
+    color:red;
+    background-color:black;
+}
+select {
+    height:40px ;
+    width:500px;
+    border-radius: 10px;
+
+}
